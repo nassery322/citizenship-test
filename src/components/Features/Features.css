@@ -1,0 +1,23 @@
+.features {
+  height: auto;
+  background-color: rgb(239, 235, 235);
+  text-align: center;
+}
+.feature-items {
+  width: 82%;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features header {
+  font-size: 1.6rem; padding-top:15px; padding-bottom: 15px; font-weight: 600;
+}
+
+
+@media (max-width:420px){
+    .feature-items{
+        width: 90%;
+    }
+}

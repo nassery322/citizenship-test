@@ -1,0 +1,20 @@
+.home-btn{
+    width: 250px;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border:none;
+    border-radius: 36px;
+    height:4rem;
+    border:1px solid #d22a2a;
+    background-color: white;
+    color:#d22a2a;
+    margin:0 10px;
+    transition: .3s all ease-in-out;
+}
+
+.home-btn:hover{
+   color:white;
+   background-color:#d22a2a ;
+}
+

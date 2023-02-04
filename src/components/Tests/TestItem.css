@@ -1,0 +1,89 @@
+.test-item {
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 26px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.test-item header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(73, 71, 71);
+  margin: 10px 0;
+  margin-left: 10px;
+}
+.test-image{
+    border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  height: 42%;
+}
+.test-image img {
+  width: 100%;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  
+  height: 100%;
+}
+.test-description {
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+  padding: 8px;
+  height: auto;
+}
+
+.test-item:hover {
+  box-shadow: 0.5px 0px 20px 1px grey;
+}
+.test-item:hover header{
+    color:#d22a2a;
+}
+.start-test-btn {
+    cursor: pointer;
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #d22a2a;
+  color: #d22a2a;
+  height: 2.7rem;
+  background-color: #fefefe;
+  transition: 0.3s all ease-in-out;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+.start-test-btn:hover {
+  background-color: #d22a2a;
+  color: white;
+}
+
+@media (max-width:1060px){
+    .test-item{
+        width: 40%;
+    }
+}
+
+@media (max-width:720px){
+    .test-item{
+        width: 70%;
+    }
+}
+
+@media (max-width:550px){
+    .test-item{
+        width: 80%;
+    }
+    .test-item header{
+        font-size:1.4rem;
+    }
+}
+
+@media (max-width:400px){
+    .test-item{
+        width: 90%;
+    }
+    .test-item header{
+        font-size:1.2rem;
+    }
+}

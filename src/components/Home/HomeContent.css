@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&display=swap");
+/* font-family: "Roboto Mono", monospace; */
+/* background-image: url(../../assets/leaf.png);
+background-repeat: no-repeat;
+background-size: 600px;
+background-position-x: 110%;
+background-position-y: 70%; */
+
+
+
+.home-content {
+  font-family: sans-serif;
+  margin-top: 65px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 80vh;
+}
+.home-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-image img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 100%;
+}
+.home-content p {
+  width: 100%;
+}
+.home-quotes {
+  width: 50%;
+}
+.home-quote {
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(89, 88, 88);
+}
+.home-quote2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+@media (max-width: 911px) {
+  .home-quote {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 800px) {
+  .home-content {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+    /* .home-image{
+        width:0;
+    } */
+  /* .home-image img {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    z-index: 0;
+    opacity: 0.1;
+  } */
+  .home-content{
+    flex-direction: column;
+  }
+  .home-quotes {
+    text-align: center;
+    width: 100%; 
+  }
+  .home-buttons{
+    margin-top: 30px;
+  }
+  
+}
+@media (max-width: 450px) {
+  /* .home-image img {
+    left: 0;
+    width: 100%;
+  } */
+  
+}

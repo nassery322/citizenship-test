@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+
+.navbar {
+  height: 80px;
+  background-color: #d22a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  box-shadow: 0px 0px 20px 1px rgb(85, 84, 84);
+}
+.name-logo {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list li {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 7.5px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.nav-list li:hover {
+  background-color: #c21515;
+}
+#login {
+  border: 2px solid white;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  display: none;
+}
+
+.avatar-canvas {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.avatar-canvas img {
+  width: 45px ;
+  height: 45px;
+}
+
+@media (min-width: 822px) {
+  #login:hover {
+    background-color: white;
+    color: #d22a2a;
+  }
+}
+
+@media (max-width: 1028px) {
+  .name-logo {
+    font-size: 1.2rem;
+  }
+  .nav-list li {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-list li {
+    margin: 0 7.5px;
+  }
+}
+
+@media (max-width: 822px) {
+  .nav-button {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+  }
+  #login {
+    border: none;
+  }
+  .avatar-canvas img{
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  .name-logo {
+    font-size: 1rem;
+  }
+}

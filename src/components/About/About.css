@@ -1,0 +1,23 @@
+.about {
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+}
+.about header {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+.about-details {
+  margin-left: 15px;
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.about-details h3 {
+  font-size: 2rem;
+}
+.about-details section{
+    margin-bottom: 45px;
+}
