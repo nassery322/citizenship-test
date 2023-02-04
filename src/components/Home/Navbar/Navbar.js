@@ -43,7 +43,7 @@ setManageModalIsOpen(e => !e)
         <li onClick={ManageAccountHandler}>
           <a className="avatar-canvas" >
             <Avatar />
-           
+        
           </a>
         </li>
         <li>

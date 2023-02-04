@@ -108,21 +108,8 @@
     transition: all 0.3s ease;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* .wrapper ul li div{
-    
-    width: 45px;
-    font-size: 30px;
-    font-weight: 500;
-    padding: 5px;
-    left: 14%;
-    color: #fff; border: none;
-    position: absolute;
-    line-height: 50px;
-    margin: 5px ;
-    transition: all 0.3s ease;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    border: 2px white;
-} */
+
+
 .wrapper ul li a:after {
     position: absolute;
     content: "";

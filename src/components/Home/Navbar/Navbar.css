@@ -54,7 +54,6 @@
  display: flex;
  justify-content: center;
  align-items: center;
-
 }
 .avatar-canvas img {
   width: 45px ;
@@ -96,6 +95,11 @@
   .avatar-canvas img{
     width: 55px;
     height: 55px;
+  }
+}
+@media(max-height:200px){
+  .avatar-canvas{
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 480px) {
