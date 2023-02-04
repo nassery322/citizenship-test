@@ -1,11 +1,9 @@
 import Modal from "../../../UI/Modal";
 import "./Signup.css";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState} from "react";
 import { auth, firebaseDatabase } from "../../firebase";
 import {
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
   signOut,
 } from "firebase/auth";
 
@@ -126,9 +124,7 @@ const Signup = (props) => {
       [name]: value,
     }));
   }
-async function singouthandler(){
-await signOut(auth)
-}
+
   return (
     <Modal onClick={props.onClick} show={props.show}>
       <div className="close-btn" onClick={props.onClick}>
@@ -203,7 +199,7 @@ await signOut(auth)
         <button type="submit" className="form-submit-btn" >
           {isloading ? "Signing up" : "Sign up"}
         </button>
-        <button onClick={singouthandler}>Signout</button>
+        
         <p style={{'textAlign':'center'}}>Already have an account? <a className="modal-change-btn" onClick={props.onChangeModal}>Click Here</a></p>
       </form>
     </Modal>
