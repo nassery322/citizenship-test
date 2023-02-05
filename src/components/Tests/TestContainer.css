@@ -52,7 +52,7 @@
   
   flex-direction: column;
   border-bottom: 1px solid grey;
-  padding: 20px;
+  padding: 22px;
 }
 .options strong {
   font-size: 1.3rem;
@@ -62,15 +62,19 @@
 .options div {
   margin: 10px 0;
   box-shadow: rgba(111, 100, 100, 0.2) 0px 7px 29px 0px;
-  height: 23%;
+  height: 20% ;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   padding: 2%;
   transition: 0.3s all ease;
   border: none 1px;
   border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
+ box-sizing: border-box;
+}
+.options p{
 }
 .test-controls {
   height: 10%;
@@ -96,4 +100,8 @@
   color: #d22a2a;
   border-color: #d22a2a;
   cursor: pointer;
+}
+
+.selectedOption{
+    background-color: rgb(83, 83, 189);
 }

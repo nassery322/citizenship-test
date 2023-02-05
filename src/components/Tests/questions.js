@@ -712,7 +712,7 @@ const Ontario = [{
                 "option1": "The British Charter of Rights and Freedoms.",
                 "option2": "The Canadian Charter of Rights.",
                 "option3": "The Canadian Charter of Freedoms.",
-                "option4": "The Canadian Charter of Rights and Freedoms. (correct answer)",
+                "option4": "The Canadian Charter of Rights and Freedoms.",
                 "correctOption": "The Canadian Charter of Rights and Freedoms.",
                 "category": "laws"
                 },
@@ -1449,7 +1449,7 @@ const Ontario = [{
                                             {
                                                 "id": "q154",
                                                 "question": "Why did the British North America Act create the Dominion of Canada?",
-                                                "option1": "To provide for a federal union of the Provinces of Canada, Nova Scotia, and New Brunswick. (correct answer)",
+                                                "option1": "To provide for a federal union of the Provinces of Canada, Nova Scotia, and New Brunswick.",
                                                 "option2": "To create a separate country for British citizens in North America.",
                                                 "option3": "To create a separate country for Indigenous peoples in North America.",
                                                 "option4": "To provide for a federal union of all British North American colonies.",
@@ -1459,7 +1459,7 @@ const Ontario = [{
                                                 {
                                                 "id": "q155",
                                                 "question": "Who were the original four provinces in the Dominion of Canada?",
-                                                "option1": "Nova Scotia, New Brunswick, Quebec, and Ontario. (correct answer)",
+                                                "option1": "Nova Scotia, New Brunswick, Quebec, and Ontario.",
                                                 "option2": "British Columbia, Alberta, Saskatchewan, and Manitoba.",
                                                 "option3": "Newfoundland, Labrador, Prince Edward Island, and Yukon.",
                                                 "option4": "Nunavut, Northwest Territories, Yukon, and British Columbia.",
@@ -1470,7 +1470,7 @@ const Ontario = [{
                                                 "id": "q156",
                                                 "question": "What was the significance of the founding of the Hudson's Bay Company in 1670?",
                                                 "option1": "It was the first trading post established in Canada.",
-                                                "option2": "It marked the beginning of the fur trade in Canada. (correct answer)",
+                                                "option2": "It marked the beginning of the fur trade in Canada.",
                                                 "option3": "It was the first settlement established in Canada.",
                                                 "option4": "It marked the beginning of the gold rush in Canada.",
                                                 "correctOption": "It marked the beginning of the fur trade in Canada.",
@@ -1479,7 +1479,7 @@ const Ontario = [{
                                                 {
                                                 "id": "q157",
                                                 "question": "What was the significance of the British North America Act of 1867?",
-                                                "option1": "It was the first step in creating the Dominion of Canada. (correct answer)",
+                                                "option1": "It was the first step in creating the Dominion of Canada.",
                                                 "option2": "It made French an official language in Canada.",
                                                 "option3": "It marked the end of the fur trade in Canada.",
                                                 "option4": "It made the Canadian dollar the official currency of Canada.",
@@ -1489,7 +1489,7 @@ const Ontario = [{
                                                 {
                                                 "id": "q158",
                                                 "question": "What was the significance of the Statute of Westminster in 1931?",
-                                                "option1": "It declared the independence of Canada from Britain. (correct answer)",
+                                                "option1": "It declared the independence of Canada from Britain.",
                                                 "option2": "It declared the independence of Britain from Canada.",
                                                 "option3": "It marked the end of the gold rush in Canada.",
                                                 "option4": "It made French an official language in Canada.",
@@ -1954,10 +1954,10 @@ const NovaScotia = [
         "id": "ns64",
         "question": "What is the capital city of Nova Scotia?",
         "option1": "Shearwater",
-        "option2": "Halifax (correct answer)",
+        "option2": "Halifax",
         "option3": "Dartmouth",
         "option4": "Devon",
-        "correctOption": "Halifax (correct answer)",
+        "correctOption": "Halifax",
         "category": "geography"
         },
         {
@@ -1965,9 +1965,9 @@ const NovaScotia = [
         "question": "What is the name of the leader of the opposition in Nova Scotia?",
         "option1": "Darrell Dexter",
         "option2": "John MacDonell",
-        "option3": "Zach Churchill (correct answer)",
+        "option3": "Zach Churchill",
         "option4": "Jamie Baillie",
-        "correctOption": "Zach Churchill (correct answer)",
+        "correctOption": "Zach Churchill",
         "category": "government"
         },
         {
@@ -1976,8 +1976,8 @@ const NovaScotia = [
         "option1": "Honourable John James Grant",
         "option2": "Honourable Myra Freeman",
         "option3": "Honourable Mayann Francis",
-        "option4": "Honourable Arthur J. LeBlanc (correct answer)",
-        "correctOption": "Honourable Arthur J. LeBlanc (correct answer)",
+        "option4": "Honourable Arthur J. LeBlanc",
+        "correctOption": "Honourable Arthur J. LeBlanc",
         "category": "government"
         },
         {
@@ -1985,9 +1985,9 @@ const NovaScotia = [
         "question": "What is the name of the Premier of Nova Scotia?",
         "option1": "Premier Darrel Dexter",
         "option2": "Premier Stephen McNeil",
-        "option3": "Premier Tim Houston (correct answer)",
+        "option3": "Premier Tim Houston",
         "option4": "Premier Rodney MacDonald",
-        "correctOption": "Premier Tim Houston (correct answer)",
+        "correctOption": "Premier Tim Houston",
         "category": "government"
         },
         {
@@ -1995,19 +1995,19 @@ const NovaScotia = [
         "question": "What three industries are important to Nova Scotia’s economy today?",
         "option1": "Fisheries, shipbuilding and forestry",
         "option2": "Forestry, mining and tourism",
-        "option3": "Coal mining, forestry and agriculture (correct answer)",
+        "option3": "Coal mining, forestry and agriculture",
         "option4": "Tourism, movies and shipbuilding",
-        "correctOption": "Coal mining, forestry and agriculture (correct answer)",
+        "correctOption": "Coal mining, forestry and agriculture",
         "category": "economy"
         },
         {
         "id": "ns112",
         "question": "Which political party is in power in Nova Scotia?",
         "option1": "New Democrats",
-        "option2": "Progressive Conservative (correct answer)",
+        "option2": "Progressive Conservative",
         "option3": "Liberal",
         "option4": "Nova Scotia Party",
-        "correctOption": "Progressive Conservative (correct answer)",
+        "correctOption": "Progressive Conservative",
         "category": "government"
         }
 ]
@@ -2017,7 +2017,7 @@ const Nunavut = [
         "id": "n29",
         "question": "On what date did Nunavut become a territory?",
         "option1": "July 1st, 1867",
-        "option2": "April 1st, 1999 (correct answer)",
+        "option2": "April 1st, 1999",
         "option3": "June 24th, 1995",
         "option4": "March 31st, 1949",
         "correctOption": "April 1st, 1999",
@@ -2027,7 +2027,7 @@ const Nunavut = [
         "id": "n64",
         "question": "What is the capital City of the Nunavut?",
         "option1": "Sinaa",
-        "option2": "Iqaluit (correct answer)",
+        "option2": "Iqaluit",
         "option3": "Nipisa",
         "option4": "Mivvik",
         "correctOption": "Iqaluit",
@@ -2039,7 +2039,7 @@ const Nunavut = [
         "option1": "Honourable Peter Irniq",
         "option2": "Honourable Ann Meekitjuk Hanson",
         "option3": "Honourable Eva Aariak",
-        "option4": "Honourable Nellie Taptaqut Kusugak (correct answer)",
+        "option4": "Honourable Nellie Taptaqut Kusugak",
         "correctOption": "Honourable Nellie Taptaqut Kusugak",
         "category": "government"
         },
@@ -2048,7 +2048,7 @@ const Nunavut = [
         "question": "What is the name of the leader of the opposition in Nunavut?",
         "option1": "Don Morin",
         "option2": "Joe Handley",
-        "option3": "None (correct answer)",
+        "option3": "None",
         "option4": "Eva Aariak",
         "correctOption": "None",
         "category": "government"
@@ -2059,7 +2059,7 @@ const Nunavut = [
         "option1": "Premier Paul Okalik",
         "option2": "Premier Floyd Roalnd",
         "option3": "Premier Joe Savikataaq",
-        "option4": "Premier P.J. Akeeagok (correct answer)",
+        "option4": "Premier P.J. Akeeagok",
         "correctOption": "Premier P.J. Akeeagok",
         "category": "government"
         },
@@ -2069,7 +2069,7 @@ const Nunavut = [
         "option1": "Progressive Conservative",
         "option2": "Liberal",
         "option3": "Nunavut Party",
-        "option4": "Governed by consensus (correct answer)",
+        "option4": "Governed by consensus",
         "correctOption": "Governed by consensus",
         "category": "government"
         }
@@ -2081,9 +2081,9 @@ const PrinceEdwardIsland = [
         "question": "What is the capital City of the Prince Edward Island?",
         "option1": "Cornwall",
         "option2": "Stratford",
-        "option3": "Charlottetown (correct answer)",
+        "option3": "Charlottetown",
         "option4": "Georgetown",
-        "correctOption": "Charlottetown (correct answer)",
+        "correctOption": "Charlottetown",
         "category": "geography"
         },
         {
@@ -2092,38 +2092,38 @@ const PrinceEdwardIsland = [
         "option1": "Olive Crane",
         "option2": "Jamie Fox",
         "option3": "Steven Meyers",
-        "option4": "Peter Bevan-Baker (correct answer)",
-        "correctOption": "Peter Bevan-Baker (correct answer)",
+        "option4": "Peter Bevan-Baker",
+        "correctOption": "Peter Bevan-Baker",
         "category": "government"
         },
         {
         "id": "pe73",
         "question": "What is the name of the Lieutenant-Governor of Prince Edward Island?",
-        "option1": "Honourable Antoinette Perry (correct answer)",
+        "option1": "Honourable Antoinette Perry",
         "option2": "Honourable H. Frank Lewis",
         "option3": "Honourable Barbara Oliver Hagerman",
         "option4": "Honourable Léonce Barnard",
-        "correctOption": "Honourable Antoinette Perry (correct answer)",
+        "correctOption": "Honourable Antoinette Perry",
         "category": "government"
         },
         {
         "id": "pe74",
         "question": "What is the name of the Premier of Prince Edward Island?",
         "option1": "Premier Wade MacLauchlan",
-        "option2": "Premier Dennis King (correct answer)",
+        "option2": "Premier Dennis King",
         "option3": "Premier Pat Binns",
         "option4": "Premier Joe Ghiz",
-        "correctOption": "Premier Dennis King (correct answer)",
+        "correctOption": "Premier Dennis King",
         "category": "government"
         },
         {
         "id": "pe111",
         "question": "Which political party is in power in Prince Edward Island?",
-        "option1": "Progressive Conservative (correct answer)",
+        "option1": "Progressive Conservative",
         "option2": "New Democrats",
         "option3": "Liberals",
         "option4": "Union Nationale",
-        "correctOption": "Progressive Conservative (correct answer)",
+        "correctOption": "Progressive Conservative",
         "category": "government"
         },
 ]
@@ -2133,20 +2133,20 @@ const Quebec = [
         "id": "qu56",
         "question": "What is a major river in Quebec?",
         "option1": "Fraser River",
-        "option2": "St. Lawrence River (correct answer)",
+        "option2": "St. Lawrence River",
         "option3": "Niagara",
         "option4": "Hudson's Bay.",
-        "correctOption": "St. Lawrence River (correct answer)",
+        "correctOption": "St. Lawrence River",
         "category": "geography"
         },
         {
         "id": "qu64",
         "question": "What is the capital City of the Quebec?",
         "option1": "Beauport",
-        "option2": "Quebec City (correct answer)",
+        "option2": "Quebec City",
         "option3": "Montreal",
         "option4": "Chicoutimi",
-        "correctOption": "Quebec City (correct answer)",
+        "correctOption": "Quebec City",
         "category": "geography"
         },
         {
@@ -2154,39 +2154,39 @@ const Quebec = [
         "question": "What is the name of the Premier of Quebec ?",
         "option1": "Premier Lucien Bouchard",
         "option2": "Premier Pauline Marois",
-        "option3": "Premier Francois Legault (correct answer)",
+        "option3": "Premier Francois Legault",
         "option4": "Premier Philippe Couillard",
-        "correctOption": "Premier Francois Legault (correct answer)",
+        "correctOption": "Premier Francois Legault",
         "category": "government"
         },
         {
         "id": "qu82",
         "question": "What three industries are important to Quebec’s economy today?",
         "option1": "Tourism, mining and forestry",
-        "option2": "Pulp and paper, forestry and hydro-electric power (correct answer)",
+        "option2": "Pulp and paper, forestry and hydro-electric power",
         "option3": "Films, fishing and mining",
         "option4": "Forestry, shipping and tourism",
-        "correctOption": "Pulp and paper, forestry and hydro-electric power (correct answer)",
+        "correctOption": "Pulp and paper, forestry and hydro-electric power",
         "category": "economy"
         },
         {
         "id": "qu110",
         "question": "Which political party is in power in Quebec?",
-        "option1": "Coalition Avenir Québec (correct answer)",
+        "option1": "Coalition Avenir Québec",
         "option2": "Parti libéral",
         "option3": "Parti Quebecois",
         "option4": "Union Nationale",
-        "correctOption": "Coalition Avenir Québec (correct answer)",
+        "correctOption": "Coalition Avenir Québec",
         "category": "government"
         },
         {
         "id": "qu142",
         "question": "Who led Quebec into Confederation?",
         "option1": "Sir Louis-Hippolyte La Fontaine",
-        "option2": "Sir George-Étienne Cartier (correct answer)",
+        "option2": "Sir George-Étienne Cartier",
         "option3": "Sir Wilfrid Laurier",
         "option4": "Sir John A. Macdonald",
-        "correctOption": "Sir George-Étienne Cartier (correct answer)",
+        "correctOption": "Sir George-Étienne Cartier",
         "category": "history"
         },
 ]
@@ -2196,11 +2196,11 @@ const Saskatchewan = [
     {
         "id": "s64",
         "question": "What is the capital city of Saskatchewan?",
-        "option1": "Regina (correct answer)",
+        "option1": "Regina",
         "option2": "Avonlea",
         "option3": "Glenavon",
         "option4": "Fort Qu'Appelle",
-        "correctOption": "Regina (correct answer)",
+        "correctOption": "Regina",
         "category": "geography"
         },
         
@@ -2208,10 +2208,10 @@ const Saskatchewan = [
         "id": "s72",
         "question": "What is the name of the leader of the opposition in Saskatchewan?",
         "option1": "Ryan Meili",
-        "option2": "Carla Beck (correct answer)",
+        "option2": "Carla Beck",
         "option3": "John Nilson",
         "option4": "Cam Broten",
-        "correctOption": "Carla Beck (correct answer)",
+        "correctOption": "Carla Beck",
         "category": "government"
         },
         
@@ -2220,9 +2220,9 @@ const Saskatchewan = [
         "question": "What is the name of the Lieutenant-Governor of Saskatchewan?",
         "option1": "Honourable Dr. Gordon L. Barnhart",
         "option2": "Honourable Vaughn Solomon Schofield",
-        "option3": "Honourable Russ Mirasty (correct answer)",
+        "option3": "Honourable Russ Mirasty",
         "option4": "Honourable Lynda Maureen Haverstock",
-        "correctOption": "Honourable Russ Mirasty (correct answer)",
+        "correctOption": "Honourable Russ Mirasty",
         "category": "government"
         },
         
@@ -2231,9 +2231,9 @@ const Saskatchewan = [
         "question": "What is the name of the Premier of Saskatchewan?",
         "option1": "Premier Lorne Calvert",
         "option2": "Premier Brad Wall",
-        "option3": "Premier Scott Moe (correct answer)",
+        "option3": "Premier Scott Moe",
         "option4": "Premier Len Taylor",
-        "correctOption": "Premier Scott Moe (correct answer)",
+        "correctOption": "Premier Scott Moe",
         "category": "government"
         },
         
@@ -2243,8 +2243,8 @@ const Saskatchewan = [
         "option1": "Forestry, films and tourism",
         "option2": "Fishing, mining and agriculture",
         "option3": "Mining, oil production and forestry",
-        "option4": "Farming, mining and natural gas (correct answer)",
-        "correctOption": "Farming, mining and natural gas (correct answer)",
+        "option4": "Farming, mining and natural gas",
+        "correctOption": "Farming, mining and natural gas",
         "category": "economy"
         },
         
@@ -2252,10 +2252,10 @@ const Saskatchewan = [
         "id": "s112",
         "question": "Which political party is in power in Saskatchewan?",
         "option1": "NDP",
-        "option2": "Saskatchewan Party (correct answer)",
+        "option2": "Saskatchewan Party",
         "option3": "Progressive Conservative",
         "option4": "Social Credit",
-        "correctOption": "Saskatchewan Party (correct answer)",
+        "correctOption": "Saskatchewan Party",
         "category": "government"
         }
 ]
@@ -2267,7 +2267,7 @@ export const YukonTerritories = [
         "question": "What is the capital city of Yukon Territory?",
         "option1": "MacRae",
         "option2": "Crestview",
-        "option3": "Whitehorse (correct answer)",
+        "option3": "Whitehorse",
         "option4": "Riverdale",
         "correctOption": "Whitehorse",
         "category": "geography"
@@ -2276,7 +2276,7 @@ export const YukonTerritories = [
         "id": "y71",
         "question": "What is the name of the Commissioner of Yukon Territory?",
         "option1": "Honourable Doug Phillips",
-        "option2": "Honourable Angélique Bernard (correct answer)",
+        "option2": "Honourable Angélique Bernard",
         "option3": "Honourable Jack Cable",
         "option4": "Honourable Douglas Bell",
         "correctOption": "Honourable Angélique Bernard",
@@ -2286,7 +2286,7 @@ export const YukonTerritories = [
         "id": "y73",
         "question": "What is the name of the leader of the opposition in Yukon Territory?",
         "option1": "Trevor Harding",
-        "option2": "Currie Dixon (correct answer)",
+        "option2": "Currie Dixon",
         "option3": "Stacey Hassard",
         "option4": "Arthur Mitchell",
         "correctOption": "Currie Dixon",
@@ -2298,7 +2298,7 @@ export const YukonTerritories = [
         "option1": "Premier Dennis Fentie",
         "option2": "Premier Bob McLeod",
         "option3": "Premier Darrell Pasloski",
-        "option4": "Premier Sandy Silver (correct answer)",
+        "option4": "Premier Sandy Silver",
         "correctOption": "Premier Sandy Silver",
         "category": "government"
         },
@@ -2307,7 +2307,7 @@ export const YukonTerritories = [
         "question": "Which political party is in power in Yukon Territory?",
         "option1": "Progressive Conservatives",
         "option2": "New Democrats",
-        "option3": "Liberal (correct answer)",
+        "option3": "Liberal",
         "option4": "Yukon Party",
         "correctOption": "Liberal",
         "category": "government"
