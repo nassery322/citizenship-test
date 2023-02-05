@@ -7,6 +7,7 @@ import { auth } from "./components/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Home from "./components/Home/Home";
 import Tests from "./components/Tests/Tests";
+import TestContainer from "./components/Tests/TestContainer";
 
 function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       {userIsLoggedIn ? (
         <Fragment>
           <Tests />
+          <TestContainer />
         </Fragment>
       ) : (
         <Fragment>

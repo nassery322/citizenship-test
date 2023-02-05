@@ -8,7 +8,7 @@ import government from '../../assets/politics.jpg'
 import law from '../../assets/law.jpg'
 import symbols from '../../assets/symbols.jpg'
 import Navbar from "../Home/Navbar/Navbar";
-
+import { YukonTerritories } from "./questions";
 const Tests = () => {
     const testsArray = [
         {
@@ -48,7 +48,7 @@ const Tests = () => {
           image: symbols,
         },
       ];
-      
+      console.log(YukonTerritories[0].question)
 
   return (
     <Fragment>
