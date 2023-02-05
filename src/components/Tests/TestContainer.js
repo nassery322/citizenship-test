@@ -35,7 +35,6 @@ const TestContainer = (props) => {
     target = target.parentNode;
     }
     
-    console.log(answers);
     answers[questionNum].selectedOption = target.children[1].innerHTML;
     
     resetOptions();

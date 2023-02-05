@@ -46,14 +46,14 @@
   font-weight: 600;
 }
 .options {
-    box-sizing: border-box;
+  box-sizing: border-box;
   min-height: 60%;
   display: flex;
   justify-content: center;
-  
+
   flex-direction: column;
   border-bottom: 1px solid grey;
-  padding: 22px;
+  padding: 10px;
 }
 .options strong {
   font-size: 1.3rem;
@@ -63,7 +63,7 @@
 .options div {
   margin: 10px 0;
   box-shadow: rgba(111, 100, 100, 0.2) 0px 7px 29px 0px;
-  min-height: 20% ;
+  min-height: 20%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -73,7 +73,7 @@
   border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .test-controls {
@@ -102,53 +102,51 @@
   cursor: pointer;
 }
 
-.selectedOption{
-    background-color: rgb(83, 83, 189);
-    color:white;
+.selectedOption {
+  background-color: rgb(83, 83, 189);
+  color: white;
 }
-@media (max-width:1070px){
-    .test-container-main{
-        width: 65%;
-    }
+@media (max-width: 1070px) {
+  .test-container-main {
+    width: 65%;
+  }
 }
-@media (max-width:880px){
-    .test-container-main{
-        min-width: 75%;
-    }
+@media (max-width: 880px) {
+  .test-container-main {
+    min-width: 75%;
+  }
 }
-@media (max-width:650px){
-    .test-container-main{
-        min-width: 89%;
-    }
+@media (max-width: 650px) {
+  .test-container-main {
+    min-width: 89%;
+  }
 }
-@media (max-width:500px){
-    .test-container-main{
-        width: 100%;
-        min-height: 100vh;
-        
-    }
-    .question{
-       font-weight: 500;
-       font-size: 1.1rem;
-    }
-    .options div{
-        font-size: 1rem;
-    }
-    .options strong{
-        font-size: 1.2rem;
-    }
-    .test-btn:hover{
-    
-        border-color:inherit ;
-        color:inherit;
-    }
-    .test-btn:active{
-        border-color: #d22a2a;
-        color:#d22a2a;
-    }
+@media (max-width: 500px) {
+  .test-container-main {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .question {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .options div {
+    font-size: 1rem;
+  }
+  .options strong {
+    font-size: 1.2rem;
+  }
+  .test-btn:hover {
+    border-color: inherit;
+    color: inherit;
+  }
+  .test-btn:active {
+    border-color: #d22a2a;
+    color: #d22a2a;
+  }
 }
-@media (max-height:420px){
-    .test-controls{
-        min-height: 20%;
-    }
+@media (max-height: 420px) {
+  .test-controls {
+    min-height: 20%;
+  }
 }
