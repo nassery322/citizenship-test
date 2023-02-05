@@ -1,4 +1,4 @@
-const Ontario = [{
+export const Ontario = [{
     "id": "q1",
     "question": "A Member of Parliament from Montreal announces that she will spend her weekend in her electoral district. This means she would be:",
     "option1": "In her office on Parliament Hill.",
@@ -7,8 +7,8 @@ const Ontario = [{
     "option4": "Going on a vacation.",
     "correctOption": "In the part of Montreal where she was elected.",
     "category": "Government"
-    },
-    {
+    }
+    ,{
     "id": "q2",
     "question": "After a federal election, which party forms the new government?",
     "option1": "The party with the most elected representatives is invited by the Governor General to become the party in power.",
@@ -44,7 +44,7 @@ const Ontario = [{
     "option1": "Equality of women and men",
     "option2": "Equality of all races.",
     "option3": "Equal pay for equal work.",
-    "option4": "Equal rightsof all individuals.",
+    "option4": "Equal rights of all individuals.",
     "correctOption": "Equal rights of all individuals.",
     "category": "Law and rights"
     },
