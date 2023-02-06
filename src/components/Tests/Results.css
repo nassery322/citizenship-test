@@ -1,0 +1,103 @@
+.results {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.results-qualification{
+    font-size: 1.5rem;
+    color:#17d4ae;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+.main-results{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.results-pie {
+  --b: 12px;
+  --c: #d22a2a;
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 15px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.results-pie:before,
+.results-pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.results-pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.results-pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+.animate {
+  animation: PieAnimate 1s 0.5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes PieAnimate {
+  from {
+    --p: 0;
+  }
+}
+
+.check-btn{
+    width: 250px;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border:none;
+    border-radius: 36px;
+    height:4rem;
+    border:1px solid #d22a2a;
+    color:white;
+   background-color:#d22a2a ;
+    
+    margin:15px 0;
+    transition: .3s all ease-in-out;
+}
+
+.check-btn:hover{
+    background-color: white;
+    color:#d22a2a;
+}

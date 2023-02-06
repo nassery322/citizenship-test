@@ -67,7 +67,7 @@ export const Questions = [{
     "option3": "By not recycling.",
     "option4": "By not voting in elections.",
     "correctOption": "By joining a sports team.",
-    "category": "Citizenship"
+    "category": "laws"
     },
     {
     "id": "q8",
@@ -2403,4 +2403,3 @@ const shuffleArray = (array) => {
   }
   return array;
 }
-console.log(shuffleArray(Ontario))

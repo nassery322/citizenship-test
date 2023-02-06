@@ -1,10 +1,13 @@
 import React, { Fragment, useState } from "react";
 import "./TestContainer.css";
 import timerSvg from "../../assets/timer.svg";
+import Results from "./Results";
+import ProvinceSelector from "./ProvinceSelector";
 // import { YukonTerritories, Ontario } from "./questions";
 const TestContainer = (props) => {
   const [questionNum, setQuestionNum] = useState(0);
-  // const [mainQuestion, setMainQuestion] = useState()
+  const [testIsFinished, setTestIsFinished] = useState(false);
+  // const [province, setProvince] = useState(null)
   const [answers, setAnswers] = useState(
     props.questions && props.questions.map((item) => {
       return { correctOption: item.correctOption, selectedOption: "" };
@@ -44,12 +47,16 @@ const TestContainer = (props) => {
 
   const mainQuestion = props.questions[questionNum];
   const selectedOption = answers[questionNum].selectedOption;
-
+    // const provinceHandler = (province) =>{
+    //   setProvince(true)
+    //   props.onProvinceSelect(province)
+    // }
+    
   return (
     <Fragment>
-      <div className="close-btn">&times;</div>
+      <div className="close-btn" style={{'fontSize':'3rem'}}>&times;</div>
       <section className="test-container">
-        <section className="test-container-main">
+        {testIsFinished? <Results /> :<section className="test-container-main">
           <div className="timer">
             <div>
               <p className="question-number">
@@ -112,7 +119,7 @@ const TestContainer = (props) => {
               Next
             </button>
           </section>
-        </section>
+        </section>}
       </section>
     </Fragment>
   );
