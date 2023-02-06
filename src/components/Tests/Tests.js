@@ -31,6 +31,7 @@ const Tests = (props) => {
   const [testIsStarted, setTestIsStarted] = useState(false);
   const [testQuestions, setTestQuestions] = useState();
   const [province, setProvince] = useState(null);
+  const [askForProvince, setAskForProvince] = useState(false);
   const testsArray = [
     {
       id: "t1",
@@ -38,7 +39,9 @@ const Tests = (props) => {
       description:
         "Our simulation test replicates the format of the real Canadian Citizenship Test. It draws questions from every categories and are also timed which helps to further prepare you.",
       image: citizenCert,
-      questions: province ? [...Questions.slice(0, 15), ...province.slice(0, 2)] : Questions.slice(0, 15)
+      questions: Questions.slice(0, 15).concat(
+        province ? province.slice(0, 5) : ""
+      ),
     },
     {
       id: "t2",
@@ -82,7 +85,9 @@ const Tests = (props) => {
       questions: Questions.filter(
         (question) =>
           question.category && question.category.toLowerCase() === "laws"
-      ).slice(0, 5).concat(province && province.slice(0, 2))
+      )
+        .slice(0, 5)
+        .concat(province && province.slice(0, 2)),
     },
     {
       id: "t6",
@@ -108,7 +113,19 @@ const Tests = (props) => {
     },
   ];
   const startTestHandler = (e) => {
-    props.askForProvince(true)
+    if (!e) {
+      return;
+    }
+    // console.log(e)
+    const { startTest, questions } = e;
+    if (startTest) {
+      setTestIsStarted(true);
+      // setTestQuestions(questions)
+      setTestQuestions(questions);
+    }
+    if (province) {
+    }
+    console.log(questions);
   };
 
   const provinceSelectHandler = (provinceCode) => {
@@ -151,39 +168,63 @@ const Tests = (props) => {
     if (provinceCode === "SK") {
       setProvince(Saskatchewan);
     }
+    setAskForProvince(false);
   };
+
+  // function provinceHandler() {
+  //   setAskForProvince(true);
+  // }
+
   useEffect(() => {
-provinceSelectHandler(props.province)
-  }, [props.province])
+    provinceSelectHandler(props.province)
+  }, [province]);
 
- 
+  function provinceHandler(){
+    if(!province){
+
+      props.provinceSelect(true)
+    }else{
+
+    }
+  }
+
 console.log(province)
-function examHandler(e){
-  setTestIsStarted(true)
-  setTestQuestions(e)
-}
-
   return (
     <Fragment>
-    
-        {testIsStarted? <TestContainer questions={testQuestions} /> :<section className="tests-section">
+      {/* {testIsStarted ? (
+        !province ? (
+          <ProvinceSelector province={provinceSelectHandler} />
+        ) : (
+          <TestContainer questions={testQuestions} />
+        )
+      ) : ( */}
+
+      {testIsStarted ? (
+        
+          <TestContainer questions={testQuestions} />
+        )
+      : (
+        <section className="tests-section">
           <Navbar />
           <section className="test-items">
-            {testsArray.map((test) => (
-               <TestItem
-                key={test.id}
-                title={test.title}
-                description={test.description}
-                image={test.image}
-                questions={test.questions}
-                startTest={startTestHandler}
-                province={province}
-                mainExamStart={examHandler}
-              /> 
-            ))}
+            {testsArray.map((test) =>
+                <TestItem
+                  key={test.id}
+                  id={test.id}
+                  title={test.title}
+                  description={test.description}
+                  image={test.image}
+                  questions={test.questions}
+                  p={province}
+                  startTest={startTestHandler}
+                  province={provinceHandler}
+                />
+              
+            )}
           </section>
-        </section>}
-      
+        </section>
+      )}
+      {/* )} */}
     </Fragment>
   );
 };

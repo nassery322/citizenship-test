@@ -7,12 +7,10 @@ import { auth } from "./components/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Home from "./components/Home/Home";
 import Tests from "./components/Tests/Tests";
-import TestContainer from "./components/Tests/TestContainer";
 import ProvinceSelector from "./components/Tests/ProvinceSelector";
-
 function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
-  const [provinceIsSelected, setProvinceIsSelected] = useState(true)
+  const [provinceIsSelected, setProvinceIsSelected] = useState(true);
   const [province, setProvince] = useState(null)
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
@@ -21,20 +19,20 @@ function App() {
       }
     });
   }, [auth.currentUser]);
-  function provinceHandler(){
-    setProvinceIsSelected(false)
+
+  function handler(e){
+setProvinceIsSelected(false)
+
   }
-  function provinceChangeHandler(code){
+  function phandler(e){
+    setProvince(e)
     setProvinceIsSelected(true)
-    setProvince(code)
   }
   return (
     <div className="App">
       {userIsLoggedIn ? (
         <Fragment>
-          {provinceIsSelected? <Tests askForProvince={provinceHandler} province={province && province}  /> : <ProvinceSelector province={provinceChangeHandler} />}
-          {/* <TestContainer /> */}
-        </Fragment>
+{provinceIsSelected? <Tests provinceSelect={handler} province={province && province }  /> : <ProvinceSelector province={phandler} />}        </Fragment>
       ) : (
         <Fragment>
           <Home />

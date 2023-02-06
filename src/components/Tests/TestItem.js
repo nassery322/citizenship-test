@@ -4,14 +4,23 @@ import TestContainer from "./TestContainer";
 import "./TestItem.css";
 
 const TestItem = (props) => {
+  const [province, setProvince] = useState(null)
   const startTestHandler = () => {
+    if(props.id === 't1'){
+      props.province(true)
+    
+    }
     props.startTest({ startTest: true, questions: props.questions });
   };
-  useEffect(()=>{
-    if(props.province){
-      props.mainExamStart(props.questions)
+ useEffect(()=>{
+  if(props.id === 't1'){
+    if(props.p){
+      props.startTest({ startTest: true, questions: props.questions });
     }
-  },[props.province])
+  }
+
+ },[props.p])
+ 
   return (
     <Fragment>
       <section className="test-item">

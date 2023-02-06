@@ -3,7 +3,6 @@ import "./TestContainer.css";
 import timerSvg from "../../assets/timer.svg";
 import Results from "./Results";
 import ProvinceSelector from "./ProvinceSelector";
-// import { YukonTerritories, Ontario } from "./questions";
 const TestContainer = (props) => {
   const [questionNum, setQuestionNum] = useState(0);
   const [testIsFinished, setTestIsFinished] = useState(false);
