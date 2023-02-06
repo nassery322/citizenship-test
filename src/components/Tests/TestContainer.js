@@ -1,18 +1,18 @@
 import React, { Fragment, useState } from "react";
 import "./TestContainer.css";
 import timerSvg from "../../assets/timer.svg";
-import { YukonTerritories, Ontario } from "./questions";
+// import { YukonTerritories, Ontario } from "./questions";
 const TestContainer = (props) => {
   const [questionNum, setQuestionNum] = useState(0);
   // const [mainQuestion, setMainQuestion] = useState()
   const [answers, setAnswers] = useState(
-    Ontario.map((item) => {
+    props.questions && props.questions.map((item) => {
       return { correctOption: item.correctOption, selectedOption: "" };
     })
   );
 
   const nextHandler = () => {
-    if (questionNum < Ontario.length - 1) {
+    if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
     } else {
@@ -42,17 +42,18 @@ const TestContainer = (props) => {
     target.classList.add("selectedOption");
     };
 
-  const mainQuestion = Ontario[questionNum];
+  const mainQuestion = props.questions[questionNum];
   const selectedOption = answers[questionNum].selectedOption;
 
   return (
     <Fragment>
+      <div className="close-btn">&times;</div>
       <section className="test-container">
         <section className="test-container-main">
           <div className="timer">
             <div>
               <p className="question-number">
-                Question {questionNum + 1} of {Ontario.length}
+                Question {questionNum + 1} of {props.questions.length}
               </p>
             </div>
             <div>

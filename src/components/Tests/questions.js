@@ -1,4 +1,5 @@
-export const Ontario = [{
+
+export const Questions = [{
     "id": "q1",
     "question": "A Member of Parliament from Montreal announces that she will spend her weekend in her electoral district. This means she would be:",
     "option1": "In her office on Parliament Hill.",
@@ -36,7 +37,7 @@ export const Ontario = [{
     "option3": "3",
     "option4": "5",
     "correctOption": "10",
-    "category": "Geography"
+    "category": "geography"
     },
     {
     "id": "q5",
@@ -56,7 +57,7 @@ export const Ontario = [{
     "option3": "Ottawa",
     "option4": "Vancouver",
     "correctOption": "Ottawa",
-    "category": "Geography"
+    "category": "geography"
     },
     {
     "id": "q7",
@@ -85,7 +86,7 @@ export const Ontario = [{
 "option3": "Montreal",
 "option4": "Vancouver",
 "correctOption": "Ottawa",
-"category": "Geography"
+"category": "geography"
 }, {
     "id": "q10",
     "question": "What is the currency used in Canada?",
@@ -193,7 +194,7 @@ export const Ontario = [{
             "option3": "Atlantic Canada",
             "option4": "Northern Canada",
             "correctOption": "Central Canada",
-            "category": "Geography"
+            "category": "geography"
             },{
                 "id": "q21",
                 "question": "Name all the federal political parties in the House of Commons and their leaders",
@@ -222,7 +223,7 @@ export const Ontario = [{
                 "option3": "Atlantic, Central, Prairie, West Coast, and North",
                 "option4": "West, Central, East, Prairies, and Territories",
                 "correctOption": "Atlantic, Central, Prairie, West Coast, and North",
-                "category": "Geography"
+                "category": "geography"
                 },
                 {
                 "id": "q24",
@@ -292,7 +293,7 @@ export const Ontario = [{
                 "option3": "Northwest Territories.",
                 "option4": "Manitoba.",
                 "correctOption": "Ontario.",
-                "category": "Geography"
+                "category": "geography"
                 },{
                     "id": "q31",
                     "question": "What does the Canadian Coat of Arms and motto, “A Mari Usque Ad Mare,” mean?",
@@ -301,7 +302,7 @@ export const Ontario = [{
                     "option3": "From the sea to the ends of the earth.",
                     "option4": "From the water to the earth.",
                     "correctOption": "From sea to sea.",
-                    "category": "Geography"
+                    "category": "geography"
                     },
                     {
                     "id": "q32",
@@ -321,7 +322,7 @@ export const Ontario = [{
                     "option3": "Saskatchewan (Regina) and Manitoba (Winnipeg).",
                     "option4": "Saskatchewan (Regina), Manitoba (Winnipeg) and Ontario (Toronto).",
                     "correctOption": "Alberta (Edmonton), Saskatchewan (Regina) and Manitoba (Winnipeg).",
-                    "category": "Geography"
+                    "category": "geography"
                     },
                     {
                     "id": "q34",
@@ -331,7 +332,7 @@ export const Ontario = [{
                     "option3": "Ontario (Toronto) and Quebec (Quebec City).",
                     "option4": "Saskatchewan (Regina) and Manitoba Winnipeg).",
                     "correctOption": "Ontario (Toronto) and Quebec (Quebec City).",
-                    "category": "Geography"
+                    "category": "geography"
                     },{
                         "id": "q35",
                         "question": "What are the provinces of the Atlantic region and their capital cities?",
@@ -340,7 +341,7 @@ export const Ontario = [{
                         "option3": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Quebec (Quebec).",
                         "option4": "Nova Scotia (Halifax), New Brunswick (Fredericton), Quebec (Quebec City) and Ontario (Toronto)",
                     "correctOption": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown)",
-                    "category": "Geography"
+                    "category": "geography"
                     },
                     {
                     "id": "q36",
@@ -350,7 +351,7 @@ export const Ontario = [{
                     "option3": "Northwest Territories (Yellowknife)",
                     "option4": "Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit)",
                     "correctOption": "Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit)",
-                    "category": "Geography"
+                    "category": "geography"
                     },
                     {
                     "id": "q37",
@@ -542,18 +543,6 @@ export const Ontario = [{
     "correctOption": "Ottawa.",
     "category": "geography"
   },
-
-  {
-    "id": "q64",
-    "question": "What is the capital city of Ontario?",
-    "option1": "Kingston",
-    "option2": "Ottawa",
-    "option3": "Toronto",
-    "option4": "London",
-    "correctOption": "Toronto",
-    "category": "geography"
-  },
-
   {
     "id": "q65",
     "question": "What is the difference between the role of the Sovereign and that of the Prime Minister?",
@@ -624,36 +613,6 @@ export const Ontario = [{
         "option3": "Richard Wagner.",
         "option4": "Julie Payette",
         "correctOption": "Mary Simon.",
-        "category": "government"
-        },
-        {
-        "id": "q72",
-        "question": "What is the name of the leader of the Opposition in Ontario?",
-        "option1": "Andrea Horwath",
-        "option2": "Tim Hudak",
-        "option3": "Peter Tabuns",
-        "option4": "Dalton McGuinty",
-        "correctOption": "Peter Tabuns",
-        "category": "government"
-        },
-        {
-        "id": "q73",
-        "question": "What is the name of the Lieutenant-Governor of Ontario?",
-        "option1": "James Bartleman",
-        "option2": "Elizabeth Dowdeswell",
-        "option3": "David C. Onley",
-        "option4": "Belinda Stronach",
-        "correctOption": "Elizabeth Dowdeswell",
-        "category": "government"
-        },
-        {
-        "id": "q74",
-        "question": "What is the name of the Premier of Ontario?",
-        "option1": "Premier Doug Ford",
-        "option2": "Premier Jack Layton",
-        "option3": "Premier Kathleen Wynne",
-        "option4": "Premier Mike Harris",
-        "correctOption": "Premier Doug Ford",
         "category": "government"
         },
         {
@@ -745,16 +704,6 @@ export const Ontario = [{
                     "option4": "Amazing Grace.",
                     "correctOption": "O Canada.",
                     "category": "symbols"
-                    },
-                    {
-                    "id": "q84",
-                    "question": "What three industries are important to Ontario’s economy today?",
-                    "option1": "Mining, fishing, automobile manufacturing",
-                    "option2": "Mining, tourism, automobile manufacturing",
-                    "option3": "Farming, tourism, fishing",
-                    "option4": "Automobile manufacturing, tourism, fishing",
-                    "correctOption": "Mining, tourism, automobile manufacturing",
-                    "category": "economy"
                     },
                     {
                     "id": "q85",
@@ -1028,16 +977,6 @@ export const Ontario = [{
                 "category": "government"
                 },
                 {
-                "id": "q112",
-                "question": "Which political party is in power in Ontario?",
-                "option1": "Green Party",
-                "option2": "Liberal Party",
-                "option3": "Progressive Conservative Party",
-                "option4": "New Democratic Party",
-                "correctOption": "Progressive Conservative Party",
-                "category": "government"
-                },
-                {
                 "id": "q113",
                 "question": "Which port is the largest and busiest in Canada?",
                 "option1": "The Port of Halifax",
@@ -1146,16 +1085,6 @@ export const Ontario = [{
                         "option4": "Manitoba.",
                         "correctOption": "Prairie provinces.",
                         "category": "geography"
-                        },
-                        {
-                        "id": "q124",
-                        "question": "Which three are Members of Ontario’s Legislative Assembly?",
-                        "option1": "Brian Kilrea, Marlene Catterall, Tom Green",
-                        "option2": "Howard Hampton, Maurice Richard, Daniel Poliquin",
-                        "option3": "Daniel Lanois, Rosario Marchese, Diane Dufresne",
-                        "option4": "Paul Calandra, Todd Smith, Lisa Gretzky",
-                        "correctOption": "Paul Calandra, Todd Smith, Lisa Gretzky",
-                        "category": "government"
                         },
                         {
                         "id": "q125",
@@ -1496,9 +1425,163 @@ export const Ontario = [{
                                                 "correctOption": "It declared the independence of Canada from Britain.",
                                                 "category": "government"
                                                 },
+                                                {
+                                                  "id": "q158_1",
+                                                  "question": "What is the currency of Canada?",
+                                                  "option1": "US Dollar",
+                                                  "option2": "Canadian Dollar",
+                                                  "option3": "Mexican Peso",
+                                                  "option4": "Euro",
+                                                  "correctOption": "Canadian Dollar",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_2",
+                                                  "question": "What is the main source of revenue for the Canadian government?",
+                                                  "option1": "Tourism",
+                                                  "option2": "Manufacturing",
+                                                  "option3": "Taxes",
+                                                  "option4": "Agriculture",
+                                                  "correctOption": "Taxes",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_3",
+                                                  "question": "Which of the following is a major export of Canada?",
+                                                  "option1": "Oil",
+                                                  "option2": "Technology",
+                                                  "option3": "Furniture",
+                                                  "option4": "Clothing",
+                                                  "correctOption": "Oil",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_4",
+                                                  "question": "What is the stock exchange index of Canada?",
+                                                  "option1": "NASDAQ",
+                                                  "option2": "NYSE",
+                                                  "option3": "TSX (Toronto Stock Exchange)",
+                                                  "option4": "S&P 500",
+                                                  "correctOption": "TSX (Toronto Stock Exchange)",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_5",
+                                                  "question": "Who regulates the banking sector in Canada?",
+                                                  "option1": "The Canadian Bankers Association",
+                                                  "option2": "The Canadian Chamber of Commerce",
+                                                  "option3": "The Bank of Canada",
+                                                  "option4": "The Financial Consumer Agency of Canada",
+                                                  "correctOption": "The Bank of Canada",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_6",
+                                                  "question": "What is the unemployment rate in Canada?",
+                                                  "option1": "5%",
+                                                  "option2": "6%",
+                                                  "option3": "7%",
+                                                  "option4": "8%",
+                                                  "correctOption": "8%",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_7",
+                                                  "question": "What is the inflation rate in Canada?",
+                                                  "option1": "1%",
+                                                  "option2": "2%",
+                                                  "option3": "3%",
+                                                  "option4": "4%",
+                                                  "correctOption": "2%",
+                                                  "category": "economy"
+                                                  },
+                                                  {
+                                                  "id": "q158_8",
+                                                  "question": "What is the minimum wage in Canada?",
+                                                  "option1": "$10 per hour",
+                                                  "option2": "$12 per hour",
+                                                  "option3": "$15 per hour",
+                                                  "option4": "$20 per hour",
+                                                  "correctOption": "$15 per hour",
+                                                  "category": "economy"
+                                                  }
                       ]
+export const Ontario = [
+  {
+    "id": "o64",
+    "question": "What is the capital city of Ontario?",
+    "option1": "Kingston",
+    "option2": "Ottawa",
+    "option3": "Toronto",
+    "option4": "London",
+    "correctOption": "Toronto",
+    "category": "geography"
+  },
+  {
+    "id": "o72",
+    "question": "What is the name of the leader of the Opposition in Ontario?",
+    "option1": "Andrea Horwath",
+    "option2": "Tim Hudak",
+    "option3": "Peter Tabuns",
+    "option4": "Dalton McGuinty",
+    "correctOption": "Peter Tabuns",
+    "category": "government"
+    },
+    {
+    "id": "o73",
+    "question": "What is the name of the Lieutenant-Governor of Ontario?",
+    "option1": "James Bartleman",
+    "option2": "Elizabeth Dowdeswell",
+    "option3": "David C. Onley",
+    "option4": "Belinda Stronach",
+    "correctOption": "Elizabeth Dowdeswell",
+    "category": "government"
+    },
+    {
+    "id": "o74",
+    "question": "What is the name of the Premier of Ontario?",
+    "option1": "Premier Doug Ford",
+    "option2": "Premier Jack Layton",
+    "option3": "Premier Kathleen Wynne",
+    "option4": "Premier Mike Harris",
+    "correctOption": "Premier Doug Ford",
+    "category": "government"
+    },
+    {
+      "id": "o84",
+      "question": "What three industries are important to Ontario’s economy today?",
+      "option1": "Mining, fishing, automobile manufacturing",
+      "option2": "Mining, tourism, automobile manufacturing",
+      "option3": "Farming, tourism, fishing",
+      "option4": "Automobile manufacturing, tourism, fishing",
+      "correctOption": "Mining, tourism, automobile manufacturing",
+      "category": "economy"
+      },
+      
+      {
+        "id": "o112",
+        "question": "Which political party is in power in Ontario?",
+        "option1": "Green Party",
+        "option2": "Liberal Party",
+        "option3": "Progressive Conservative Party",
+        "option4": "New Democratic Party",
+        "correctOption": "Progressive Conservative Party",
+        "category": "government"
+        },
+        
+        {
+          "id": "o124",
+          "question": "Which three are Members of Ontario’s Legislative Assembly?",
+          "option1": "Brian Kilrea, Marlene Catterall, Tom Green",
+          "option2": "Howard Hampton, Maurice Richard, Daniel Poliquin",
+          "option3": "Daniel Lanois, Rosario Marchese, Diane Dufresne",
+          "option4": "Paul Calandra, Todd Smith, Lisa Gretzky",
+          "correctOption": "Paul Calandra, Todd Smith, Lisa Gretzky",
+          "category": "government"
+          },
+]
 
-const Alberta = [
+export const Alberta = [
     {
         "id": "a63",
         "question": "What is the capital city of Alberta?",
@@ -1561,7 +1644,7 @@ const Alberta = [
         },
 ]
 
-const BritishColumbia = [
+export const BritishColumbia = [
     {
         "id": "b23",
         "question": "Name the federal electoral districts in Richmond, British Columbia.",
@@ -1684,7 +1767,7 @@ const BritishColumbia = [
             },
 ]
 
-const Manitoba = [
+export const Manitoba = [
     {
 "id": "m64",
 "question": "What is the capital city of Manitoba?",
@@ -1757,7 +1840,7 @@ const Manitoba = [
 }
 ]
 
-const NewBrunswick = [
+export const NewBrunswick = [
     {
         "id": "nb64",
         "question": "What is the capital city of New Brunswick?",
@@ -1821,7 +1904,7 @@ const NewBrunswick = [
 ]
 
 
-const Newfoundland = [
+export const Newfoundland = [
     {
         "id": "nl64",
         "question": "What is the capital city of Newfoundland and Labrador?",
@@ -1895,7 +1978,7 @@ const Newfoundland = [
 ]
 
 
-const NorthwestTerritories = [
+export const NorthwestTerritories = [
     {
         "id": "nt64",
         "question": "What is the capital City of the Northwest Territories?",
@@ -1949,7 +2032,7 @@ const NorthwestTerritories = [
 ]
 
 
-const NovaScotia = [
+export const NovaScotia = [
     {
         "id": "ns64",
         "question": "What is the capital city of Nova Scotia?",
@@ -2012,7 +2095,7 @@ const NovaScotia = [
         }
 ]
 
-const Nunavut = [
+export const Nunavut = [
     {
         "id": "n29",
         "question": "On what date did Nunavut become a territory?",
@@ -2075,7 +2158,7 @@ const Nunavut = [
         }
 ]
 
-const PrinceEdwardIsland = [
+export const PrinceEdwardIsland = [
     {
         "id": "pe64",
         "question": "What is the capital City of the Prince Edward Island?",
@@ -2128,7 +2211,7 @@ const PrinceEdwardIsland = [
         },
 ]
 
-const Quebec = [
+export const Quebec = [
     {
         "id": "qu56",
         "question": "What is a major river in Quebec?",
@@ -2192,7 +2275,7 @@ const Quebec = [
 ]
 
 
-const Saskatchewan = [
+export const Saskatchewan = [
     {
         "id": "s64",
         "question": "What is the capital city of Saskatchewan?",
@@ -2313,3 +2396,11 @@ export const YukonTerritories = [
         "category": "government"
         }
 ]
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+console.log(shuffleArray(Ontario))

@@ -1,6 +1,14 @@
+import { useState } from "react";
+import TestContainer from "./TestContainer";
 import "./TestItem.css";
 
 const TestItem = (props) => {
+  const startTestHandler = () => {
+props.startTest(props.questions)
+// props.testTitle(props.title)
+
+
+  }
   return (
     <section className="test-item">
       <div className="test-image">
@@ -8,8 +16,7 @@ const TestItem = (props) => {
       </div>
         <header>{props.title}</header>
         <div className="test-description">{props.description}</div>
-        <button className="start-test-btn">Start Test</button>
-      
+        <button className="start-test-btn" onClick={startTestHandler}>Start Test</button>
     </section>
   );
 };
