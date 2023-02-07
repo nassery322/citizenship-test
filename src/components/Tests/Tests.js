@@ -33,6 +33,12 @@ const Tests = (props) => {
   const [province, setProvince] = useState(null);
   const [askForProvince, setAskForProvince] = useState(false);
   const [testIsClosed, setTestIsClosed] = useState(false);
+  const [retake, setRetake] = useState(null);
+  const [testId, setTestId] = useState(null);
+
+  function shuffleArray(a, b) {
+    return Math.random() - 0.5;
+  }
   const testsArray = [
     {
       id: "t1",
@@ -40,8 +46,8 @@ const Tests = (props) => {
       description:
         "Our simulation test replicates the format of the real Canadian Citizenship Test. It draws questions from every categories and are also timed which helps to further prepare you.",
       image: citizenCert,
-      questions: Questions.slice(0, 15).concat(
-        province ? province.slice(0, 5) : ""
+      questions: (Questions.sort(shuffleArray).slice(0, 1).concat(
+        province ? province.sort(shuffleArray).slice(0, 5) : "")
       ),
     },
     {
@@ -50,10 +56,12 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian geography and demographics. This test covers topics such as the physical geography of Canada, major cities and provinces, and demographic information.",
       image: geography,
-      questions: Questions.filter(
+      questions: Questions.sort(shuffleArray).filter(
         (question) =>
           question.category && question.category.toLowerCase() === "geography"
-      ).slice(0, 5),
+      )
+        .sort(shuffleArray)
+        .slice(0, 15),
     },
     {
       id: "t3",
@@ -61,7 +69,7 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian history and heritage. This test covers topics such as important historical events, famous Canadians, and cultural heritage.",
       image: history,
-      questions: Questions.filter(
+      questions: Questions.sort(shuffleArray).filter(
         (question) =>
           question.category && question.category.toLowerCase() === "history"
       ).slice(0, 15),
@@ -72,7 +80,7 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian political and social systems. This test covers topics such as the parliamentary system, the role of the Prime Minister, and Canadian values.",
       image: government,
-      questions: Questions.filter(
+      questions: Questions.sort(shuffleArray).filter(
         (question) =>
           question.category && question.category.toLowerCase() === "government"
       ).slice(0, 15),
@@ -83,12 +91,11 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian laws, rights, and freedoms. This test covers topics such as the Canadian Charter of Rights and Freedoms, criminal law, and the justice system.",
       image: law,
-      questions: Questions.filter(
+      questions: Questions.sort(shuffleArray).filter(
         (question) =>
           question.category && question.category.toLowerCase() === "laws"
-      )
-        .slice(0, 5)
-        .concat(province && province.slice(0, 2)),
+      ).slice(0, 5)
+      
     },
     {
       id: "t6",
@@ -96,7 +103,7 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian symbols, holidays, and traditions. This test covers topics such as the Canadian flag, national anthem, and important holidays.",
       image: symbols,
-      questions: Questions.filter(
+      questions: Questions.sort(shuffleArray).filter(
         (question) =>
           question.category && question.category.toLowerCase() === "symbols"
       ),
@@ -107,21 +114,20 @@ const Tests = (props) => {
       description:
         "A test focusing on the Canadian economy. This test covers topics such as currency, sources of government revenue, exports, stock exchange, banking sector regulation, unemployment and inflation rates, and minimum wage.",
       image: economy,
-      questions: Questions.filter(
+      questions: Questions.sort(shuffleArray).filter(
         (question) =>
           question.category && question.category.toLowerCase() === "economy"
       ),
     },
   ];
-  const startTestHandler = (e) => {
-    if (!e) {
+  const startTestHandler = (questions) => {
+    console.log("ss");
+    if (!questions) {
       return;
     }
-    const { startTest, questions } = e;
-    if (startTest) {
-      setTestIsStarted(true);
-      setTestQuestions(questions);
-    }
+
+    setTestIsStarted(true);
+    setTestQuestions(questions);
   };
 
   const provinceSelectHandler = (provinceCode) => {
@@ -181,12 +187,23 @@ const Tests = (props) => {
     setTestIsStarted(false);
     setTestIsClosed(true);
   }
+  const retakeTestHandler = (id) => {
+    setRetake(true);
+    setTestIsStarted(false);
+    startTestHandler(testsArray.find((test) => test.id === id).questions);
+  };
+
+  function testIdentfierHandler(id) {
+    setTestId(id);
+  }
   return (
     <Fragment>
       {testIsStarted ? (
         <TestContainer
           questions={testQuestions}
           onClose={closeContainerHandler}
+          onRetake={retakeTestHandler}
+          id={testId}
         />
       ) : (
         <section className="tests-section">
@@ -194,6 +211,7 @@ const Tests = (props) => {
           <section className="test-items">
             {testsArray.map((test) => (
               <TestItem
+                idForRetake={testIdentfierHandler}
                 key={test.id}
                 id={test.id}
                 title={test.title}

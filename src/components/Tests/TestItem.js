@@ -1,27 +1,32 @@
 import { Fragment, useEffect } from "react";
+import { Questions } from "./questions";
 
 import "./TestItem.css";
 
 const TestItem = (props) => {
   const startTestHandler = () => {
-    if(props.id === 't1'){
-      props.askForProvince(true)
-    return;
-    }
-    props.startTest({ startTest: true, questions: props.questions });
-  };
- useEffect(()=>{
-  if(props.id === 't1'){
-    if(props.testIsClosed){
+    props.idForRetake(props.id)
+    if (props.id === "t1") {
+      props.askForProvince(true);
       return;
     }
-    if(props.province){
-      props.startTest({ startTest: true, questions: props.questions });
-    }
-  }
 
- },[props.province])
- 
+    props.startTest(props.questions);
+    
+  };
+  useEffect(() => {
+
+    if (props.id === "t1") {
+      if (props.testIsClosed) {
+        return;
+      }
+      if (props.province) {
+        props.startTest(props.questions);
+      }
+    }
+
+  }, [props.province]);
+
   return (
     <Fragment>
       <section className="test-item">

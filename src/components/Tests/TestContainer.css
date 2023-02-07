@@ -25,7 +25,9 @@
   font-size: 1.1rem;
 }
 #timer{
-  min-width:20px ;
+  display: flex;
+  justify-content: center;
+  min-width:40px ;
 }
 .timer div {
   height: 100%;

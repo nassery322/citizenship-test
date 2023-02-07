@@ -23,7 +23,6 @@ const TestContainer = (props) => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
-      console.log(answers);
     } else {
       testFinishedHandler();
     }
@@ -107,7 +106,14 @@ const TestContainer = (props) => {
     },
     [testIsFinished]
   );
-
+  const retakeTestHandler = () =>{
+    
+    props.onRetake(props.id)
+    setTestIsFinished(false)
+    setQuestionNum(0)
+   
+  }
+console.log(answers)
 
   return (
     <Fragment>
@@ -128,6 +134,7 @@ const TestContainer = (props) => {
         {testIsFinished ? (
           <Results
             onCheck={checkAnswersHandler}
+            onRetake={retakeTestHandler}
             score={score}
             numberOfQuestions={props.questions.length}
           />

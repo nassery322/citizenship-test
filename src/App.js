@@ -12,6 +12,8 @@ function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
   const [province, setProvince] = useState(null);
+  const [aa, setaa] = useState(false)
+
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
@@ -27,6 +29,10 @@ function App() {
     setProvince(province);
     setProvinceIsSelected(true);
   }
+// function retakeHandler(){
+// setaa(true)
+// }
+
   return (
     <div className="App">
       {userIsLoggedIn ? (

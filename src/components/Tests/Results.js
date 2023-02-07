@@ -19,7 +19,7 @@ const Results = (props) => {
         <div className="results-pie animate no-round" style={{"--p":`${percentage}`}}>{percentage}%</div>
         <div className="results-buttons">
             <button className="check-btn" onClick={props.onCheck}>Check Answers</button>
-            <Button>Retake Test</Button>
+            <Button onClick={props.onRetake}>Retake Test</Button>
 
         </div>
       </section>
