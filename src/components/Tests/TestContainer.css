@@ -24,6 +24,9 @@
   padding: 0 20px;
   font-size: 1.1rem;
 }
+#timer{
+  min-width:20px ;
+}
 .timer div {
   height: 100%;
   display: flex;
