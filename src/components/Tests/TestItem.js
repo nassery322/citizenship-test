@@ -25,7 +25,7 @@ const TestItem = (props) => {
       }
     }
 
-  }, [props.province]);
+  }, [props.province, props.questions]);
 
   return (
     <Fragment>

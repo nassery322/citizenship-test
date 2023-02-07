@@ -18,7 +18,7 @@ const TestContainer = (props) => {
         return { correctOption: item.correctOption, selectedOption: "" };
       })
   );
-
+ console.log(props.questions)
   const nextHandler = () => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
@@ -107,12 +107,17 @@ const TestContainer = (props) => {
     [testIsFinished]
   );
   const retakeTestHandler = () =>{
-    
     props.onRetake(props.id)
     setTestIsFinished(false)
     setQuestionNum(0)
-   
+   setCheckAnswers(false)
   }
+  useEffect(()=>{
+    setAnswers(props.questions &&
+      props.questions.map((item) => {
+        return { correctOption: item.correctOption, selectedOption: "" };
+      }))
+  },[props.questions])
 console.log(answers)
 
   return (
