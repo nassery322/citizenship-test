@@ -1,15 +1,16 @@
-.wrong-answer{
-    background-color: rgb(233, 94, 94);
-    color:white;
+.wrong-answer, .wrong-answer:hover{
+    background-color: rgb(233, 94, 94) !important;
+    color:white !important;
 }
 
-.right-answer{
-    background-color: #25e0ba;
-    color:white;
+.right-answer, .right-answer:hover{
+    background-color: #25e0ba !important;
+    color:white !important;
 }
+
 
 .checking div:hover{
-    background-color: inherit !important;
-    color:inherit !important;
+    background-color: inherit ;
+    color:inherit ;
     cursor:auto;
 }
