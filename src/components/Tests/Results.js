@@ -1,12 +1,15 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Button from "../../UI/Button";
 import "./Results.css";
-
+import { firebaseDatabase } from "../firebase";
 const Results = (props) => {
   const {score, numberOfQuestions} = props
   const percentage = ((score/numberOfQuestions) * 100).toFixed(0);
   const qualification = percentage > 75 ? 'You Have Qualified The Test!' : 'You Have Failed The Test!'
   const styles = percentage > 75 ? {'color': '#17d4ae'} :  {'color': '#e21b1b '}
+
+
+ 
   return (
     <Fragment>
       <section className="results">

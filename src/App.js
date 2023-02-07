@@ -12,7 +12,6 @@ function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
   const [province, setProvince] = useState(null);
-  const [aa, setaa] = useState(false)
 
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
@@ -22,16 +21,14 @@ function App() {
     });
   }, [auth.currentUser]);
 
-  function askForProvinceHandler(e) {
-    setProvinceIsSelected(false);
+  function askForProvinceHandler() {
+    setProvinceIsSelected(e => !e);
   }
   function provinceSelectHandler(province) {
     setProvince(province);
     setProvinceIsSelected(true);
   }
-// function retakeHandler(){
-// setaa(true)
-// }
+
 
   return (
     <div className="App">
@@ -40,7 +37,7 @@ function App() {
           {provinceIsSelected ? (
             <Tests askForProvince={askForProvinceHandler} province={province && province} />
           ) : (
-            <ProvinceSelector province={provinceSelectHandler} />
+            <ProvinceSelector onClose={askForProvinceHandler} province={provinceSelectHandler} />
           )}{" "}
         </Fragment>
       ) : (

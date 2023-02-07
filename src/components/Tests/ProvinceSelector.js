@@ -38,7 +38,7 @@ const ProvinceSelector = (props) => {
 
 
   return (<Fragment>
-    <div className="close-btn">&times;</div>
+    <div className="close-btn" onClick={props.onClose}>&times;</div>
     <section className="province-selector">
       <form>
         <label htmlFor="province">

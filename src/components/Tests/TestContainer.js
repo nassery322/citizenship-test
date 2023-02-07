@@ -2,16 +2,16 @@ import React, { Fragment, useState, useEffect } from "react";
 import "./TestContainer.css";
 import timerSvg from "../../assets/timer.svg";
 import Results from "./Results";
-import ProvinceSelector from "./ProvinceSelector";
 import CloseTestContainer from "./CloseTestContainer";
 import CheckAnswers from "./CheckAnswers";
+import { firebaseDatabase } from "../firebase";
 const TestContainer = (props) => {
   const [questionNum, setQuestionNum] = useState(0);
   const [testIsFinished, setTestIsFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [closeTestContainer, setCloseTestContainer] = useState(false);
   const [checkAnswers, setCheckAnswers] = useState(false);
-
+  const [sendScore, setSendScore] = useState(false)
   const [answers, setAnswers] = useState(
     props.questions &&
       props.questions.map((item) => {
@@ -22,7 +22,11 @@ const TestContainer = (props) => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
-    } else {
+    // }if(!(questionNum < props.questions.length - 1) || !checkAnswers){
+    //   testFinishedHandler()
+    //   sendDataToFirebase()
+     }
+     else {
       testFinishedHandler();
     }
   };
@@ -41,9 +45,7 @@ const TestContainer = (props) => {
     if (target.tagName === "P") {
       target = target.parentNode;
     }
-
     answers[questionNum].selectedOption = target.children[1].innerHTML;
-
     resetOptions();
 
     target.classList.add("selectedOption");
@@ -54,7 +56,6 @@ const TestContainer = (props) => {
 
   function testFinishedHandler() {
     setTestIsFinished(true);
-    // setTestCheck(false);
     let points = 0;
     for (let i = 0; i < answers.length; i++) {
       if (answers[i].correctOption === answers[i].selectedOption) {
@@ -74,6 +75,7 @@ const TestContainer = (props) => {
     props.onClose(true);
   };
   const checkAnswersHandler = () => {
+    setSendScore(false)
     setCheckAnswers(true);
     setQuestionNum(0);
     setTestIsFinished(false)
@@ -106,10 +108,12 @@ const TestContainer = (props) => {
     [testIsFinished]
   );
   const retakeTestHandler = () =>{
+    setSendScore(false)
     props.onRetake(props.id)
     setTestIsFinished(false)
     setQuestionNum(0)
    setCheckAnswers(false)
+   setScore(0)
   }
   useEffect(()=>{
     setAnswers(props.questions &&
@@ -117,7 +121,13 @@ const TestContainer = (props) => {
         return { correctOption: item.correctOption, selectedOption: "" };
       }))
   },[props.questions])
+const nextOrFinish = questionNum === props.questions.length -1? 'Finish' : 'Next'
+// console.log(checkAnswers)
+const sendDataToFirebase = async () =>{
+  testFinishedHandler()
+   setSendScore(true)
 
+}
   return (
     <Fragment>
       <div
@@ -140,6 +150,7 @@ const TestContainer = (props) => {
             onRetake={retakeTestHandler}
             score={score}
             numberOfQuestions={props.questions.length}
+            sendScore={sendScore}
           />
         ) : (
           <section className="test-container-main">
@@ -215,8 +226,8 @@ const TestContainer = (props) => {
                   Prev
                 </button>
               )}
-              <button className="test-btn" onClick={nextHandler}>
-                Next
+              <button className="test-btn" onClick={(questionNum < props.questions.length - 1|| checkAnswers)? nextHandler: sendDataToFirebase}>
+                {nextOrFinish}
               </button>
             </section>
           </section>

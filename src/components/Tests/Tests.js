@@ -26,14 +26,12 @@ import {
   Questions,
 } from "./questions";
 import TestContainer from "./TestContainer";
-import ProvinceSelector from "./ProvinceSelector";
+
 const Tests = (props) => {
   const [testIsStarted, setTestIsStarted] = useState(false);
   const [testQuestions, setTestQuestions] = useState();
   const [province, setProvince] = useState(null);
-  const [askForProvince, setAskForProvince] = useState(false);
   const [testIsClosed, setTestIsClosed] = useState(false);
-  const [retake, setRetake] = useState(null);
   const [testId, setTestId] = useState(null);
 
   function shuffleArray(a, b) {
@@ -169,7 +167,6 @@ const Tests = (props) => {
     if (provinceCode === "SK") {
       setProvince(Saskatchewan);
     }
-    setAskForProvince(false);
   };
 
   useEffect(() => {
@@ -187,7 +184,6 @@ const Tests = (props) => {
     setTestIsClosed(true);
   }
   const retakeTestHandler = (id) => {
-    setRetake(true);
     setTestIsStarted(false);
     startTestHandler(testsArray.find((test) => test.id === id).questions);
   };
