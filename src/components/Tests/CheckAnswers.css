@@ -7,3 +7,9 @@
     background-color: #25e0ba;
     color:white;
 }
+
+.checking div:hover{
+    background-color: inherit !important;
+    color:inherit !important;
+    cursor:auto;
+}

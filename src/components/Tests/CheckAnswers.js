@@ -12,7 +12,7 @@ const CheckAnswers = (props) => {
     props.answers[questionNum].correctOption;
 
   return (
-    <section className="options">
+    <section className="options checking">
       <div
         className={`option ${
           selectedOption === mainQuestion.option1
