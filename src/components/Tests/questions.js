@@ -1504,7 +1504,110 @@ export const Questions = [{
                                                   "option4": "$20 per hour",
                                                   "correctOption": "$15 per hour",
                                                   "category": "economy"
-                                                  }
+                                                  },
+                                                  {
+                                                    "id": "q170",
+                                                    "question": "What does the Crown symbolize for Canadians?",
+                                                    "option1": "The Constitution of Confederation",
+                                                    "option2": "The Federal State",
+                                                    "option3": "The 400 year tradition of a Constitutional Monarchy",
+                                                    "option4": "Freedom",
+                                                    "correctOption": "The 400 year tradition of a Constitutional Monarchy",
+                                                    "category": "Symbols"
+                                                    },
+                                                    {
+                                                    "id": "q171",
+                                                    "question": "Canada has two official languages. What are they?",
+                                                    "option1": "English and French",
+                                                    "option2": "English and Inuktitut",
+                                                    "option3": "French and Inuktitut",
+                                                    "option4": "French and Métis",
+                                                    "correctOption": "English and French",
+                                                    "category": "Symbols"
+                                                    },
+                                                    {
+                                                    "id": "q172",
+                                                    "question": "What Canada's national summer sport?",
+                                                    "option1": "Tennis",
+                                                    "option2": "Field or street hockey",
+                                                    "option3": "Lacrosse",
+                                                    "option4": "Canadian football",
+                                                    "correctOption": "Lacrosse",
+                                                    "category": "Symbols"
+                                                    },
+                                                    {
+                                                    "id": "q173",
+                                                    "question": "Which is incorrect concerning the maple leaf symbol?",
+                                                    "option1": "It is on the headstones of fallen soldiers both overseas and in Canada",
+                                                    "option2": "It was adopted by French-Canadians as a symbol in the 1700s",
+                                                    "option3": "It has appeared on Canadian uniforms since the 1850s",
+                                                    "option4": "It is on the Union Jack flag",
+                                                    "correctOption": "It is on the Union Jack flag",
+                                                    "category": "Symbols"
+                                                    },
+                                                    {
+                                                    "id": "q174",
+                                                    "question": "Chose the two that are NOT Canadian symbols.",
+                                                    "option1": "Maple Leaf, Parliament Buildings",
+                                                    "option2": "Stars and Stripes, Stanley Cup",
+                                                    "option3": "Canadian flag, Fleur-de-Lys",
+                                                    "option4": "Canadian Crown, Coat of Arms",
+                                                    "correctOption": "Stars and Stripes, Stanley Cup",
+                                                    "category": "Symbols"
+                                                    },
+                                                    {
+                                                    "id": "q175",
+                                                    "question": "What is Canada's national winter sport and most popular spectator sport?",
+                                                    "option1": "Hockey",
+                                                    "option2": "Curling",
+                                                    "option3": "Lacrosse",
+                                                    "option4": "Cross country skiing",
+                                                    "correctOption": "Hockey",
+                                                    "category": "Symbols"
+                                                    },
+                                                    {
+                                                    "id": "q176",
+                                                    "question": "Where does the red-white-red pattern of the flag come from?",
+                                                    "option1": "The Union Jack",
+                                                    "option2": "The St. George's Cross flag",
+                                                    "option3": "The flag of the Royal Military College",
+                                                    "option4": "The French flag",
+                                                    "correctOption": "The flag of the Royal Military College",
+                                                    "category": "Symbols"
+                                                    },
+
+                                                    {
+                                                      "id": "q177",
+                                                      "question": "When was the National Anthem of Canada proclaimed?",
+                                                      "option1": "1921",
+                                                      "option2": "1880",
+                                                      "option3": "1876",
+                                                      "option4": "1980",
+                                                      "correctOption": "1980",
+                                                      "category": "Symbols"
+                                                      },
+                                                      
+                                                      {
+                                                      "id": "q178",
+                                                      "question": "When was current day's Canada flag raised?",
+                                                      "option1": "1921",
+                                                      "option2": "1965",
+                                                      "option3": "1945",
+                                                      "option4": "1876",
+                                                      "correctOption": "1965",
+                                                      "category": "Symbols"
+                                                      },
+                                                      
+                                                      {
+                                                      "id": "q179",
+                                                      "question": "The Crown is a symbol of:",
+                                                      "option1": "Police services and the Canadian Forces",
+                                                      "option2": "Government, Parliament and legislatures",
+                                                      "option3": "All the answers are correct",
+                                                      "option4": "The Courts",
+                                                      "correctOption": "All the answers are correct",
+                                                      "category": "Symbols"
+                                                      }
                       ]
 export const Ontario = [
   {

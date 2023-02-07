@@ -10,9 +10,7 @@ const CheckAnswers = (props) => {
   const answerCheck =
     props.answers[questionNum].selectedOption ==
     props.answers[questionNum].correctOption;
-console.log(questionNum)
 
-  console.log(correctOption);
   return (
     <section className="options">
       <div
