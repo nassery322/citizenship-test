@@ -1,25 +1,26 @@
-import { Fragment, useEffect, useState } from "react";
-import ProvinceSelector from "./ProvinceSelector";
-import TestContainer from "./TestContainer";
+import { Fragment, useEffect } from "react";
+
 import "./TestItem.css";
 
 const TestItem = (props) => {
-  const [province, setProvince] = useState(null)
   const startTestHandler = () => {
     if(props.id === 't1'){
-      props.province(true)
-    
+      props.askForProvince(true)
+    return;
     }
     props.startTest({ startTest: true, questions: props.questions });
   };
  useEffect(()=>{
   if(props.id === 't1'){
-    if(props.p){
+    if(props.testIsClosed){
+      return;
+    }
+    if(props.province){
       props.startTest({ startTest: true, questions: props.questions });
     }
   }
 
- },[props.p])
+ },[props.province])
  
   return (
     <Fragment>

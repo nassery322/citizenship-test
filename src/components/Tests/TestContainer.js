@@ -3,10 +3,12 @@ import "./TestContainer.css";
 import timerSvg from "../../assets/timer.svg";
 import Results from "./Results";
 import ProvinceSelector from "./ProvinceSelector";
+import CloseTestContainer from "./CloseTestContainer";
 const TestContainer = (props) => {
   const [questionNum, setQuestionNum] = useState(0);
   const [testIsFinished, setTestIsFinished] = useState(false);
-  // const [province, setProvince] = useState(null)
+  const [score, setScore] = useState(0);
+  const [closeTestContainer, setCloseTestContainer] = useState(false)
   const [answers, setAnswers] = useState(
     props.questions && props.questions.map((item) => {
       return { correctOption: item.correctOption, selectedOption: "" };
@@ -17,8 +19,9 @@ const TestContainer = (props) => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
+      console.log(answers)
     } else {
-      return;
+      testFinishedHandler()
     }
   };
   const prevHandler = () => {
@@ -46,16 +49,36 @@ const TestContainer = (props) => {
 
   const mainQuestion = props.questions[questionNum];
   const selectedOption = answers[questionNum].selectedOption;
-    // const provinceHandler = (province) =>{
-    //   setProvince(true)
-    //   props.onProvinceSelect(province)
-    // }
+  
+  function testFinishedHandler() {
+    setTestIsFinished(true);
+    // setTestCheck(false);
+    let points = 0;
+    for (let i = 0; i < answers.length; i++) {
+      if (answers[i].correctOption === answers[i].selectedOption) {
+        points = points + 1;
+      }
+    }
+    setScore(points);
+  }
+  const closeModalHandler = () =>{
+    if(!testIsFinished){
+      setCloseTestContainer(e => !e)
+    }else{
+      props.onClose(true)
+    }
+  }
+  const closeTestContainerHandler = () =>{
+    props.onClose(true)
+  }
     
   return (
     <Fragment>
-      <div className="close-btn" style={{'fontSize':'3rem'}}>&times;</div>
+      <div className="close-btn" style={{'fontSize':'3rem'}} onClick={closeModalHandler}>&times;</div>
+      <CloseTestContainer show={closeTestContainer} onClose={closeModalHandler} onCloseContainer={closeTestContainerHandler}/>
+
       <section className="test-container">
-        {testIsFinished? <Results /> :<section className="test-container-main">
+        {testIsFinished? <Results score={score} numberOfQuestions={props.questions.length} /> :<section className="test-container-main">
           <div className="timer">
             <div>
               <p className="question-number">

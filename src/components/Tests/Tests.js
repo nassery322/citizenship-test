@@ -32,6 +32,7 @@ const Tests = (props) => {
   const [testQuestions, setTestQuestions] = useState();
   const [province, setProvince] = useState(null);
   const [askForProvince, setAskForProvince] = useState(false);
+  const [testIsClosed, setTestIsClosed] = useState(false);
   const testsArray = [
     {
       id: "t1",
@@ -52,7 +53,7 @@ const Tests = (props) => {
       questions: Questions.filter(
         (question) =>
           question.category && question.category.toLowerCase() === "geography"
-      ).slice(0, 15),
+      ).slice(0, 5),
     },
     {
       id: "t3",
@@ -116,16 +117,11 @@ const Tests = (props) => {
     if (!e) {
       return;
     }
-    // console.log(e)
     const { startTest, questions } = e;
     if (startTest) {
       setTestIsStarted(true);
-      // setTestQuestions(questions)
       setTestQuestions(questions);
     }
-    if (province) {
-    }
-    console.log(questions);
   };
 
   const provinceSelectHandler = (provinceCode) => {
@@ -171,56 +167,45 @@ const Tests = (props) => {
     setAskForProvince(false);
   };
 
-  // function provinceHandler() {
-  //   setAskForProvince(true);
-  // }
-
   useEffect(() => {
-    provinceSelectHandler(props.province)
+    if (props.province) {
+      provinceSelectHandler(props.province);
+    }
   }, [province]);
 
-  function provinceHandler(){
-    if(!province){
-
-      props.provinceSelect(true)
-    }else{
-
-    }
+  function askForProvinceHandler() {
+    setTestIsClosed(false);
+    props.askForProvince(true);
   }
-
-console.log(province)
+  function closeContainerHandler() {
+    setTestIsStarted(false);
+    setTestIsClosed(true);
+  }
   return (
     <Fragment>
-      {/* {testIsStarted ? (
-        !province ? (
-          <ProvinceSelector province={provinceSelectHandler} />
-        ) : (
-          <TestContainer questions={testQuestions} />
-        )
-      ) : ( */}
-
       {testIsStarted ? (
-        
-          <TestContainer questions={testQuestions} />
-        )
-      : (
+        <TestContainer
+          questions={testQuestions}
+          onClose={closeContainerHandler}
+        />
+      ) : (
         <section className="tests-section">
           <Navbar />
           <section className="test-items">
-            {testsArray.map((test) =>
-                <TestItem
-                  key={test.id}
-                  id={test.id}
-                  title={test.title}
-                  description={test.description}
-                  image={test.image}
-                  questions={test.questions}
-                  p={province}
-                  startTest={startTestHandler}
-                  province={provinceHandler}
-                />
-              
-            )}
+            {testsArray.map((test) => (
+              <TestItem
+                key={test.id}
+                id={test.id}
+                title={test.title}
+                description={test.description}
+                image={test.image}
+                questions={test.questions}
+                province={province}
+                startTest={startTestHandler}
+                askForProvince={askForProvinceHandler}
+                testIsClosed={testIsClosed}
+              />
+            ))}
           </section>
         </section>
       )}

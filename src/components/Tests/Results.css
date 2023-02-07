@@ -8,7 +8,6 @@
 }
 .results-qualification{
     font-size: 1.5rem;
-    color:#17d4ae;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
@@ -24,7 +23,7 @@
 }
 
 .results-pie {
-  --b: 12px;
+  --b: 5px;
   --c: #d22a2a;
   --w: 150px;
 
@@ -67,7 +66,7 @@
     translateY(calc(50% - var(--w) / 2));
 }
 .animate {
-  animation: PieAnimate 1s 0.5s both;
+  animation: PieAnimate .7s both;
 }
 .no-round:before {
   background-size: 0 0, auto;

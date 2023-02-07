@@ -1,0 +1,10 @@
+.close-container {
+  padding: 30px;
+  text-align: center;
+}
+.close-container-question {
+  margin: 10px 0;
+}
+.close-container button {
+  margin: 10px 10px 0px 10px;
+}

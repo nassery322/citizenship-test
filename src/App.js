@@ -11,7 +11,7 @@ import ProvinceSelector from "./components/Tests/ProvinceSelector";
 function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
-  const [province, setProvince] = useState(null)
+  const [province, setProvince] = useState(null);
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
@@ -20,19 +20,23 @@ function App() {
     });
   }, [auth.currentUser]);
 
-  function handler(e){
-setProvinceIsSelected(false)
-
+  function askForProvinceHandler(e) {
+    setProvinceIsSelected(false);
   }
-  function phandler(e){
-    setProvince(e)
-    setProvinceIsSelected(true)
+  function provinceSelectHandler(province) {
+    setProvince(province);
+    setProvinceIsSelected(true);
   }
   return (
     <div className="App">
       {userIsLoggedIn ? (
         <Fragment>
-{provinceIsSelected? <Tests provinceSelect={handler} province={province && province }  /> : <ProvinceSelector province={phandler} />}        </Fragment>
+          {provinceIsSelected ? (
+            <Tests askForProvince={askForProvinceHandler} province={province && province} />
+          ) : (
+            <ProvinceSelector province={provinceSelectHandler} />
+          )}{" "}
+        </Fragment>
       ) : (
         <Fragment>
           <Home />

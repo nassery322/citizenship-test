@@ -31,7 +31,7 @@ const ManageAccount = (props) => {
       <div className="avatar-canvas-manage">
         <Avatar />
         {username}
-        <button className="signout-btn" onClick={signoutHandler}>
+        <button className="signout-btn modal-btn" onClick={signoutHandler}>
           Sign Out
         </button>
       </div>
