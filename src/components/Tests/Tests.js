@@ -59,7 +59,7 @@ const Tests = (props) => {
           question.category && question.category.toLowerCase() === "geography"
       )
         .sort(shuffleArray)
-        .slice(0, 4),
+        .slice(0, 15),
       
     },
     {
