@@ -22,10 +22,10 @@ const TestContainer = (props) => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
-    // }if(!(questionNum < props.questions.length - 1) || !checkAnswers){
+     }//else{
     //   testFinishedHandler()
     //   sendDataToFirebase()
-     }
+    //  }
      else {
       testFinishedHandler();
     }
@@ -124,9 +124,28 @@ const TestContainer = (props) => {
 const nextOrFinish = questionNum === props.questions.length -1? 'Finish' : 'Next'
 // console.log(checkAnswers)
 const sendDataToFirebase = async () =>{
-  testFinishedHandler()
    setSendScore(true)
+  //  console.log('done')
+   testFinishedHandler()
+// sendRequest()
+}
+async function sendRequest(){
+  // console.log('request sent')
+//   const scoreData = ((score / props.questions.length) * 100).toFixed(0);
+// console.log(scoreData)
+//   const response = await fetch(`${firebaseDatabase}/sss.json`);
+//   let data = await response.json();
+//   data = Object.values(data);
+//   data.unshift(scoreData);
 
+//   if (data.length > 7) {
+//     data.pop();
+//   }
+
+//   await fetch(`${firebaseDatabase}/sss.json`, {
+//     method: "PUT",
+//     body: JSON.stringify(data),
+//   });
 }
   return (
     <Fragment>
