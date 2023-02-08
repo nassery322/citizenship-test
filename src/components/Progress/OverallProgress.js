@@ -16,14 +16,29 @@ const OverallProgress = () => {
         let loadedData = [];
         let labels = [];
         for (const key in data) {
-          labels.push(Number(key) + 1);
+          labels.push(Number(key) + 1 +'th test');
           loadedData.push(data[key]);
         }
         console.log(data);
         setChartData({
-          labels: labels,
-          datasets: [{ label: "overall progress", data: loadedData.reverse() }],
-        });
+            labels: labels,
+            datasets: [{ 
+              label: " Overall Progress Based on Last 7 Tests", 
+              data: loadedData.reverse(), 
+              backgroundColor: "#d22a2a", 
+            }],
+            options: {
+              scales: {
+                yAxes: [{
+                  ticks: {
+                    suggestedMax: 100
+                  }
+                }]
+              }
+            }
+          });
+          
+          
       }
     });
   }, [auth.currentUser]);
