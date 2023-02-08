@@ -125,6 +125,7 @@ const Tests = (props) => {
     }
 
     setTestIsStarted(true);
+    props.testIsStarted(true)
     setTestQuestions(questions);
   };
 
@@ -182,6 +183,7 @@ const Tests = (props) => {
   }
   function closeContainerHandler() {
     setTestIsStarted(false);
+    props.testIsStarted(false)
     setTestIsClosed(true);
   }
   const retakeTestHandler = (id) => {
@@ -203,7 +205,7 @@ const Tests = (props) => {
         />
       ) : (
         <section className="tests-section">
-          <Navbar />
+          
           <section className="test-items">
             {testsArray.map((test) => (
               <TestItem

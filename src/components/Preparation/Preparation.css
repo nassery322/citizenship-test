@@ -1,0 +1,29 @@
+.preparation{
+    min-height: 110vh;
+}
+
+.preparation-content{
+    width: 80%;
+    margin:40px auto;
+    font-size: 1.1rem;
+}
+.preparation-content a {
+    text-decoration: underline;
+}
+.preparation-content li{
+margin:10px 0;
+}
+.preparation header{
+    
+    font-size: 2rem;
+    color:rgb(73, 71, 71);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.preparation-content strong{
+    font-size: 1.5rem;
+    color:rgb(73, 71, 71);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}

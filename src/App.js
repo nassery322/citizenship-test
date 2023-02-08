@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState, useSyncExternalStore } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -8,11 +8,12 @@ import { onAuthStateChanged } from "firebase/auth";
 import Home from "./components/Home/Home";
 import Tests from "./components/Tests/Tests";
 import ProvinceSelector from "./components/Tests/ProvinceSelector";
+import Preparation from "./components/Preparation/Preparation";
 function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
   const [province, setProvince] = useState(null);
-
+  const [testIsStarted, setTestIsStarted] = useState(false)
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
@@ -28,14 +29,17 @@ function App() {
     setProvince(province);
     setProvinceIsSelected(true);
   }
-
+const testHandler = (event) =>{
+setTestIsStarted(event)
+}
 
   return (
     <div className="App">
       {userIsLoggedIn ? (
         <Fragment>
+          {!testIsStarted && <Preparation />}
           {provinceIsSelected ? (
-            <Tests askForProvince={askForProvinceHandler} province={province && province} />
+            <Tests askForProvince={askForProvinceHandler} testIsStarted={testHandler} province={province && province} />
           ) : (
             <ProvinceSelector onClose={askForProvinceHandler} province={provinceSelectHandler} />
           )}{" "}
