@@ -11,7 +11,7 @@ const ProgressByCategory = () => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
         const response = await fetch(
-          `${firebaseDatabase}/usersprogress/${currentUser.uid}/progressByCategory.json`
+          `${firebaseDatabase}/usersprogress/${'O2iGFbrlXNQ3mwFWxxrRVUG7Et72'}/progressByCategory.json`
         );
         const progressByCategory = await response.json();
 
@@ -42,15 +42,7 @@ const ProgressByCategory = () => {
                   borderWidth: 1,
                 },
               ],
-              options: {
-                scales: {
-                  yAxes: [{
-                    ticks: {
-                      suggestedMax: 100
-                    }
-                  }]
-                }
-              },
+              
               id: item.id,
             },
           };
