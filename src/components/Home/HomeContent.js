@@ -36,7 +36,7 @@ const HomeContent = () => {
           </p>
           <div className="home-buttons">
             <Button onClick={signupModalPopUp}>Create Account</Button>
-           {form === 'signup' ? <Signup  onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/> : <Login onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/>}
+           {form === 'signup' ? <Signup  onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/> : <Login onLoginClose={signupModalPopUp} onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/>}
             
           </div>
         </section>

@@ -56,8 +56,8 @@ const OverallProgress = (props) => {
   return <section className="overall-progress">
         
     
-    {chartData && chartData.labels.length > 1 && <BarChart data={chartData} />}
-    {chartData && chartData.labels.length > 1 && <Graph data={chartData} />}
+    {chartData && chartData.labels.length > 0 && <BarChart data={chartData} />}
+    {chartData && chartData.labels.length > 0 && <Graph data={chartData} />}
   </section>;
 };
 

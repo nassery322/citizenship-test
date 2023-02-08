@@ -102,6 +102,7 @@ setManageModalIsOpen(e => !e)
           {form === "login" ? (
             <Login
               onClick={loginModalPopUp}
+              onLoginClose={loginModalPopUp}
               show={modalIsOpen}
               onChangeModal={changeModalHandler}
             />
