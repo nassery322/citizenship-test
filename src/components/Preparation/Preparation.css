@@ -7,14 +7,14 @@
   overflow: hidden;
 }
 .side-shape {
-  display: inline-block;
+  display: block;
   box-sizing: border-box !important;
   float: right;
-  width: 25%;
+  min-width: 25%;
   height: 35vh;
   z-index: 0;
   background-color: #d22a2a;
-  border-bottom-left-radius: 90%;
+  border-bottom-left-radius: 100%;
   margin-top: 0px;
   right: 0;
 }
@@ -51,4 +51,83 @@
   font-weight: 600;
   display: block;
   margin-bottom: 15px;
+}
+
+
+@media (max-width:1240px){
+    .side-shape{
+        /* width: 25%; */
+        height: 30vh;
+    }
+    .bottom-side-shape{
+        max-width: 13%;
+        height: 20vh;
+    }
+}
+
+@media (max-width:1070px){
+    .side-shape{
+        max-height: 25vh;
+    }
+   
+}
+
+
+@media (max-width:940px){
+    .side-shape{
+        height: 20vh;
+    }
+    .bottom-side-shape{
+        
+        height: 10vh;
+    }
+}
+
+@media (max-width:760px){
+    .side-shape{
+        max-width: 25%;
+    }
+    /* .bottom-side-shape{
+        height: 10vh;
+    } */
+}
+
+@media (max-width:670px){
+    .side-shape{
+       width:27% ;
+       height: 17vh;
+    }
+    
+}
+
+@media (max-width:540px){
+    .side-shape{
+        height: 14vh;
+       
+    }
+    .bottom-side-shape{
+
+        min-width: 22%;
+            height: 10vh;
+    }
+}
+
+@media (max-width:420px){
+    .side-shape{
+
+        height: 15vh;
+    }
+    .bottom-side-shape{
+    }
+}
+
+@media (max-height:400px){
+    .side-shape{
+        width: 25%;
+        height: 90vh !important;
+    }
+    .bottom-side-shape{
+        height: 20vh;
+        width: 25%;
+    }
 }
