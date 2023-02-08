@@ -14,17 +14,20 @@ const OverallProgress = () => {
         );
         const data = await response.json();
         let loadedData = [];
+        let labels = [];
         for (const key in data) {
+          labels.push(key);
           loadedData.push(data[key]);
         }
         console.log(data);
         setChartData({
-          labels: [1, 2, 3, 4, 5, 6, 7],
+          labels: labels,
           datasets: [{ label: "overall progress", data: loadedData.reverse() }],
         });
       }
     });
   }, [auth.currentUser]);
+  
   return <section className="overall-progress">
     {chartData && <BarChart data={chartData} />}
   </section>;
