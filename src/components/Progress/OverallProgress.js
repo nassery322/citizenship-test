@@ -16,7 +16,7 @@ const OverallProgress = () => {
         let loadedData = [];
         let labels = [];
         for (const key in data) {
-          labels.push(key);
+          labels.push(Number(key) + 1);
           loadedData.push(data[key]);
         }
         console.log(data);

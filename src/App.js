@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      {!testIsStarted && provinceIsSelected && <Navbar /> }
       {userIsLoggedIn ? (
         <Fragment>
           {provinceIsSelected ? (
