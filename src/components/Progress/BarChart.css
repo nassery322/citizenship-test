@@ -1,4 +1,15 @@
 .bar-chart{
-    width: 50%;
+    width: 75%;
     margin:40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-chart div:first-child{
+     width: 80%;
+}
+
+.average-score{
+    text-align: center;
+    width:20%;
 }

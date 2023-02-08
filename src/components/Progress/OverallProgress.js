@@ -7,6 +7,7 @@ import "./OverallProgress.css";
 
 const OverallProgress = () => {
   const [chartData, setChartData] = useState(null);
+  const [average, setAverage] = useState(0)
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
@@ -19,9 +20,13 @@ const OverallProgress = () => {
         for (const key in data) {
           labels.push(Number(key) + 1 +'th test');
           loadedData.push(data[key]);
+          
         }
+        const sum = loadedData.reduce((total, value) => total + parseInt(value), 0) / loadedData.length
+        setAverage(sum)
         console.log(data);
         setChartData({
+            average: sum,
             labels: labels,
             datasets: [{ 
               label: " Overall Progress Based on Last 7 Tests", 
@@ -45,8 +50,10 @@ const OverallProgress = () => {
       }
     });
   }, [auth.currentUser]);
-  
+  console.log(average)
   return <section className="overall-progress">
+        
+    
     {chartData && <BarChart data={chartData} />}
     {chartData && <Graph data={chartData} />}
   </section>;
