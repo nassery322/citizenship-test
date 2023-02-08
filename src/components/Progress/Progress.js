@@ -15,7 +15,7 @@ const Progress = () => {
   return (
     <Fragment>
       <section className="progress" id="progress">
-        {empty || categoryProgressIsEmpty ?<section className="empty">You Have No Progress Yet!</section>:
+        {empty && categoryProgressIsEmpty ?<section className="empty">You Have No Progress Yet!</section>:
         <Fragment>
           <OverallProgress progressIsEmpty={EmptyHandler} />
           <ProgressByCategory progressIsEmpty={categoryEmptyHandler} />
