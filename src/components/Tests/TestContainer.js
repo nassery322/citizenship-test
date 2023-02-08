@@ -11,22 +11,25 @@ const TestContainer = (props) => {
   const [score, setScore] = useState(0);
   const [closeTestContainer, setCloseTestContainer] = useState(false);
   const [checkAnswers, setCheckAnswers] = useState(false);
-  const [sendScore, setSendScore] = useState(false)
+  const [sendScore, setSendScore] = useState(false);
+  const [categoryScores, setCategoryScores] = useState({});
+
   const [answers, setAnswers] = useState(
     props.questions &&
       props.questions.map((item) => {
-        return { correctOption: item.correctOption, selectedOption: "" };
+        return {
+          correctOption: item.correctOption,
+          selectedOption: "",
+          category: item.category && item.category.toLowerCase() ,
+        };
       })
   );
   const nextHandler = () => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
-     }//else{
-    //   testFinishedHandler()
-    //   sendDataToFirebase()
-    //  }
-     else {
+    } 
+    else {
       testFinishedHandler();
     }
   };
@@ -57,13 +60,39 @@ const TestContainer = (props) => {
   function testFinishedHandler() {
     setTestIsFinished(true);
     let points = 0;
+    let categories = {};
+    const categorySet = new Set(answers.map((a) => a.category));
     for (let i = 0; i < answers.length; i++) {
-      if (answers[i].correctOption === answers[i].selectedOption) {
-        points = points + 1;
-      }
+        const answer = answers[i];
+        if (answer.correctOption === answer.selectedOption) {
+            points = points + 1;
+            const category = answer.category;
+            if (!categories[category]) {
+                categories[category] = 0;
+            }
+            categories[category] += 1;
+        }
+    }
+    for (let category of categorySet) {
+        if (!categories[category]) {
+            categories[category] = 0;
+        } else {
+            const numOfQuestions = props.questions.filter((q) => q.category === category).length;
+            if (numOfQuestions === 0) {
+                categories[category] = 0;
+            } else {
+                categories[category] =
+                  (categories[category] / numOfQuestions) * 100;
+                categories[category] = categories[category].toFixed(0);
+            }
+        }
     }
     setScore(points);
-  }
+    setCategoryScores(categories);
+}
+
+
+
   const closeModalHandler = () => {
     if (!testIsFinished) {
       setCloseTestContainer((e) => !e);
@@ -75,10 +104,10 @@ const TestContainer = (props) => {
     props.onClose(true);
   };
   const checkAnswersHandler = () => {
-    setSendScore(false)
+    setSendScore(false);
     setCheckAnswers(true);
     setQuestionNum(0);
-    setTestIsFinished(false)
+    setTestIsFinished(false);
   };
 
   let timer;
@@ -107,46 +136,35 @@ const TestContainer = (props) => {
     },
     [testIsFinished]
   );
-  const retakeTestHandler = () =>{
-    setSendScore(false)
-    props.onRetake(props.id)
-    setTestIsFinished(false)
-    setQuestionNum(0)
-   setCheckAnswers(false)
-   setScore(0)
-  }
-  useEffect(()=>{
-    setAnswers(props.questions &&
-      props.questions.map((item) => {
-        return { correctOption: item.correctOption, selectedOption: "" };
-      }))
-  },[props.questions])
-const nextOrFinish = questionNum === props.questions.length -1? 'Finish' : 'Next'
-// console.log(checkAnswers)
-const sendDataToFirebase = async () =>{
-   setSendScore(true)
-  //  console.log('done')
-   testFinishedHandler()
-// sendRequest()
-}
-async function sendRequest(){
-  // console.log('request sent')
-//   const scoreData = ((score / props.questions.length) * 100).toFixed(0);
-// console.log(scoreData)
-//   const response = await fetch(`${firebaseDatabase}/sss.json`);
-//   let data = await response.json();
-//   data = Object.values(data);
-//   data.unshift(scoreData);
+  const retakeTestHandler = () => {
+    setSendScore(false);
+    props.onRetake(props.id);
+    setTestIsFinished(false);
+    setQuestionNum(0);
+    setCheckAnswers(false);
+    setScore(0);
+    setCategoryScores({});
+  };
+  useEffect(() => {
+    setAnswers(
+      props.questions &&
+        props.questions.map((item) => {
+          return {
+            correctOption: item.correctOption,
+            selectedOption: "",
+            category: item.category && item.category.toLowerCase(),
+          };
+        })
+    );
+  }, [props.questions]);
+  const nextOrFinish =
+    questionNum === props.questions.length - 1 ? "Finish" : "Next";
 
-//   if (data.length > 7) {
-//     data.pop();
-//   }
-
-//   await fetch(`${firebaseDatabase}/sss.json`, {
-//     method: "PUT",
-//     body: JSON.stringify(data),
-//   });
-}
+    const sendDataToFirebase = async () => {
+    setSendScore(true);
+    testFinishedHandler();
+  };
+  console.log(props.id);
   return (
     <Fragment>
       <div
@@ -170,6 +188,8 @@ async function sendRequest(){
             score={score}
             numberOfQuestions={props.questions.length}
             sendScore={sendScore}
+            categoryScores={categoryScores}
+            id={props.id}
           />
         ) : (
           <section className="test-container-main">
@@ -179,16 +199,18 @@ async function sendRequest(){
                   Question {questionNum + 1} of {props.questions.length}
                 </p>
               </div>
-              {!checkAnswers && <div>
-                <img src={timerSvg} alt="Timer" />
-                <p id="timer">10:00</p>
-              </div>}
+              {!checkAnswers && (
+                <div>
+                  <img src={timerSvg} alt="Timer" />
+                  <p id="timer">10:00</p>
+                </div>
+              )}
             </div>
             <div className="question">{mainQuestion.question}</div>
             {checkAnswers ? (
               <CheckAnswers
-                 mainQuestion={mainQuestion}
-                 questionNum={questionNum}
+                mainQuestion={mainQuestion}
+                questionNum={questionNum}
                 answers={answers}
               />
             ) : (
@@ -245,7 +267,14 @@ async function sendRequest(){
                   Prev
                 </button>
               )}
-              <button className="test-btn" onClick={(questionNum < props.questions.length - 1|| checkAnswers)? nextHandler: sendDataToFirebase}>
+              <button
+                className="test-btn"
+                onClick={
+                  questionNum < props.questions.length - 1 || checkAnswers
+                    ? nextHandler
+                    : sendDataToFirebase
+                }
+              >
                 {nextOrFinish}
               </button>
             </section>

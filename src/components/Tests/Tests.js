@@ -44,8 +44,8 @@ const Tests = (props) => {
       description:
         "Our simulation test replicates the format of the real Canadian Citizenship Test. It draws questions from every categories and are also timed which helps to further prepare you.",
       image: citizenCert,
-      questions: (Questions.sort(shuffleArray).slice(0, 15).concat(
-        province ? province.sort(shuffleArray).slice(0, 5) : "")
+      questions: (Questions.sort(shuffleArray).slice(0, 5).concat(
+        province ? province.sort(shuffleArray).slice(0, 0) : "")
       ),
     },
     {
@@ -60,6 +60,7 @@ const Tests = (props) => {
       )
         .sort(shuffleArray)
         .slice(0, 4),
+      
     },
     {
       id: "t3",

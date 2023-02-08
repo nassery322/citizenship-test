@@ -47,7 +47,7 @@ export const Questions = [{
     "option3": "Equal pay for equal work.",
     "option4": "Equal rights of all individuals.",
     "correctOption": "Equal rights of all individuals.",
-    "category": "Law and rights"
+    "category": "laws"
     },
     {
     "id": "q6",

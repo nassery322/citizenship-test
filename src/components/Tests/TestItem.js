@@ -17,6 +17,7 @@ const TestItem = (props) => {
   useEffect(() => {
 
     if (props.id === "t1") {
+      props.idForRetake(props.id)
       if (props.testIsClosed) {
         return;
       }
