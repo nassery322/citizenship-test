@@ -3,13 +3,34 @@
     margin:40px auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    box-sizing: border-box;
 }
 .bar-chart div:first-child{
-     width: 80%;
+     min-width: 80%;
+     margin:20px 0;
 }
 
 .average-score{
     text-align: center;
     width:20%;
+   
+}
+
+@media (max-width:760px){
+    .bar-chart{
+        flex-direction:column ;
+        width: 80%;
+    }
+
+    .average-score{
+        width: 30%;
+    }
+}
+
+@media (max-width:520px){
+    .bar-chart{
+        width: 90%;
+    }
 }

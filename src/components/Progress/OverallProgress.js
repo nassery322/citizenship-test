@@ -5,7 +5,7 @@ import BarChart from "./BarChart";
 import Graph from "./Graph";
 import "./OverallProgress.css";
 
-const OverallProgress = () => {
+const OverallProgress = (props) => {
   const [chartData, setChartData] = useState(null);
   const [average, setAverage] = useState(0)
   useEffect(() => {
@@ -22,9 +22,9 @@ const OverallProgress = () => {
           loadedData.push(data[key]);
           
         }
+
         const sum = loadedData.reduce((total, value) => total + parseInt(value), 0) / loadedData.length
         setAverage(sum)
-        console.log(data);
         setChartData({
             average: sum,
             labels: labels,
@@ -45,17 +45,19 @@ const OverallProgress = () => {
               }
             }
           });
+          if(labels.length < 1){
+            props.progressIsEmpty(true)
+          }
           
           
       }
     });
   }, [auth.currentUser]);
-  console.log(average)
   return <section className="overall-progress">
         
     
-    {chartData && <BarChart data={chartData} />}
-    {chartData && <Graph data={chartData} />}
+    {chartData && chartData.labels.length > 1 && <BarChart data={chartData} />}
+    {chartData && chartData.labels.length > 1 && <Graph data={chartData} />}
   </section>;
 };
 

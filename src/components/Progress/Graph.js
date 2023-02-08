@@ -4,7 +4,7 @@ import './Graph.css'
 
 const Graph = (props) =>{
     return <section className='graph'>
-        <Line data={props.data} />
+        <Line data={props.data}  />
     </section>
 }
 

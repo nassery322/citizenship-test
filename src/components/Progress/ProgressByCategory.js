@@ -5,24 +5,27 @@ import BarChart from "./BarChart";
 import Graph from "./Graph";
 import "./ProgressByCategory.css";
 
-const ProgressByCategory = () => {
+const ProgressByCategory = (props) => {
   const [categoryProgress, setCategoryProgress] = useState(null);
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
         const response = await fetch(
-          `${firebaseDatabase}/usersprogress/${'O2iGFbrlXNQ3mwFWxxrRVUG7Et72'}/progressByCategory.json`
+          `${firebaseDatabase}/usersprogress/${currentUser.uid}/progressByCategory.json`
         );
         const progressByCategory = await response.json();
 
         let dataArray = [];
         let labels = [];
         for (const category in progressByCategory) {
+            
           let categoryData = [];
           for (const key in progressByCategory[category]) {
+            // if (!progressByCategory[category][key]) {
+            //     return;
+            //   }
             categoryData.push(progressByCategory[category][key]);
             labels.push(Number(key) + 1 + "th test");
-            console.log(labels);
           }
           dataArray.push({ id: category, data: categoryData });
         }
@@ -35,7 +38,7 @@ const ProgressByCategory = () => {
                 item.data.length,
               datasets: [
                 {
-                  label: `${item.id} Progress`,
+                  label: `${item.id.toLocaleUpperCase()} Category Progress`,
                   data: item.data,
                   backgroundColor: "#d22a2a",
                   borderColor: "black",
@@ -49,10 +52,12 @@ const ProgressByCategory = () => {
         });
 
         setCategoryProgress(loadedData);
+        if(loadedData.length < 1){
+            props.progressIsEmpty(true)
+        }
       }
     });
   }, [auth.currentUser]);
-  console.log(categoryProgress);
   return (
     <section className="progress-category">
       {categoryProgress &&
