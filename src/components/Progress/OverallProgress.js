@@ -2,6 +2,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth, firebaseDatabase } from "../firebase";
 import BarChart from "./BarChart";
+import Graph from "./Graph";
 import "./OverallProgress.css";
 
 const OverallProgress = () => {
@@ -26,6 +27,8 @@ const OverallProgress = () => {
               label: " Overall Progress Based on Last 7 Tests", 
               data: loadedData.reverse(), 
               backgroundColor: "#d22a2a", 
+              borderColor: 'black',
+              borderWidth:1
             }],
             options: {
               scales: {
@@ -45,6 +48,7 @@ const OverallProgress = () => {
   
   return <section className="overall-progress">
     {chartData && <BarChart data={chartData} />}
+    {chartData && <Graph data={chartData} />}
   </section>;
 };
 
