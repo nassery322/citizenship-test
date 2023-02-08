@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import Tests from "./components/Tests/Tests";
 import ProvinceSelector from "./components/Tests/ProvinceSelector";
 import Preparation from "./components/Preparation/Preparation";
+import Navbar from "./components/Home/Navbar/Navbar";
 function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
@@ -35,14 +36,16 @@ setTestIsStarted(event)
 
   return (
     <div className="App">
+      <Navbar />
       {userIsLoggedIn ? (
         <Fragment>
-          {!testIsStarted && <Preparation />}
+         
           {provinceIsSelected ? (
             <Tests askForProvince={askForProvinceHandler} testIsStarted={testHandler} province={province && province} />
           ) : (
             <ProvinceSelector onClose={askForProvinceHandler} province={provinceSelectHandler} />
-          )}{" "}
+          )}
+           {!testIsStarted && <Preparation />}
         </Fragment>
       ) : (
         <Fragment>

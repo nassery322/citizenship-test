@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <Fragment>
       <section className="home">
-        <Navbar />
         <HomeContent />
       </section>
     </Fragment>

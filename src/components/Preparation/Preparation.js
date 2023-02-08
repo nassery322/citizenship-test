@@ -6,12 +6,12 @@ const Preparation = () => {
   return (
     <Fragment>
       <section className="preparation">
-        <Navbar />
+        <div className="side-shape"></div>
         <section className="preparation-content">
             <header>Prepare for the test :</header>
           <strong>What’s on the test? </strong>
-          The test shows what you know about Canada. they’ll
-          ask you 20 questions about the rights and responsibilities of
+          The test shows what you know about Canada. you’ll be
+          asked 20 questions about the rights and responsibilities of
           Canadians and Canada’s:
           <ul className="categories-list">
             <li>History</li>
@@ -36,6 +36,7 @@ const Preparation = () => {
             <li><a href="https://www.canada.ca/content/dam/ircc/migration/ircc/english/department/media/multimedia/audio/discover/discover-canada.mp3">Download MP3</a></li>
           </ul>
         </section>
+        <div className="bottom-side-shape"></div>
       </section>
     </Fragment>
   );
