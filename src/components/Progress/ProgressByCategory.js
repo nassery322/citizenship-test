@@ -32,7 +32,7 @@ const ProgressByCategory = (props) => {
         const loadedData = dataArray.map((item) => {
           return {
             data: {
-              labels: Array.from({ length: item.data.length }, (_, i) => i),
+              labels: Array.from({ length: item.data.length }, (_, i) => i + 1),
               average:
                 item.data.reduce((total, value) => total + parseInt(value), 0) /
                 item.data.length,
