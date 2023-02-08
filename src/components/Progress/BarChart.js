@@ -12,7 +12,7 @@ const BarChart = (props) =>{
         }
     },[window.innerWidth])
       return  <section className="bar-chart">
-        <div><Bar data={props.data} options={{barThickness: 20, }}/></div>
+        <div><Bar data={props.data} options={{barThickness: barThickness, }}/></div>
         <div className="average-score">Average Score
         <div className="results-pie animate no-round "
           style={{ "--p": `${props.data.average}` }}>{props.data.average.toFixed(0)}%</div>
