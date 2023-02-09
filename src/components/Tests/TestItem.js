@@ -10,7 +10,11 @@ const TestItem = (props) => {
       props.askForProvince(true);
       return;
     }
-
+    if(props.id === 't2'){
+      props.askForProvince(true)
+      props.askForNumberOfQuestions(true)
+      return;
+    }
     props.startTest(props.questions);
     
   };
@@ -25,8 +29,18 @@ const TestItem = (props) => {
         props.startTest(props.questions);
       }
     }
+    if(props.id === 't2'){
+      props.idForRetake(props.id)
+      if(props.testIsClosed){
+        return;
+      }
+      if(props.numberOfQuestions && props.province){
+        props.startTest(props.questions)
+      }
+    }
 
-  }, [props.province, props.questions]);
+
+  }, [props.province, props.questions, props.numberOfQuestions]);
 
   return (
     <Fragment>

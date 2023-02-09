@@ -3,7 +3,8 @@ import Button from "../../UI/Button";
 import "./ProvinceSelector.css";
 
 const ProvinceSelector = (props) => {
-  const [province, setProvince] = useState('AB');
+  const [province, setProvince] = useState("AB");
+  const [number, setNumber] = useState(5)
   const CanadianProvinces = [
     { name: "Alberta", code: "AB" },
     { name: "British Columbia", code: "BC" },
@@ -24,43 +25,64 @@ const ProvinceSelector = (props) => {
   const provinceHandler = (e) => {
     setProvince(e.target.value);
     // props.province(e.target.value);
-};
-
+  };
+  const numberHandler = (e) =>{
+    setNumber(e.target.value)
+  }
   const submitHandler = (e) => {
     e.preventDefault();
     if (province) {
       props.province(province);
     }
+    if(number){
+      props.numberOfQuestions(number)
+    }
   };
-//  useEffect(()=>{
-//     props.province(province)
-//  },[])
+  //  useEffect(()=>{
+  //     props.province(province)
+  //  },[])
 
-
-  return (<Fragment>
-    <div className="close-btn" onClick={props.onClose}>&times;</div>
-    <section className="province-selector">
-      <form>
-        <label htmlFor="province">
-          Please select your province of residence:
-        </label>
-        <select
-          className="form-select"
-          aria-label="Default select example"
-          onChange={provinceHandler}
-          defaultValue='AB'
-        >
-          {CanadianProvinces.map((province) => (
-            <option key={province.code} value={province.code}>
-              {province.name}
-            </option>
-          ))}
-        </select>
-        <Button onClick={submitHandler} style={buttonStyles}>
-          Start Test
-        </Button>
-      </form>
-    </section>
+  return (
+    <Fragment>
+      <div className="close-btn" onClick={props.onClose}>
+        &times;
+      </div>
+      <section className="province-selector">
+        <form>
+          <label htmlFor="province">
+            {props.requestNumberOfQuestions
+              ? `Please select your province of residence:`
+              : "Please select your province of residence and number of questions:"}
+          </label>
+          <select
+            className="form-select"
+            aria-label="Default select example"
+            onChange={provinceHandler}
+            defaultValue="AB"
+          >
+            {CanadianProvinces.map((province) => (
+              <option key={province.code} value={province.code}>
+                {province.name}
+              </option>
+            ))}
+          </select>
+          <div className="num-questions">
+            {!props.requestNumberOfQuestions && (
+              <select className="form-select" defaultValue="AB" onChange={numberHandler}>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="80">80</option>
+                <option value="all">All</option>
+              </select>
+            )}
+          </div>
+          <Button onClick={submitHandler} style={buttonStyles}>
+            Start Test
+          </Button>
+        </form>
+      </section>
     </Fragment>
   );
 };

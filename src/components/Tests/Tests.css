@@ -13,7 +13,13 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
+.test-items section:nth-child(2) img{
+  max-height: 80px !important;
+  width: 90%;
+}
+.test-items section:nth-child(2) .test-image{
+  height: 200px !important;
+}
 /* @media (max-width:1060px){
     .test-items{
         justify-content: space-evenly;

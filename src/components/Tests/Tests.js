@@ -8,7 +8,7 @@ import government from "../../assets/politics.jpg";
 import law from "../../assets/law.jpg";
 import symbols from "../../assets/symbols.jpg";
 import economy from "../../assets/economy.jpg";
-import Navbar from "../Home/Navbar/Navbar";
+import rplLogo from "../../assets/rpl-logo.png";
 import {
   Ontario,
   YukonTerritories,
@@ -34,7 +34,8 @@ const Tests = (props) => {
   const [province, setProvince] = useState(null);
   const [testIsClosed, setTestIsClosed] = useState(false);
   const [testId, setTestId] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [numberOfQuestions, setNumberOfQuestions] = useState(null);
   function shuffleArray(a, b) {
     return Math.random() - 0.5;
   }
@@ -51,6 +52,23 @@ const Tests = (props) => {
     },
     {
       id: "t2",
+      title: "Richmond Library Test",
+      description:
+        "The practice test consists of over 100 multiple choice questions derived from the book Discover Canada, on which the test is based",
+      image: rplLogo,
+      questions:
+        numberOfQuestions && numberOfQuestions >= 15
+          ? Questions.sort(shuffleArray)
+              .slice(0, numberOfQuestions - 5)
+              .concat(province ? province.sort(shuffleArray).slice(0, 5) : "")
+          : numberOfQuestions === "all"
+          ? Questions.sort(shuffleArray)
+              .slice(0, Questions.length - 5)
+              .concat(province ? province.sort(shuffleArray).slice(0, 5) : "")
+          : Questions.sort(shuffleArray).slice(0, numberOfQuestions),
+    },
+    {
+      id: "t3",
       title: "Geography Test",
       description:
         "A test focusing on Canadian geography and demographics. This test covers topics such as the physical geography of Canada, major cities and provinces, and demographic information.",
@@ -64,7 +82,7 @@ const Tests = (props) => {
         .slice(0, 15),
     },
     {
-      id: "t3",
+      id: "t4",
       title: "History and Heritage Test",
       description:
         "A test focusing on Canadian history and heritage. This test covers topics such as important historical events, famous Canadians, and cultural heritage.",
@@ -77,7 +95,7 @@ const Tests = (props) => {
         .slice(0, 15),
     },
     {
-      id: "t4",
+      id: "t5",
       title: "Political and Social Systems Test",
       description:
         "A test focusing on Canadian political and social systems. This test covers topics such as the parliamentary system, the role of the Prime Minister, and Canadian values.",
@@ -91,7 +109,7 @@ const Tests = (props) => {
         .slice(0, 15),
     },
     {
-      id: "t5",
+      id: "t6",
       title: "Laws and Rights Test",
       description:
         "A test focusing on Canadian laws, rights, and freedoms. This test covers topics such as the Canadian Charter of Rights and Freedoms, criminal law, and the justice system.",
@@ -104,7 +122,7 @@ const Tests = (props) => {
         .slice(0, 15),
     },
     {
-      id: "t6",
+      id: "t7",
       title: "Symbols and Traditions Test",
       description:
         "A test focusing on Canadian symbols, holidays, and traditions. This test covers topics such as the Canadian flag, national anthem, and important holidays.",
@@ -117,7 +135,7 @@ const Tests = (props) => {
         .slice(0, 15),
     },
     {
-      id: "t7",
+      id: "t8",
       title: "Economy Test",
       description:
         "A test focusing on the Canadian economy. This test covers topics such as currency, sources of government revenue, exports, stock exchange, banking sector regulation, unemployment and inflation rates, and minimum wage.",
@@ -186,12 +204,21 @@ const Tests = (props) => {
     if (props.province) {
       provinceSelectHandler(props.province);
     }
-  }, [province]);
+    if (props.numberOfQuestions) {
+      setNumberOfQuestions(props.numberOfQuestions);
+    }
+  }, [province, props.numberOfQuestions]);
 
   function askForProvinceHandler() {
     setTestIsClosed(false);
     props.askForProvince(true);
   }
+
+  function askForNumberOfQuestionsHandler() {
+    setTestIsClosed(false);
+    props.askForNumberOfQuestions(true);
+  }
+
   function closeContainerHandler() {
     setTestIsStarted(false);
     props.testIsStarted(false);
@@ -212,7 +239,9 @@ const Tests = (props) => {
   }, []);
   return (
     <Fragment>
-      {loading ? <LoadingSpinner /> :
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
         <Fragment>
           {testIsStarted ? (
             <TestContainer
@@ -234,8 +263,10 @@ const Tests = (props) => {
                     image={test.image}
                     questions={test.questions}
                     province={province}
+                    numberOfQuestions={numberOfQuestions}
                     startTest={startTestHandler}
                     askForProvince={askForProvinceHandler}
+                    askForNumberOfQuestions={askForNumberOfQuestionsHandler}
                     testIsClosed={testIsClosed}
                   />
                 ))}
@@ -244,7 +275,7 @@ const Tests = (props) => {
           )}
           {/* )} */}
         </Fragment>
-      }
+      )}
     </Fragment>
   );
 };

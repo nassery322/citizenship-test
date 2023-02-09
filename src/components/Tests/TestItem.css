@@ -21,7 +21,7 @@
 }
 .test-image{
   border-radius: 16px;
-  height: 42%;
+  height: 42% !important;
   border: #d22a2a solid 4px ;
   width: 80%;
   margin:10px auto;

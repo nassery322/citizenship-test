@@ -16,19 +16,20 @@ function App() {
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
   const [province, setProvince] = useState(null);
   const [testIsStarted, setTestIsStarted] = useState(false);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
+  const [numberOfQuestions, setNumberOfQuestions] = useState(null);
+  const [numberOfQuestionsSelected, setNumberOfQuestionsSelected] =
+    useState(true);
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       setInterval(() => {
-        setLoading(false)
+        setLoading(false);
       }, 100);
       if (currentUser && currentUser.uid) {
         setUserIsLoggedIn(true);
       }
     });
   }, [auth]);
-
-
 
   function askForProvinceHandler() {
     setProvinceIsSelected((e) => !e);
@@ -37,46 +38,58 @@ function App() {
     setProvince(province);
     setProvinceIsSelected(true);
   }
+  function askForNumberOfQuestionsHandler() {
+    setNumberOfQuestionsSelected((e) => !e);
+  }
+  function numberOfQuestionsHandler(num) {
+    setNumberOfQuestions(num);
+    setNumberOfQuestionsSelected(true);
+  }
   const testHandler = (event) => {
     setTestIsStarted(event);
   };
 
   return (
     <div className="App">
-      {!loading && <Fragment>
-      {!testIsStarted && provinceIsSelected && <Navbar /> }
-      {userIsLoggedIn ? (
+      {!loading && (
         <Fragment>
-          {provinceIsSelected ? (
-            <Tests
-              askForProvince={askForProvinceHandler}
-              testIsStarted={testHandler}
-              province={province && province}
-            />
-          ) : (
-            <ProvinceSelector
-              onClose={askForProvinceHandler}
-              province={provinceSelectHandler}
-            />
-          )}
-          {!testIsStarted && provinceIsSelected && (
+          {!testIsStarted && provinceIsSelected && <Navbar />}
+          {userIsLoggedIn ? (
             <Fragment>
+              {provinceIsSelected && numberOfQuestionsSelected ? (
+                <Tests
+                  askForProvince={askForProvinceHandler}
+                  testIsStarted={testHandler}
+                  askForNumberOfQuestions={askForNumberOfQuestionsHandler}
+                  province={province && province}
+                  numberOfQuestions={numberOfQuestions}
+                />
+              ) : (
+                <ProvinceSelector
+                  onClose={askForProvinceHandler}
+                  province={provinceSelectHandler}
+                  requestNumberOfQuestions={numberOfQuestionsSelected}
+                  numberOfQuestions={numberOfQuestionsHandler}
+                />
+              )}
+              {!testIsStarted && provinceIsSelected && (
+                <Fragment>
+                  <Preparation />
+                  <Progress />
+                </Fragment>
+              )}
+            </Fragment>
+          ) : (
+            <Fragment>
+              <Home />
+              <Features />
               <Preparation />
-              <Progress />
+              <About />
+              <Contact />
             </Fragment>
           )}
         </Fragment>
-      ) : (
-        <Fragment>
-          <Home />
-          <Features />
-          <Preparation />
-          <About />
-          <Contact />
-        </Fragment>
-        
       )}
-      </Fragment>}
     </div>
   );
 }
