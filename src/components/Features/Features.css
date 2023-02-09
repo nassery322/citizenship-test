@@ -9,7 +9,7 @@
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .features header {
   font-size: 1.6rem; padding-top:15px; padding-bottom: 15px; font-weight: 600;

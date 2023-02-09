@@ -23,6 +23,7 @@ const About = () => {
           </p>
         </section>
       </section>
+      
     </section>
   );
 };
