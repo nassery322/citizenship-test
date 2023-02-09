@@ -16,12 +16,13 @@ const Avatar = (props) => {
         fetchData(currentUser.uid);
       }
     });
-  });
-
+  },[auth]);
+  const emptyUserAvatar = `https://firebasestorage.googleapis.com/v0/b/connected-c86f2.appspot.com/o/images%2F0.30428627623556603?alt=media&token=7eb142a5-07a8-4a37-aefa-a3e994bdaf51`
   return (
     <img
-      src={`https://api.multiavatar.com/${username}.png`}
+      src={username? `https://api.multiavatar.com/${username}.png` : emptyUserAvatar}
       alt="user avatar"
+      className="avatar"
     />
   );
 };

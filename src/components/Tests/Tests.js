@@ -26,6 +26,7 @@ import {
   Questions,
 } from "./questions";
 import TestContainer from "./TestContainer";
+import LoadingSpinner from "../../UI/LoadingSpinner";
 
 const Tests = (props) => {
   const [testIsStarted, setTestIsStarted] = useState(false);
@@ -33,7 +34,7 @@ const Tests = (props) => {
   const [province, setProvince] = useState(null);
   const [testIsClosed, setTestIsClosed] = useState(false);
   const [testId, setTestId] = useState(null);
-
+  const [loading, setLoading] = useState(true);
   function shuffleArray(a, b) {
     return Math.random() - 0.5;
   }
@@ -44,9 +45,9 @@ const Tests = (props) => {
       description:
         "Our simulation test replicates the format of the real Canadian Citizenship Test. It draws questions from every categories and are also timed which helps to further prepare you.",
       image: citizenCert,
-      questions: (Questions.sort(shuffleArray).slice(0, 15).concat(
-        province ? province.sort(shuffleArray).slice(0, 5) : "")
-      ),
+      questions: Questions.sort(shuffleArray)
+        .slice(0, 15)
+        .concat(province ? province.sort(shuffleArray).slice(0, 5) : ""),
     },
     {
       id: "t2",
@@ -54,13 +55,13 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian geography and demographics. This test covers topics such as the physical geography of Canada, major cities and provinces, and demographic information.",
       image: geography,
-      questions: Questions.sort(shuffleArray).filter(
-        (question) =>
-          question.category && question.category.toLowerCase() === "geography"
-      )
+      questions: Questions.sort(shuffleArray)
+        .filter(
+          (question) =>
+            question.category && question.category.toLowerCase() === "geography"
+        )
         .sort(shuffleArray)
         .slice(0, 15),
-      
     },
     {
       id: "t3",
@@ -68,10 +69,12 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian history and heritage. This test covers topics such as important historical events, famous Canadians, and cultural heritage.",
       image: history,
-      questions: Questions.sort(shuffleArray).filter(
-        (question) =>
-          question.category && question.category.toLowerCase() === "history"
-      ).slice(0, 15),
+      questions: Questions.sort(shuffleArray)
+        .filter(
+          (question) =>
+            question.category && question.category.toLowerCase() === "history"
+        )
+        .slice(0, 15),
     },
     {
       id: "t4",
@@ -79,10 +82,13 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian political and social systems. This test covers topics such as the parliamentary system, the role of the Prime Minister, and Canadian values.",
       image: government,
-      questions: Questions.sort(shuffleArray).filter(
-        (question) =>
-          question.category && question.category.toLowerCase() === "government"
-      ).slice(0, 15),
+      questions: Questions.sort(shuffleArray)
+        .filter(
+          (question) =>
+            question.category &&
+            question.category.toLowerCase() === "government"
+        )
+        .slice(0, 15),
     },
     {
       id: "t5",
@@ -90,11 +96,12 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian laws, rights, and freedoms. This test covers topics such as the Canadian Charter of Rights and Freedoms, criminal law, and the justice system.",
       image: law,
-      questions: Questions.sort(shuffleArray).filter(
-        (question) =>
-          question.category && question.category.toLowerCase() === "laws"
-      ).slice(0, 15)
-      
+      questions: Questions.sort(shuffleArray)
+        .filter(
+          (question) =>
+            question.category && question.category.toLowerCase() === "laws"
+        )
+        .slice(0, 15),
     },
     {
       id: "t6",
@@ -102,10 +109,12 @@ const Tests = (props) => {
       description:
         "A test focusing on Canadian symbols, holidays, and traditions. This test covers topics such as the Canadian flag, national anthem, and important holidays.",
       image: symbols,
-      questions: Questions.sort(shuffleArray).filter(
-        (question) =>
-          question.category && question.category.toLowerCase() === "symbols"
-      ).slice(0, 15)
+      questions: Questions.sort(shuffleArray)
+        .filter(
+          (question) =>
+            question.category && question.category.toLowerCase() === "symbols"
+        )
+        .slice(0, 15),
     },
     {
       id: "t7",
@@ -113,10 +122,12 @@ const Tests = (props) => {
       description:
         "A test focusing on the Canadian economy. This test covers topics such as currency, sources of government revenue, exports, stock exchange, banking sector regulation, unemployment and inflation rates, and minimum wage.",
       image: economy,
-      questions: Questions.sort(shuffleArray).filter(
-        (question) =>
-          question.category && question.category.toLowerCase() === "economy"
-      ).slice(0, 15)
+      questions: Questions.sort(shuffleArray)
+        .filter(
+          (question) =>
+            question.category && question.category.toLowerCase() === "economy"
+        )
+        .slice(0, 15),
     },
   ];
   const startTestHandler = (questions) => {
@@ -125,7 +136,7 @@ const Tests = (props) => {
     }
 
     setTestIsStarted(true);
-    props.testIsStarted(true)
+    props.testIsStarted(true);
     setTestQuestions(questions);
   };
 
@@ -183,7 +194,7 @@ const Tests = (props) => {
   }
   function closeContainerHandler() {
     setTestIsStarted(false);
-    props.testIsStarted(false)
+    props.testIsStarted(false);
     setTestIsClosed(true);
   }
   const retakeTestHandler = (id) => {
@@ -194,38 +205,46 @@ const Tests = (props) => {
   function testIdentfierHandler(id) {
     setTestId(id);
   }
+  useEffect(() => {
+    setInterval(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
     <Fragment>
-      {testIsStarted ? (
-        <TestContainer
-          questions={testQuestions}
-          onClose={closeContainerHandler}
-          onRetake={retakeTestHandler}
-          id={testId}
-        />
-      ) : (
-        <section className="tests-section">
-          
-          <section className="test-items">
-            {testsArray.map((test) => (
-              <TestItem
-                idForRetake={testIdentfierHandler}
-                key={test.id}
-                id={test.id}
-                title={test.title}
-                description={test.description}
-                image={test.image}
-                questions={test.questions}
-                province={province}
-                startTest={startTestHandler}
-                askForProvince={askForProvinceHandler}
-                testIsClosed={testIsClosed}
-              />
-            ))}
-          </section>
-        </section>
-      )}
-      {/* )} */}
+      {loading ? <LoadingSpinner /> :
+        <Fragment>
+          {testIsStarted ? (
+            <TestContainer
+              questions={testQuestions}
+              onClose={closeContainerHandler}
+              onRetake={retakeTestHandler}
+              id={testId}
+            />
+          ) : (
+            <section className="tests-section">
+              <section className="test-items">
+                {testsArray.map((test) => (
+                  <TestItem
+                    idForRetake={testIdentfierHandler}
+                    key={test.id}
+                    id={test.id}
+                    title={test.title}
+                    description={test.description}
+                    image={test.image}
+                    questions={test.questions}
+                    province={province}
+                    startTest={startTestHandler}
+                    askForProvince={askForProvinceHandler}
+                    testIsClosed={testIsClosed}
+                  />
+                ))}
+              </section>
+            </section>
+          )}
+          {/* )} */}
+        </Fragment>
+      }
     </Fragment>
   );
 };
