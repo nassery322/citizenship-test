@@ -14,14 +14,22 @@ const HomeContent = () => {
   function signupModalPopUp() {
     setModalIsOpen((e) => !e);
   }
-  function changeModalHandler(){
+  function changeModalHandler(event){
     if(form === 'signup'){
       setForm('login')
     }else{
       setForm('signup')
     }
+    if(event === 'login'){
+      setForm('login')
+      signupModalPopUp()
+    }
   }
-  let sss = multiavatar('som')
+
+  const loginModalHandler = () =>{
+    setForm('login')
+    signupModalPopUp()
+  }
   return (
     <Fragment>
       <section className="home-content">
@@ -36,6 +44,7 @@ const HomeContent = () => {
           </p>
           <div className="home-buttons">
             <Button onClick={signupModalPopUp}>Create Account</Button>
+            <button onClick={loginModalHandler} className={'check-btn'} style={{'width': '170px', 'margin':'20px'}}>Login</button>
            {form === 'signup' ? <Signup  onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/> : <Login onLoginClose={signupModalPopUp} onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/>}
             
           </div>

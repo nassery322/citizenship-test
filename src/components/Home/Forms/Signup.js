@@ -165,8 +165,7 @@ const Signup = (props) => {
             onChange={changeHandler}
             value={formValues.email}
           />
-          <span class="highlight"></span>
-          <span class="bar"></span>
+          
           {errors.email && <p className="error">{errors.email}</p>}
         </div>
         <div className="form-group">

@@ -76,6 +76,11 @@ setManageModalIsOpen(e => !e)
         </a>
       </li>
       <li>
+        <a href="#preparation" className="nav-link">
+          Preparation
+        </a>
+      </li>
+      <li>
         <a href="#about" className="nav-link">
           About
         </a>

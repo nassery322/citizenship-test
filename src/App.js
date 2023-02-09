@@ -16,13 +16,19 @@ function App() {
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
   const [province, setProvince] = useState(null);
   const [testIsStarted, setTestIsStarted] = useState(false);
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
+      setInterval(() => {
+        setLoading(false)
+      }, 100);
       if (currentUser && currentUser.uid) {
         setUserIsLoggedIn(true);
       }
     });
-  }, [auth.currentUser]);
+  }, [auth]);
+
+
 
   function askForProvinceHandler() {
     setProvinceIsSelected((e) => !e);
@@ -37,6 +43,7 @@ function App() {
 
   return (
     <div className="App">
+      {!loading && <Fragment>
       {!testIsStarted && provinceIsSelected && <Navbar /> }
       {userIsLoggedIn ? (
         <Fragment>
@@ -63,10 +70,13 @@ function App() {
         <Fragment>
           <Home />
           <Features />
+          <Preparation />
           <About />
           <Contact />
         </Fragment>
+        
       )}
+      </Fragment>}
     </div>
   );
 }
