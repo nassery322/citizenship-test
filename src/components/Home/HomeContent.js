@@ -5,31 +5,31 @@ import maple from "../../assets/leaf.png";
 import Signup from "./Forms/Signup";
 import Transition from "react-transition-group/Transition";
 import Login from "./Forms/Login";
-import multiavatar from '@multiavatar/multiavatar/esm'
-
+import multiavatar from "@multiavatar/multiavatar/esm";
+import bookcover from "../../assets/bookcover.png";
 
 const HomeContent = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [form, setForm] = useState('signup')
+  const [form, setForm] = useState("signup");
   function signupModalPopUp() {
     setModalIsOpen((e) => !e);
   }
-  function changeModalHandler(event){
-    if(form === 'signup'){
-      setForm('login')
-    }else{
-      setForm('signup')
+  function changeModalHandler(event) {
+    if (form === "signup") {
+      setForm("login");
+    } else {
+      setForm("signup");
     }
-    if(event === 'login'){
-      setForm('login')
-      signupModalPopUp()
+    if (event === "login") {
+      setForm("login");
+      signupModalPopUp();
     }
   }
 
-  const loginModalHandler = () =>{
-    setForm('login')
-    signupModalPopUp()
-  }
+  const loginModalHandler = () => {
+    setForm("login");
+    signupModalPopUp();
+  };
   return (
     <Fragment>
       <section className="home-content">
@@ -44,13 +44,43 @@ const HomeContent = () => {
           </p>
           <div className="home-buttons">
             <Button onClick={signupModalPopUp}>Create Account</Button>
-            <button onClick={loginModalHandler} className={'check-btn'} style={{'width': '170px', 'margin':'20px'}}>Login</button>
-           {form === 'signup' ? <Signup  onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/> : <Login onLoginClose={signupModalPopUp} onClick={signupModalPopUp} show={modalIsOpen}  onChangeModal={changeModalHandler}/>}
-            
+            <button
+              onClick={loginModalHandler}
+              className={"check-btn"}
+              style={{ width: "170px", margin: "20px" }}
+            >
+              Login
+            </button>
+            {form === "signup" ? (
+              <Signup
+                onClick={signupModalPopUp}
+                show={modalIsOpen}
+                onChangeModal={changeModalHandler}
+              />
+            ) : (
+              <Login
+                onLoginClose={signupModalPopUp}
+                onClick={signupModalPopUp}
+                show={modalIsOpen}
+                onChangeModal={changeModalHandler}
+              />
+            )}
           </div>
         </section>
         <section className="home-image">
-          <img src={maple} alt="Maple leaf!" />
+          <img src={bookcover} alt="Maple leaf!" />
+          <section className="book-buttons">
+            <Button className="image-btn">
+              <a href="https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/pub/discover.pdf">
+                Download PDF
+              </a>
+            </Button>
+            <Button className="image-btn">
+              <a href="https://www.canada.ca/content/dam/ircc/migration/ircc/english/department/media/multimedia/audio/discover/discover-canada.mp3">
+                Audio Book
+              </a>
+            </Button>
+          </section>
         </section>
       </section>
     </Fragment>
