@@ -1,11 +1,8 @@
 import { Fragment, useState } from "react";
 import Button from "../../UI/Button";
 import "./HomeContent.css";
-import maple from "../../assets/leaf.png";
 import Signup from "./Forms/Signup";
-import Transition from "react-transition-group/Transition";
 import Login from "./Forms/Login";
-import multiavatar from "@multiavatar/multiavatar/esm";
 import bookcover from "../../assets/bookcover.png";
 
 const HomeContent = () => {
@@ -14,21 +11,18 @@ const HomeContent = () => {
   function signupModalPopUp() {
     setModalIsOpen((e) => !e);
   }
-  function changeModalHandler(event) {
+  function changeModalHandler() {
     if (form === "signup") {
       setForm("login");
     } else {
       setForm("signup");
     }
-    if (event === "login") {
-      setForm("login");
-      signupModalPopUp();
-    }
+ 
   }
 
   const loginModalHandler = () => {
-    setForm("login");
     signupModalPopUp();
+     setForm("login");
   };
   return (
     <Fragment>

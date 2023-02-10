@@ -1,5 +1,4 @@
 import { Fragment, useEffect } from "react";
-import { Questions } from "./questions";
 
 import "./TestItem.css";
 
@@ -19,7 +18,6 @@ const TestItem = (props) => {
     
   };
   useEffect(() => {
-
     if (props.id === "t1") {
       props.idForRetake(props.id)
       if (props.testIsClosed) {
@@ -41,6 +39,7 @@ const TestItem = (props) => {
 
 
   }, [props.province, props.questions, props.numberOfQuestions]);
+  
 
   return (
     <Fragment>

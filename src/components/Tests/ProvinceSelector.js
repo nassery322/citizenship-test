@@ -4,7 +4,7 @@ import "./ProvinceSelector.css";
 
 const ProvinceSelector = (props) => {
   const [province, setProvince] = useState("AB");
-  const [number, setNumber] = useState(5)
+  const [number, setNumber] = useState(!props.requestNumberOfQuestions &&  5)
   const CanadianProvinces = [
     { name: "Alberta", code: "AB" },
     { name: "British Columbia", code: "BC" },
@@ -24,7 +24,6 @@ const ProvinceSelector = (props) => {
 
   const provinceHandler = (e) => {
     setProvince(e.target.value);
-    // props.province(e.target.value);
   };
   const numberHandler = (e) =>{
     setNumber(e.target.value)
@@ -38,9 +37,7 @@ const ProvinceSelector = (props) => {
       props.numberOfQuestions(number)
     }
   };
-  //  useEffect(()=>{
-  //     props.province(province)
-  //  },[])
+ 
 
   return (
     <Fragment>
