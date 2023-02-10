@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     right: -110%;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: #d22a2a;
     transition: all 0.6s ease-in-out;
@@ -185,5 +185,11 @@ input[type="checkbox"] {
 @media (max-width:345px){
     .wrapper ul li a {
         left: 29%;
+    }
+}
+
+@media (max-height:420px){
+    .wrapper ul li{
+        margin:25px 0;
     }
 }

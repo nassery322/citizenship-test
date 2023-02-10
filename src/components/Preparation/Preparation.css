@@ -115,7 +115,7 @@
 @media (max-width:420px){
     .side-shape{
 
-        height: 15vh;
+        height: 12vh;
     }
     .bottom-side-shape{
     }
@@ -124,7 +124,7 @@
 @media (max-height:400px){
     .side-shape{
         width: 25%;
-       
+       height: 30vh !important;
     }
     .bottom-side-shape{
         height: 20vh;
