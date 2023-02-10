@@ -34,7 +34,7 @@ const websiteFeatures = [
     header: "Track Your Progress",
     image: chartsSvg,
     description:
-      "Track your progress with our user friendly graphs and chart",
+      "Track your progress with our user friendly graphs and chart.",
   },
   {
     id: "f5",
@@ -48,7 +48,7 @@ const websiteFeatures = [
     header: "User-Friendly Interface",
     image: happyFaceSvg,
     description:
-      "Our website offers a user-friendly interface with an intuitive design and easy navigation for an effortless and enjoyable citizenship test experience. ",
+      "Our website offers a user-friendly interface with an intuitive design and easy navigation for an effortless and enjoyable experience. ",
   },
 ];
 const Features = () => {
