@@ -3,6 +3,13 @@
     height: auto;
   
 }
+.progress header{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color:rgb(69, 67, 67);
+}
 .empty{
     width: 100%;
     height: 100vh;

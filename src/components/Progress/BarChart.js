@@ -7,6 +7,16 @@ import {Chart as ChartJS} from 'chart.js/auto'
 const BarChart = (props) =>{
     const [barThickness, setBarThickness] = useState(40)
     useEffect(()=>{
+      const observer = new IntersectionObserver( (entries) => {
+        entries.forEach( (entry) => { 
+            if(entry.isIntersecting){
+                entry.target.classList.add('animate')
+            }
+        
+         } )
+    } )
+    const hiddenElements = document.querySelectorAll('.results-pie');
+    hiddenElements.forEach( (el) => {observer.observe(el)} )
         if(window.innerWidth < 600){
             setBarThickness(20)
         }
@@ -14,7 +24,7 @@ const BarChart = (props) =>{
       return  <section className="bar-chart">
         <div><Bar data={props.data} options={{barThickness: barThickness, }}/></div>
         <div className="average-score">Average Score
-        <div className="results-pie animate no-round "
+        <div className="results-pie no-round "
           style={{ "--p": `${props.data.average}` }}>{props.data.average.toFixed(0)}%</div>
         </div>
         
