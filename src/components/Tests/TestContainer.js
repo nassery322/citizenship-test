@@ -20,7 +20,7 @@ const TestContainer = (props) => {
         return {
           correctOption: item.correctOption,
           selectedOption: "",
-          category: item.category && item.category.toLowerCase() ,
+          category: item.category && item.category.toLowerCase(),
         };
       })
   );
@@ -28,8 +28,7 @@ const TestContainer = (props) => {
     if (questionNum < props.questions.length - 1) {
       resetOptions();
       setQuestionNum((e) => e + 1);
-    } 
-    else {
+    } else {
       testFinishedHandler();
     }
   };
@@ -56,42 +55,41 @@ const TestContainer = (props) => {
 
   const mainQuestion = props.questions[questionNum];
   const selectedOption = answers[questionNum].selectedOption;
-
+  const questionsLength = props.questions.length;
   function testFinishedHandler() {
     setTestIsFinished(true);
     let points = 0;
     let categories = {};
     const categorySet = new Set(answers.map((a) => a.category));
     for (let i = 0; i < answers.length; i++) {
-        const answer = answers[i];
-        if (answer.correctOption === answer.selectedOption) {
-            points = points + 1;
-            const category = answer.category;
-            if (!categories[category]) {
-                categories[category] = 0;
-            }
-            categories[category] += 1;
+      const answer = answers[i];
+      if (answer.correctOption === answer.selectedOption) {
+        points = points + 1;
+        const category = answer.category;
+        if (!categories[category]) {
+          categories[category] = 0;
         }
+        categories[category] += 1;
+      }
     }
     for (let category of categorySet) {
-        if (!categories[category]) {
-            categories[category] = 0;
+      if (!categories[category]) {
+        categories[category] = 0;
+      } else {
+        const numOfQuestions = props.questions.filter(
+          (q) => q.category === category
+        ).length;
+        if (numOfQuestions === 0) {
+          categories[category] = 0;
         } else {
-            const numOfQuestions = props.questions.filter((q) => q.category === category).length;
-            if (numOfQuestions === 0) {
-                categories[category] = 0;
-            } else {
-                categories[category] =
-                  (categories[category] / numOfQuestions) * 100;
-                categories[category] = categories[category].toFixed(0);
-            }
+          categories[category] = (categories[category] / numOfQuestions) * 100;
+          categories[category] = categories[category].toFixed(0);
         }
+      }
     }
     setScore(points);
     setCategoryScores(categories);
-}
-
-
+  }
 
   const closeModalHandler = () => {
     if (!testIsFinished) {
@@ -103,20 +101,27 @@ const TestContainer = (props) => {
   const closeTestContainerHandler = () => {
     props.onClose(true);
   };
-  const checkAnswersHandler = () => {
-    setSendScore(false);
-    setCheckAnswers(true);
-    setQuestionNum(0);
-    setTestIsFinished(false);
-  };
 
   let timer;
   useEffect(
     function timerStart() {
-      let time = 600;
+      let time;
+      if (questionsLength <= 20) {
+        time = 600;
+      }
+      if (questionsLength > 20) {
+        time = 1800;
+      }
+      if (questionsLength >= 80) {
+        time = 2700;
+      }
       timer = setInterval(() => {
+        if (checkAnswers) {
+          return;
+        }
         time--;
         if (time < 0) time = 0;
+
         const minutes = Math.floor(time / 60);
         const seconds = time % 60;
         const timeState = document.getElementById("timer");
@@ -136,6 +141,14 @@ const TestContainer = (props) => {
     },
     [testIsFinished]
   );
+
+  const checkAnswersHandler = () => {
+    setSendScore(false);
+    setCheckAnswers(true);
+    setQuestionNum(0);
+    setTestIsFinished(false);
+  };
+
   const retakeTestHandler = () => {
     setSendScore(false);
     props.onRetake(props.id);
@@ -158,13 +171,13 @@ const TestContainer = (props) => {
     );
   }, [props.questions]);
   const nextOrFinish =
-    questionNum === props.questions.length - 1 ? "Finish" : "Next";
+    questionNum === questionsLength - 1 ? "Finish" : "Next";
 
-    const sendDataToFirebase = async () => {
+  const sendDataToFirebase = async () => {
     setSendScore(true);
     testFinishedHandler();
   };
-  console.log(props.id);
+ 
   return (
     <Fragment>
       <div
@@ -186,7 +199,7 @@ const TestContainer = (props) => {
             onCheck={checkAnswersHandler}
             onRetake={retakeTestHandler}
             score={score}
-            numberOfQuestions={props.questions.length}
+            numberOfQuestions={questionsLength}
             sendScore={sendScore}
             categoryScores={categoryScores}
             id={props.id}
@@ -196,13 +209,19 @@ const TestContainer = (props) => {
             <div className="timer">
               <div>
                 <p className="question-number">
-                  Question {questionNum + 1} of {props.questions.length}
+                  Question {questionNum + 1} of {questionsLength}
                 </p>
               </div>
               {!checkAnswers && (
                 <div>
                   <img src={timerSvg} alt="Timer" />
-                  <p id="timer">10:00</p>
+                  <p id="timer">
+                    {questionsLength > 20
+                      ? questionsLength >= 80
+                        ? "45:00"
+                        : "30:00"
+                      : "10:00"}
+                  </p>
                 </div>
               )}
             </div>
@@ -270,7 +289,7 @@ const TestContainer = (props) => {
               <button
                 className="test-btn"
                 onClick={
-                  questionNum < props.questions.length - 1 || checkAnswers
+                  questionNum < questionsLength - 1 || checkAnswers
                     ? nextHandler
                     : sendDataToFirebase
                 }

@@ -3,7 +3,9 @@
   height: auto;
   background-color: white;
   z-index: 5;
+  overflow: hidden;
 }
+
 .test-items {
     padding-top: 30px;
   width: 85%;

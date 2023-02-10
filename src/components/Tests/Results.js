@@ -12,11 +12,9 @@ const Results = (props) => {
       : "You Have Failed The Test!";
   const styles = percentage > 75 ? { color: "#17d4ae" } : { color: "#e21b1b " };
   const [scoresend, setscoresend] = useState(false);
-  console.log(props.id);
   async function sendRequest(id) {
     if (!scoresend) {
       const scoreData = percentage;
-      console.log(scoreData);
       if (props.id === "t1") {
         const response = await fetch(
           `${firebaseDatabase}/usersprogress/${id}/overallProgress.json`
@@ -69,7 +67,6 @@ const Results = (props) => {
             body: JSON.stringify(categoryData),
           }
         );
-        console.log("request sent");
         setscoresend(true);
       }
     }

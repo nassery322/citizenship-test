@@ -58,11 +58,12 @@ const ProgressByCategory = (props) => {
       }
     });
   }, [auth.currentUser]);
+
   return (
     <section className="progress-category">
       {categoryProgress &&
-        categoryProgress.map((item) => (
-          <BarChart key={item.id} data={item.data} />
+        categoryProgress.map((item, index) => (
+          <BarChart key={index} data={item.data} />
         ))}
     </section>
   );

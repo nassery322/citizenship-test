@@ -2,10 +2,10 @@ import ReactDOM from "react-dom";
 import React from "react";
 import "./Modal.css";
 import CSSTransition from "react-transition-group/CSSTransition";
+
 const Backdrop = (props) => {
   return <div className="backdrop" onClick={props.onClick} />;
 };
-
 
 const Overlay = (props) => {
   const animationTiming = {
@@ -19,7 +19,6 @@ const Overlay = (props) => {
       in={props.show}
       timeout={animationTiming}
       classNames={{
-      
         enter: "",
         enterActive: "ModalOpen",
         exit: "",
@@ -36,13 +35,16 @@ const Overlay = (props) => {
 const Modal = (props) => {
   return (
     <React.Fragment>
-      {props.show && ReactDOM.createPortal(
-        <Backdrop onClick={props.onClick} />,
-        document.getElementById("overlay")
-      )}
+      {props.show &&
+        ReactDOM.createPortal(
+          <Backdrop onClick={props.onClick} />,
+          document.getElementById("overlay")
+        )}
 
       {ReactDOM.createPortal(
-        <Overlay show={props.show} style={props.style}>{props.children}</Overlay>,
+        <Overlay show={props.show} style={props.style}>
+          {props.children}
+        </Overlay>,
         document.getElementById("overlay")
       )}
     </React.Fragment>

@@ -8,7 +8,7 @@ import ManageAccount from "../Forms/ManageAccount";
 import Signup from "../Forms/Signup";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [form, setForm] = useState("login");
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
@@ -46,18 +46,18 @@ setManageModalIsOpen(e => !e)
         
           </a>
         </li>
-        <li>
+        <li onClick={props.onPrepTabClose}>
         <a href="#tests" className="nav-link">
           Tests
         </a>
       </li>
-      <li>
+      <li onClick={props.onPreparation}>
         <a href="#preparation" className="nav-link">
           Preparation
         </a>
       </li>
-      <li>
-        <a href="#progress" className="nav-link">
+      <li onClick={props.onPrepTabClose}>
+        <a href="#progress" className="nav-link" >
           Progress
         </a>
       </li>

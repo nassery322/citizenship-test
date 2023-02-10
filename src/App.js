@@ -18,6 +18,7 @@ function App() {
   const [testIsStarted, setTestIsStarted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [numberOfQuestions, setNumberOfQuestions] = useState(null);
+  const [preparationTabIsOpen, setPreparationTabIsOpen] = useState(false)
   const [numberOfQuestionsSelected, setNumberOfQuestionsSelected] =
     useState(true);
   useEffect(() => {
@@ -48,16 +49,21 @@ function App() {
   const testHandler = (event) => {
     setTestIsStarted(event);
   };
-
+const preparationTabHandler = () =>{
+  setPreparationTabIsOpen(true)
+}
+const prepTabCloseHandler = () =>{
+  setPreparationTabIsOpen(false)
+}
   return (
     <div className="App">
       {!loading && (
         <Fragment>
-          {!testIsStarted && provinceIsSelected && <Navbar />}
+          {!testIsStarted && provinceIsSelected && <Navbar onPrepTabClose={prepTabCloseHandler} onPreparation={preparationTabHandler} />}
           {userIsLoggedIn ? (
             <Fragment>
               {provinceIsSelected && numberOfQuestionsSelected ? (
-                <Tests
+               !preparationTabIsOpen && <Tests
                   askForProvince={askForProvinceHandler}
                   testIsStarted={testHandler}
                   askForNumberOfQuestions={askForNumberOfQuestionsHandler}
@@ -74,8 +80,8 @@ function App() {
               )}
               {!testIsStarted && provinceIsSelected && (
                 <Fragment>
-                  <Preparation />
-                  <Progress />
+                  {preparationTabIsOpen ? <Preparation /> : <Progress />}
+                  
                 </Fragment>
               )}
             </Fragment>

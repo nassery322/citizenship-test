@@ -3,11 +3,11 @@
   width: 25%;
   border: none 1px black;
   padding: 15px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: white;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
- 
+ border: solid 1px rgb(182, 178, 178);
 }
 .feature-item header {
   margin-bottom: 10px;
@@ -28,6 +28,7 @@
   margin: 0 auto;
   font-size: 1rem;
   line-height: 27px;
+  
   
 }
 .feature-item:hover img{
