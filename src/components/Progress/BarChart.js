@@ -15,8 +15,8 @@ const BarChart = (props) =>{
         
          } )
     } )
-    const hiddenElements = document.querySelectorAll('.results-pie');
-    hiddenElements.forEach( (el) => {observer.observe(el)} )
+    const pieElements = document.querySelectorAll('.results-pie');
+    pieElements.forEach( (el) => {observer.observe(el)} )
         if(window.innerWidth < 600){
             setBarThickness(20)
         }
