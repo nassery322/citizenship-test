@@ -66,30 +66,30 @@ setManageModalIsOpen(e => !e)
      : <Fragment>
         
       <li>
-        <a href="#home" className="nav-link">
+        <a href="#home" onClick={props.onPrepTabClose} className="nav-link">
           Home
         </a>
       </li>
-      <li>
+      <li onClick={props.onPrepTabClose}>
         <a href="#features" className="nav-link">
           Features
         </a>
       </li>
-      <li>
+      <li onClick={props.onPreparation}>
         <a href="#preparation" className="nav-link">
           Preparation
         </a>
       </li>
-      <li>
+      <li onClick={props.onPrepTabClose}>
         <a href="#about" className="nav-link">
           About
         </a>
       </li>
-      <li>
+      <li onClick={props.onPrepTabClose}>
         <a href="#contact" className="nav-link">
           Contact
         </a>
-      </li>
+      </li >
       <li id="login" onClick={loginModalPopUp}>
         <a href="#" className="nav-link">
           Login

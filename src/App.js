@@ -87,11 +87,13 @@ const prepTabCloseHandler = () =>{
             </Fragment>
           ) : (
             <Fragment>
+              { !preparationTabIsOpen ? 
+              <Fragment>
               <Home />
               <Features />
-              <Preparation />
               <About />
               <Contact />
+              </Fragment> : <Preparation />}
             </Fragment>
           )}
         </Fragment>
