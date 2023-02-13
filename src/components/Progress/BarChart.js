@@ -3,7 +3,7 @@ import "./BarChart.css";
 import { Bar } from "react-chartjs-2";
 
 const BarChart = (props) => {
-  const [barThickness, setBarThickness] = useState(60);
+  const [barThickness, setBarThickness] = useState(50);
   const [height, setHeight] = useState(null);
   useEffect(() => {
     const handleWindowResize = () => {
