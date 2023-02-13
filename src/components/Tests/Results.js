@@ -41,6 +41,9 @@ const Results = (props) => {
       }
 
       const categoryScores = props.categoryScores;
+      if(!categoryScores){
+        return;
+      }
       const categories = Object.keys(categoryScores);
 
       for (let i = 0; i < categories.length; i++) {
@@ -55,7 +58,7 @@ const Results = (props) => {
           categoryData = Object.values(categoryData);
         }
         categoryData.unshift(categoryScores[category]);
-
+       
         if (categoryData.length > 7) {
           categoryData.pop();
         }

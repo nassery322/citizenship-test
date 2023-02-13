@@ -11,60 +11,70 @@ const ProgressByCategory = (props) => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
         const response = await fetch(
-          `${firebaseDatabase}/usersprogress/${currentUser.uid}/progressByCategory.json`
+          `${firebaseDatabase}/usersprogress/${'O2iGFbrlXNQ3mwFWxxrRVUG7Et72'}/progressByCategory.json`
         );
         const progressByCategory = await response.json();
 
         let dataArray = [];
         let labels = [];
         for (const category in progressByCategory) {
-            
           let categoryData = [];
           for (const key in progressByCategory[category]) {
-            // if (!progressByCategory[category][key]) {
-            //     return;
-            //   }
             categoryData.push(progressByCategory[category][key]);
-            labels.push(Number(key) + 1 + "th test");
           }
-          dataArray.push({ id: category, data: categoryData });
-        }
-        const loadedData = dataArray.map((item) => {
-          return {
-            data: {
-              labels: Array.from({ length: item.data.length }, (_, i) => i + 1),
-              average:
-                item.data.reduce((total, value) => total + parseInt(value), 0) /
-                item.data.length,
-              datasets: [
-                {
-                  label: `${item.id.toLocaleUpperCase()} Category Progress`,
-                  data: item.data,
-                  backgroundColor: "#d22a2a",
-                  borderColor: "black",
-                  borderWidth: 1,
-                },
-              ],
-              
-              id: item.id,
-            },
-          };
-        });
 
-        setCategoryProgress(loadedData);
-        if(loadedData.length < 1){
-            props.progressIsEmpty(true)
+          function categoryRename(cat) {
+            if (cat == "geography") {
+              return "Geography";
+            }
+            if (cat == "history") {
+              return "History & Heritage";
+            }
+            if (cat == "government") {
+              return "Politics & Social System";
+            }
+            if (cat == "laws") {
+              return "Laws & Rights";
+            }
+            if (cat == "symbols") {
+              return "Symbols & Traditions";
+            }
+            if (cat == "economy") {
+              return "Economy";
+            }
+          }
+          dataArray.push({
+            id: categoryRename(category),
+            data: categoryData.reduce(
+              (total, value) => total + Number(value),
+              0
+            ),
+          });
+        }
+
+        const loadedData = {
+          data: {
+            labels: dataArray.filter((item) => item.data > 0 ).map(item => item.id),
+            datasets: [
+              {
+                label: `Average Score`,
+                data: dataArray.filter((item) => item.data > 0 && item.data).map(item => item.data),
+                backgroundColor: "#d22a2a",
+                borderRadius: 4,
+              },
+            ],
+          },
+        };
+        setCategoryProgress(loadedData.data);
+        if (loadedData.length < 1) {
+          props.progressIsEmpty(true);
         }
       }
     });
   }, [auth.currentUser]);
-
   return (
     <section className="progress-category">
-      {categoryProgress &&
-        categoryProgress.map((item, index) => (
-          <BarChart key={index} data={item.data} />
-        ))}
+      {categoryProgress && <BarChart data={categoryProgress} />}
     </section>
   );
 };

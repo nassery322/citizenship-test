@@ -1,26 +1,15 @@
 .bar-chart{
     width: 75%;
     margin:40px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+
     box-sizing: border-box;
 }
-.bar-chart div:first-child{
-     min-width: 80%;
-     margin:20px 0;
-}
 
-.average-score{
-    text-align: center;
-    width:20%;
-   
-}
+
+
 
 @media (max-width:760px){
     .bar-chart{
-        flex-direction:column ;
         width: 80%;
     }
 
