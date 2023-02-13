@@ -45,10 +45,10 @@ const ProgressByCategory = (props) => {
           }
           dataArray.push({
             id: categoryRename(category),
-            data: categoryData.reduce(
+            data: (categoryData.reduce(
               (total, value) => total + Number(value),
               0
-            ),
+            )/categoryData.length).toFixed(0)
           });
         }
 
