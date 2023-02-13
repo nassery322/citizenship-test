@@ -4,18 +4,18 @@ import { Bar } from "react-chartjs-2";
 
 const BarChart = (props) => {
   const [barThickness, setBarThickness] = useState(50);
-  const [height, setHeight] = useState(null);
+
   useEffect(() => {
     const handleWindowResize = () => {
+
       if (window.innerWidth < 800) {
         setBarThickness(40);
       }
 
       if (window.innerWidth < 600) {
         setBarThickness(20);
-        setHeight(300);
-      } else {
-        setHeight(null);
+      }else{
+        setBarThickness(50)
       }
     };
 
@@ -30,9 +30,19 @@ const BarChart = (props) => {
   return (
     <section className="bar-chart">
       <Bar
-        height={height && height}
         data={props.data}
         options={{
+          maintainAspectRatio: false,
+          responsive: true,
+          aspectRatio: 1,
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
+            },
+          },
           barThickness: barThickness,
           responsive: true,
 

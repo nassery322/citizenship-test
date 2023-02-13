@@ -18,7 +18,10 @@ const Progress = () => {
         <header>Progress</header>
         {empty && categoryProgressIsEmpty ?<section className="empty">You Have No Progress Yet!</section>:
         <Fragment>
+          <section className="progress-main">
           <ProgressByCategory progressIsEmpty={categoryEmptyHandler} />
+          </section>
+          
         </Fragment>}
       </section>
     </Fragment>
