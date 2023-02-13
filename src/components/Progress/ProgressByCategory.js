@@ -11,7 +11,7 @@ const ProgressByCategory = (props) => {
     onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && currentUser.uid) {
         const response = await fetch(
-          `${firebaseDatabase}/usersprogress/${'O2iGFbrlXNQ3mwFWxxrRVUG7Et72'}/progressByCategory.json`
+          `${firebaseDatabase}/usersprogress/${currentUser.uid}/progressByCategory.json`
         );
         const progressByCategory = await response.json();
 
