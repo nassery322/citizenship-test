@@ -63,7 +63,7 @@ const Tests = (props) => {
               .concat(province ? province.sort(shuffleArray).slice(0, 5) : "")
           : numberOfQuestions === "all"
           ? Questions.sort(shuffleArray)
-              .slice(0, Questions.length - 5)
+              .slice(0, 150)
               .concat(province ? province.sort(shuffleArray).slice(0, 5) : "")
           : Questions.sort(shuffleArray).slice(0, numberOfQuestions),
     },
