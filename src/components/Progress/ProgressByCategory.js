@@ -42,6 +42,9 @@ const ProgressByCategory = (props) => {
             if (cat == "economy") {
               return "Economy";
             }
+            else{
+              return;
+            }
           }
           dataArray.push({
             id: categoryRename(category),

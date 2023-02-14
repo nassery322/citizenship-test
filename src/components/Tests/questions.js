@@ -1607,8 +1607,2812 @@ export const Questions = [{
                                                       "option4": "The Courts",
                                                       "correctOption": "All the answers are correct",
                                                       "category": "Symbols"
-                                                      }
-                      ]
+                                                      },
+                                                      
+
+
+
+
+
+{
+  "id": '180',
+  "question": "In 1792, black immigrants to Nova Scotia established a colony for free slaves where?",
+  "option1": "Ethiopia",
+  "option2": "Togo",
+  "option3": "Sierrra Leone",
+  "option4": "Nigeria",
+  "correctOption": "Sierrra Leone",
+  "category": "history"
+  },
+
+  {
+    "id": '181',
+    "question": "Which of these First Nations tribes did not become allies of the original French settlers?",
+    "option1": "Algonquin",
+    "option2": "Iroquois",
+    "option3": "Huron",
+    "option4": "Montagnais",
+    "correctOption": "Iroquois",
+    "category": "history"
+    },
+    {
+      "id": '182',
+      "question": "France’s empire in North America came to an end at the Battle of the Plains of Abraham in 1759 in which part of Canada?",
+      "option1": "Hudson’s Bay",
+      "option2": "Québec City",
+      "option3": "Montréal",
+      "option4": "Prince Edward Island",
+      "correctOption": "Québec City",
+      "category": "history"
+      },
+      {
+        "id": '183',
+        "question": "Upper Canada became the first province of the British Empire to start to introduce the abolition of slavery in what year?",
+        "option1": "1807",
+        "option2": "1793",
+        "option3": "1800",
+        "option4": "1776",
+        "correctOption": "1793",
+        "category": "history"
+        },
+        {
+          "id": '184',
+          "question": "Which of these Canadian tribes lived by farming and hunting?",
+          "option1": "Cree",
+          "option2": "Dene",
+          "option3": "Iroquois",
+          "option4": "Sioux",
+          "correctOption": "Iroquois",
+          "category": "history"
+          },
+          {
+            "id": '185',
+            "question": "In what year did the British Parliament pass the Québec act?",
+            "option1": "1779",
+            "option2": "1767",
+            "option3": "1774",
+            "option4": "1781",
+            "correctOption": "1774",
+            "category": "history"
+            },
+            {
+              "id": '186',
+              "question": "Which Act of 1791 divided Québec into Upper Canada and Lower Canada?",
+              "option1": "The Québec Act",
+              "option2": "The Constitutional Act",
+              "option3": "The Canada Act",
+              "option4": "The Division Act",
+              "correctOption": "The Constitutional Act",
+              "category": "history"
+              },
+              {
+                "id": '187',
+                "question": "When European settlers first came to Canada, they caused large numbers of Aboriginal people to die due to…?",
+                "option1": "Warfare",
+                "option2": "Disease",
+                "option3": "Execution",
+                "option4": "Starvation",
+                "correctOption": "Disease",
+                "category": "history"
+                },
+                {
+                  "id": '188',
+                  "question": "During the American Revolution, Joseph Brant led thousands of Native Americans into Canada who were loyal to the British. Which tribe did they represent?",
+                  "option1": "Navajo",
+                  "option2": "Mohawks",
+                  "option3": "Apache",
+                  "option4": "Sioux",
+ "correctOption": "Mohawks",
+ "category": "history"
+ },
+ {
+   "id": '189',
+   "question": "Which of these is not a source of Canadian law?",
+   "option1": "US federal law",
+   "option2": "The French civil code",
+   "option3": "Laws passed by Parliament and the provincial legislatures",
+   "option4": "English common law",
+   "correctOption": "US federal law",
+   "category": "laws"
+   },
+   {
+    "id": '190',
+    "question": "What status do the French and English languages have in the Canadian constitution?",
+    "option1": "They are equal",
+    "option2": "French is more important",
+    "option3": "It isn’t mentioned",
+    "option4": "English is more important",
+    "correctOption": "They are equal",
+    "category": "laws"
+    },
+
+    {
+      "id": '191',
+      "question": "What status do the rights of Aboriginal Peoples have in the Canadian constitution?",
+      "option1": "They cannot be overruled by it",
+      "option2": "They are not mentioned",
+      "option3": "They have equal status with the constitution",
+      "option4": "They are subordinate to it",
+      "correctOption": "They cannot be overruled by it",
+      "category": "laws"
+      },
+
+      {
+        "id": '192',
+        "question": "The protection of Canada’s environment is the responsibility of whom?",
+        "option1": "Provincial governments",
+        "option2": "The aboriginal peoples",
+        "option3": "All citizens",
+        "option4": "The national government",
+        "correctOption": "All citizens",
+        "category": "laws"
+        },
+        {
+          "id": '193',
+          "question": "Which of these is above Canadian law?",
+          "option1": "Religious groups",
+          "option2": "Politicians",
+          "option3": "None of them",
+          "option4": "Aboriginal peoples",
+          "correctOption": "None of them",
+          "category": "laws"
+          },
+          {
+            "id": '194',
+            "question": "Jury service in Canada is…?",
+            "option1": "Non-existent",
+            "option2": "Carried out by professionals",
+            "option3": "Compulsory",
+            "option4": "Optional",
+            "correctOption": "Compulsory",
+            "category": "laws"
+            },
+            {
+              "id": '195',
+              "question": "Canada subscribes to the principle of habeas corpus. What does this mean?",
+              "option1": "The state has the right to imprison you at any time",
+              "option2": "The state has ultimate power over your body",
+              "option3": "Your rights are less important than the rights of the state",
+              "option4": "You can’t be unlawfully imprisoned by the state",
+              "correctOption": "You can’t be unlawfully imprisoned by the state",
+              "category": "laws"
+              },
+              {
+                "id": '196',
+                "question": "Military service in Canada is…?",
+                "option1": "Compulsory",
+                "option2": "Looked down on",
+                "option3": "Non-existent",
+                "option4": "Applauded",
+                "correctOption": "Applauded",
+                "category": "laws"
+                },
+                {
+                  "id": '197',
+                  "question": "Which of these religions has greater rights in Canada?",
+                  "option1": "Christianity",
+                  "option2": "They are all equal",
+                  "option3": "Judaism",
+                  "option4": "Islamism",
+                  "correctOption": "They are all equal",
+                  "category": "laws"
+                  },
+                  {
+                    "id": '198',
+                    "question": "At the time of the American Revolution, how many Loyalists fled to Canada?",
+                    "option1": "30,000+",
+                    "option2": "60,000+",
+                    "option3": "50,000+",
+                    "option4": "40,000+",
+                    "correctOption": "40,000+",
+                    "category": "history"
+                    },
+                    {
+                      "id": '199',
+                      "question": "The original French economy of Canada was driven by the trade in what?",
+                      "option1": "Dried fish",
+                      "option2": "Pine timber",
+                      "option3": "Gold",
+                      "option4": "Beaver pelts",
+                      "correctOption": "Beaver pelts",
+                      "category": "history"
+                      },
+                      {
+                        "id": '200',
+                        "question": "In what year did the Americans attempt to invade Québec?",
+                        "option1": "1776",
+                        "option2": "1771",
+                        "option3": "1775",
+                        "option4": "1769",
+                        "correctOption": "1775",
+                        "category": "history"
+                        },
+                        {
+                          "id": '201',
+                          "question": "The Québec Act allowed Catholics in Canada to do what they could not, at the time, do in Britain?",
+                          "option1": "Celebrate mass",
+                          "option2": "Hold public office",
+                          "option3": "Buy property",
+                          "option4": "Get married",
+                          "correctOption": "Hold public office",
+                          "category": "history"
+                          },
+                          {
+                            "id": '202',
+                            "question": "The Atlantic colonies and Upper and Lower Canada were collectively known as what?",
+                            "option1": "British Canada",
+                            "option2": "British North America",
+                            "option3": "Greater Canada",
+                            "option4": "Northern States",
+                            "correctOption": "British North America",
+                            "category": "history"
+                            },
+                            {
+                              "id": '203',
+                              "question": "In 1608 Samuel de Champlain built a fortress in an area which is now…?",
+                              "option1": "Québec city",
+                              "option2": "Toronto",
+                              "option3": "Montréal",
+                              "option4": "Prince Edward Island",
+                              "correctOption": "Québec city",
+                              "category": "history"
+                              },
+                              {
+                                "id": '204',
+                                "question": "Having beaten the French, the British renamed the area of the Battle of the Plains what?",
+                                "option1": "Province of Québec",
+                                "option2": "Newfoundland",
+                                "option3": "Prince Edward Island",
+                                "option4": "New Britain",
+                                "correctOption": "Province of Québec",
+                                "category": "history"
+                                },
+                                {
+                                  "id": '205',
+                                  "question": "In which year did the French make peace with the Iroquois?",
+                                  "option1": "1701",
+                                  "option2": "1741",
+                                  "option3": "1721",
+                                  "option4": "1731",
+                                  "correctOption": "1701",
+                                  "category": "history"
+                                  },
+                                  {
+                                    "id": '206',
+                                    "question": "Which of these Canadian tribes was nomadic?",
+                                    "option1": "Cree",
+                                    "option2": "Sioux",
+                                    "option3": "Iroquois",
+                                    "option4": "Inuit",
+                                    "correctOption": "Sioux",
+                                    "category": "history"
+                                    },
+                                    {
+                                      "id": '207',
+                                      "question": "In what year did King Charles II give the Hudson’s Bay Company exclusive trading rights over the Hudson Bay area?",
+                                      "option1": "1694",
+                                      "option2": "1622",
+                                      "option3": "1670",
+                                      "option4": "1678",
+                                      "correctOption": "1670",
+                                      "category": "history"
+                                      },
+  {
+    "id": '208',
+    "question": "The name Canada derives from the Iroquois word kanata, which means what?",
+    "option1": "Country",
+    "option2": "Lake",
+    "option3": "Village",
+    "option4": "Seashore",
+    "correctOption": "Village",
+    "category": "history"
+    },
+    {
+      "id": '209',
+      "question": "Around what time did the word Canada first begin appearing on maps?",
+      "option1": "1560s",
+      "option2": "15502",
+      "option3": "1540s",
+      "option4": "1570s",
+      "correctOption": "1550s",
+      "category": "history"
+      },
+      {
+        "id": '210',
+        "question": "Samuel de Champlain and Pierre de Monts established the first European settlement north of Florida in which year?",
+        "option1": "1604",
+        "option2": "1608",
+        "option3": "1589",
+        "option4": "1512",
+        "correctOption": "1604",
+        "category": "history"
+        },
+        {
+          "id": '211',
+          "question": "The commander of the victorious British Army in the Battle of the Plains was…?",
+          "option1": "Charles Cadogan",
+          "option2": "James Wolfe",
+          "option3": "Arthur Wellesley",
+          "option4": "The Duke of Marlborough",
+          "correctOption": "James Wolfe",
+          "category": "history"
+          },
+          {
+            "id": '212',
+            "question": "The Québec Act was based on…?",
+            "option1": "French criminal law and British civil law",
+            "option2": "British criminal law and British civil law",
+            "option3": "French criminal law and French civil law",
+            "option4": "British criminal law and French civil law",
+            "correctOption": "British criminal law and French civil law",
+            "category": "history"
+            },
+            {
+              "id": '213',
+              "question": "Canada became an official title in what year?",
+              "option1": "1776",
+              "option2": "1791",
+              "option3": "1782",
+              "option4": "1796",
+              "correctOption": "1791",
+              "category": "history"
+              },
+              {
+                "id": '214',
+                "question": "The first people to set foot in Canada apart from Aboriginal peoples are thought to have come from where?",
+                "option1": "Ireland",
+                "option2": "England",
+                "option3": "Iceland",
+                "option4": "Germany",
+                "correctOption": "Iceland",
+                "category": "history"
+                },
+                {
+                  "id": '215',
+                  "question": "Why did European explorers call the native people they found in Canada Indians?",
+                  "option1": "They thought they looked like Indians",
+                  "option2": "They thought they were in the East Indies",
+                  "option3": "It was short for “Independents”",
+                  "option4": "It was the native people’s word for themselves",
+                  "correctOption": "They thought they were in the East Indies",
+                  "category": "history"
+                  },
+                  {
+                    "id": '216',
+                    "question": "Who was the first European to explore the St Lawrence River?",
+                    "option1": "John Cabot",
+                    "option2": "Christopher Columbus",
+                    "option3": "William Cormack",
+                    "option4": "Jacques Cartier",
+                    "correctOption": "Jacques Cartier",
+                    "category": "history"
+                    },
+                    {
+                      "id": '217',
+                      "question": "The first democratic representative assembly in Canada was elected where?",
+                      "option1": "Newfoundland",
+                      "option2": "Halifax",
+                      "option3": "New Brunswick",
+                      "option4": "Prince Edward Island",
+                      "correctOption": "Halifax",
+                      "category": "history"
+                      },
+                      {
+                        "id": '218',
+                        "question": "Who was the first person to draw a map of the east coast of Canada?",
+                        "option1": "Jacques Cartier",
+                        "option2": "Ferdinand Magellan",
+                        "option3": "John Cabot",
+                        "option4": "Christopher Columbus",
+                        "correctOption": "John Cabot",
+                        "category": "history"
+                        },
+                        {
+                          "id": '219',
+                          "question": "In 1867, which of these provinces was not part of the new country called the Dominion of Canada?",
+                          "option1": "New Brunswick",
+                          "option2": "Nova Scotia",
+                          "option3": "Newfoundland",
+                          "option4": "Ontario",
+                          "correctOption": "Newfoundland",
+                          "category": "history"
+                          },
+{
+  "id": '220',
+  "question": "Louis Riel led uprisings against the Dominion of Canada in 1869 and 1885, leading which people?",
+  "option1": "Métis and Indians",
+  "option2": "Inuit",
+  "option3": "Sioux",
+  "option4": "Iroquois",
+  "correctOption": "Métis and Indians",
+  "category": "history"
+  },
+  {
+    "id": '221',
+    "question": "In the 1920s, it was suggested that what area should become a part of Canada?",
+    "option1": "Alaska",
+    "option2": "The Falkland Islands",
+    "option3": "British West Indies",
+    "option4": "Ireland",
+    "correctOption": "British West Indies",
+    "category": "history"
+    },
+    {
+      "id": '222',
+      "question": "Out of a population of 8 million, how many Canadians fought in the First World War?",
+      "option1": "200,000",
+      "option2": "100,000",
+      "option3": "600,000",
+      "option4": "400,000",
+      "correctOption": "600,000",
+      "category": "history"
+      },
+      {
+        "id": '223',
+        "question": "The Royal Canadian Mounted Police are now the national police force of Canada. What were they originally called when they were established to help pacify the west of Canada?",
+        "option1": "The Western Provinces Mounted Police",
+        "option2": "The Canada Mounted Police",
+        "option3": "The North West Mounted Police",
+        "option4": "Her Majesty’s Mounted Police",
+        "correctOption": "The North West Mounted Police",
+        "category": "history"
+        },
+        {
+          "id": '224',
+          "question": "To mark a remarkable victory in April 1917, April 9 is now celebrated as…?",
+          "option1": "Gallipoli Day",
+          "option2": "Passchendaele Day",
+          "option3": "Vimy Day",
+          "option4": "Ypres Day",
+          "correctOption": "Vimy Day",
+          "category": "history"
+          },
+          {
+            "id": '225',
+            "question": "On what day of the year to Canadians remember all those who have served and died for Canada?",
+            "option1": "April 3",
+            "option2": "November 11",
+            "option3": "July 1",
+            "option4": "August 25",
+            "correctOption": "November 11",
+            "category": "history"
+            },
+            {
+              "id": '226',
+              "question": "Sir John Alexander McDonald, the first Prime Minister of Canada, was born in what country?",
+              "option1": "England",
+              "option2": "Canada",
+              "option3": "Wales",
+              "option4": "Scotland",
+              "correctOption": "Scotland",
+              "category": "history"
+              },
+              {
+                "id": '227',
+                "question": "In the D-Day invasion of Western Europe on June 6, 1944, Canadian forces stormed and took which beach from the German army?",
+                "option1": "Gold",
+                "option2": "Omaha",
+                "option3": "Juno",
+                "option4": "Sword",
+                "correctOption": "Juno",
+                "category": "history"
+                },
+                {
+                  "id": '228',
+                  "question": "Canada Day, formerly known as Dominion Day, is celebrated to mark the date of the Dominion of Canada formally came into being in 1867, which is…?",
+                  "option1": "July 1",
+                  "option2": "June 1",
+                  "option3": "May 1",
+                  "option4": "August 1",
+                  "correctOption": "July 1",
+                  "category": "history"
+                  },
+                  {
+                    "id": '229',
+                    "question": "To defend Canada, the Duke of Wellington chose Bytown as the endpoint of his network of forts. What is it called today?",
+                    "option1": "Toronto",
+                    "option2": "Ottawa",
+                    "option3": "Edmonton",
+                    "option4": "Montréal",
+                    "correctOption": "Ottawa",
+                    "category": "history"
+                    },
+                    {
+                      "id": '230',
+                      "question": "In 1885 a Head Tax was established to attempt to block the immigration of which people to Canada?",
+                      "option1": "Mexicans",
+                      "option2": "Africans",
+                      "option3": "Indians",
+                      "option4": "Chinese",
+                      "correctOption": "Chinese",
+                      "category": "history"
+                      },
+                      {
+                        "id": '231',
+                        "question": "In 1812, in revenge for British interference with their shipping, which country attempted to invade Canada?",
+                        "option1": "Spain",
+                        "option2": "France",
+                        "option3": "USA",
+                        "option4": "Portugal",
+                        "correctOption": "USA",
+                        "category": "history"
+                        },
+{
+  "id": '232',
+  "question": "Which were the first group of women to be given the right to vote in federal elections in Canada?",
+  "option1": "Women working in munitions factories in World War I",
+  "option2": "Women who lost a family member in World War I",
+  "option3": "Women married to soldiers in World War I",
+  "option4": "Women serving as nurses in World War I",
+  "correctOption": "Women serving as nurses in World War I",
+  "category": "history"
+  },
+  {
+    "id": '233',
+    "question": "Many slaves escaped from the United States to Canada using…?",
+    "option1": "The Underground Tramway",
+    "option2": "The Underground Canal",
+    "option3": "The Underground Highway",
+    "option4": "The Underground Railroad",
+    "correctOption": "The Underground Railroad",
+    "category": "history"
+    },
+    {
+      "id": '234',
+      "question": "Which was the first Canadian province to give women the right to vote?",
+      "option1": "Ontario",
+      "option2": "Manitoba",
+      "option3": "Alberta",
+      "option4": "British Columbia",
+      "correctOption": "Manitoba",
+      "category": "history"
+      },
+      {
+        "id": '235',
+        "question": "The first British North American colony to truly govern itself was…?",
+        "option1": "Nova Scotia",
+        "option2": "New Brunswick",
+        "option3": "Newfoundland",
+        "option4": "Prince Edward Island",
+        "correctOption": "Nova Scotia",
+        "category": "history"
+        },
+        {
+          "id": '236',
+          "question": "In what year were Upper and Lower Canada united as the Province of Canada?",
+          "option1": "1840",
+          "option2": "1860",
+          "option3": "1830",
+          "option4": "1850",
+          "correctOption": "1840",
+          "category": "history"
+          },
+          {
+            "id": '237',
+            "question": "How many Canadians lost their lives in the First World War?",
+            "option1": "60,000",
+            "option2": "80,000",
+            "option3": "20,000",
+            "option4": "90,000",
+            "correctOption": "60,000",
+            "category": "history"
+            },
+            {
+              "id": '238',
+              "question": "In what year were the majority of female Canadian citizens aged 21 or over given the right to vote in federal elections?",
+              "option1": "1916",
+              "option2": "1921",
+              "option3": "1918",
+              "option4": "1917",
+              "correctOption": "1918",
+              "category": "history"
+              },
+              {
+                "id": '239',
+                "question": "Along with other former countries of the British Empire, Canada is part of which organisation?",
+                "option1": "The Commonwealth of Nations",
+                "option2": "The Former Empire Club",
+                "option3": "The Colonial Society",
+                "option4": "The British Protectorate",
+                "correctOption": "The Commonwealth of Nations",
+                "category": "history"
+                },
+                {
+                  "id": '240',
+                  "question": "In 1813 American invaders burnt down the Government House and the Parliament Buildings in York. What is that city now called?",
+                  "option1": "Kingston",
+                  "option2": "Montréal",
+                  "option3": "Toronto",
+                  "option4": "Halifax",
+                  "correctOption": "Toronto",
+                  "category": "history"
+                  },
+                  {
+                    "id": '241',
+                    "question": "In what year did the Montréal stock exchange open?",
+                    "option1": "1832",
+                    "option2": "1862",
+                    "option3": "1802",
+                    "option4": "1782",
+                    "correctOption": "1832",
+                    "category": "history"
+                    },
+                    {
+                      "id": '242',
+                      "question": "What was the last territory to become part of the Dominion of Canada in 1999?",
+                      "option1": "Alberta",
+                      "option2": "Saskatchewan",
+                      "option3": "Yukon",
+                      "option4": "Nunavut",
+                      "correctOption": "Nunavut",
+                      "category": "history"
+                      },
+                      {
+                        "id": '243',
+                        "question": "The cities of Edmonton, Langley, and Victoria all began as what?",
+                        "option1": "Landing stages",
+                        "option2": "Army bases",
+                        "option3": "Trading posts",
+                        "option4": "Religious settlements",
+                        "correctOption": "Trading posts",
+                        "category": "history"
+                        },
+                        {
+                          "id": '244',
+                          "question": "Sir Wilfred Laurier was the first Canadian Prime Minister…?",
+                          "option1": "Who was an immigrant",
+                          "option2": "Who was the French Canadian",
+                          "option3": "Who was born in Canada",
+                          "option4": "All of these",
+                          "correctOption": "Who was the French Canadian",
+                          "category": "history"
+                          },
+                          {
+                            "id": '245',
+                            "question": "British Columbia joined Canada in 1871 when Ottawa promised to build a linking…?",
+                            "option1": "Railway",
+                            "option2": "Canal",
+                            "option3": "Highway",
+                            "option4": "Telegraph network",
+                            "correctOption": "Railway",
+                            "category": "history"
+                            },
+                            {
+                              "id": '246',
+                              "question": "At the turn of the 19th/20th century, more than 260 Canadians died in which war?",
+                              "option1": "The American war",
+                              "option2": "The Mexican War",
+                              "option3": "The Indian war",
+                              "option4": "The Boer War",
+                              "correctOption": "The Boer War",
+                              "category": "history"
+                              },
+                              {
+                                "id": '247',
+                                "question": "How many Canadian and Newfoundland servicemen served in World War II?",
+                                "option1": "1 million+",
+                                "option2": "500,000",
+                                "option3": "250,000",
+                                "option4": "100,000",
+                                "correctOption": "1 million+",
+                                "category": "history"
+                                },
+                                {
+                                  "id": '248',
+                                  "question": "The export of which of these was not a major part of the Canadian economy when it was first founded?",
+                                  "option1": "Fish",
+                                  "option2": "Timber",
+                                  "option3": "Fur",
+                                  "option4": "Oil",
+                                  "correctOption": "Oil",
+                                  "category": "history"
+                                  },
+                                  {
+                                    "id": '249',
+                                    "question": "Sir John Alexander MacDonald, the first Prime Minister of Canada, is represented on what Canadian currency?",
+                                    "option1": "$5 bill",
+                                    "option2": "$1 bill",
+                                    "option3": "$10 bill",
+                                    "option4": "$20 bill",
+                                    "correctOption": "$10 bill",
+                                    "category": "history"
+                                    },
+                                    {
+                                      "id": '250',
+                                      "question": "",
+                                      "option1": "",
+                                      "option2": "",
+                                      "option3": "",
+                                      "option4": "",
+                                      "correctOption": "",
+                                      "category": "history"
+                                      },
+                                      {
+                                        "id": '251',
+                                        "question": "During the Second World War, Canadians with origins in which country were unfairly discriminated against in British Columbia?",
+                                        "option1": "Austria",
+                                        "option2": "Japan",
+                                        "option3": "Germany",
+                                        "option4": "Italy",
+                                        "correctOption": "Japan",
+                                        "category": "history"
+                                        },
+{
+  "id": '25',
+  "question": "",
+  "option1": "",
+  "option2": "",
+  "option3": "",
+  "option4": "",
+  "correctOption": "",
+  "category": "history"
+  },
+  {
+    "id": "q251",
+    "question": "Voting in elections in Canada is…?",
+    "option1": "A responsibility",
+    "option2": "Compulsory",
+    "option3": "Unimportant",
+    "option4": "Pointless",
+    "correctOption": "A responsibility",
+    "category": "laws"
+    },
+    {
+    "id": "q252",
+    "question": "Under Canadian law, men and women are equal…?",
+    "option1": "In all circumstances",
+    "option2": "Except in matters of religion",
+    "option3": "Except in matters of employment",
+    "option4": "Unless they are married",
+    "correctOption": "In all circumstances",
+    "category": "laws"
+    },
+    {
+    "id": "q253",
+    "question": "Canadians have a right to live and work…?",
+    "option1": "Anywhere in Canada",
+    "option2": "In the town of their birth",
+    "option3": "In the province of their birth",
+    "option4": "Within 250 miles of where they were born",
+    "correctOption": "Anywhere in Canada",
+    "category": "laws"
+    },
+    {
+    "id": "q254",
+    "question": "In 1982, the Canadian constitution was amended to include the…?",
+    "option1": "Canadian Charter of Rights and Freedoms",
+    "option2": "Canadian Charter of Crime and Punishment",
+    "option3": "Canadian Charter of Citizens’ Responsibility",
+    "option4": "Canadian Charter of National Allegiance",
+    "correctOption": "Canadian Charter of Rights and Freedoms",
+    "category": "laws"
+    },
+    {
+    "id": "q255",
+    "question": "It is regarded as the responsibility of a Canadian citizen to…?",
+    "option1": "Help others",
+    "option2": "Look out for number one",
+    "option3": "Mind your own business",
+    "option4": "Earn as much as possible",
+    "correctOption": "Help others",
+    "category": "laws"
+    },
+    {
+    "id": "q256",
+    "question": "Which of these is part of the responsibility of a citizen?",
+    "option1": "To work hard",
+    "option2": "To attend national events",
+    "option3": "To salute the Canadian flag",
+    "option4": "To show respect for the Prime Minister",
+    "correctOption": "To salute the Canadian flag",
+    "category": "laws"
+    },
+    {
+    "id": "q257",
+    "question": "Which of these is not a source of Canadian law?",
+    "option1": "US federal law",
+    "option2": "The French civil code",
+    "option3": "English common law",
+    "option4": "Laws passed by Parliament and the provincial legislatures",
+    "correctOption": "US federal law",
+    "category": "laws"
+    },
+    {
+    "id": "q258",
+    "question": "What status do the French and English languages have in the Canadian constitution?",
+    "option1": "They are equal",
+    "option2": "French is more important",
+    "option3": "English is more important",
+    "option4": "It isn’t mentioned",
+    "correctOption": "They are equal",
+    "category": "laws"
+    },
+    {
+    "id": "q259",
+    "question": "What does the Canadian constitution say about multiculturalism?",
+"option1": "It should be celebrated",
+"option2": "It should be discouraged",
+"option3": "It should be ignored",
+"option4": "It doesn’t exist",
+"correctOption": "It should be celebrated",
+"category": "laws"
+},
+{
+"id": "q260",
+"question": "Forced marriage is permitted in Canada…?",
+"option1": "Under no circumstances",
+"option2": "For certain religions",
+"option3": "If it took place abroad",
+"option4": "In certain provinces",
+"correctOption": "Under no circumstances",
+"category": "laws"
+},
+{
+"id": "q261",
+"question": "Which of these is not enshrined in Canadian law?",
+"option1": "Freedom to disobey the law",
+"option2": "Freedom of speech",
+"option3": "Freedom of association",
+"option4": "Freedom of peaceful assembly",
+"correctOption": "Freedom to disobey the law",
+"category": "laws"
+},
+{
+  "id": "q2611",
+  "question": "Roughly what proportion of First Nations people live on reserve land?",
+  "option1": "50%",
+  "option2": "25%",
+  "option3": "75%",
+  "option4": "5%",
+  "correctOption": "75%",
+  "category": "history"
+  },
+  {
+  "id": "q2612",
+  "question": "In their own language, what does “Inuit” mean?",
+  "option1": "The people",
+  "option2": "The fighters",
+  "option3": "The sailors",
+  "option4": "The hunters",
+  "correctOption": "The people",
+  "category": "history"
+  },
+  {
+  "id": "q2613",
+  "question": "First Nations make up what percentage of Canada’s Aboriginal peoples?",
+  "option1": "65%",
+  "option2": "35%",
+  "option3": "85%",
+  "option4": "15%",
+  "correctOption": "35%",
+  "category": "history"
+  },
+  {
+  "id": "q2614",
+  "question": "What proportion of aboriginal people are Inuit?",
+  "option1": "4%",
+  "option2": "12%",
+  "option3": "25%",
+  "option4": "40%",
+  "correctOption": "25%",
+  "category": "history"
+  },
+  {
+  "id": "q2615",
+  "question": "Which of these is not one of the founding peoples of Canada?",
+  "option1": "The Germans",
+  "option2": "The Aboriginal Peoples",
+  "option3": "The French",
+  "option4": "The British",
+  "correctOption": "The British",
+  "category": "history"
+  },
+  {
+  "id": "q2616",
+  "question": "Among Canadian Christians, what is the most common affiliation?",
+  "option1": "Catholic (correct answer)",
+  "option2": "Baptist",
+  "option3": "Methodist",
+  "option4": "Orthodox",
+  "correctOption": "Catholic",
+  "category": "history"
+  },
+  {
+  "id": "q2617",
+  "question": "When were territorial rights for Canada’s Aboriginal people first established?",
+  "option1": "1763",
+  "option2": "1663",
+  "option3": "1863",
+  "option4": "1963",
+  "correctOption": "1963",
+  "category": "history"
+  },
+  {
+  "id": "q2618",
+  "question": "Those who immigrate to Canada are expected to…?",
+  "option1": "Embrace democratic principles",
+  "option2": "Ignore Canada’s principles",
+  "option3": "Retain the principles of their original country",
+  "option4": "Any of these",
+  "correctOption": "Embrace democratic principles",
+  "category": "history"
+  },
+  {
+  "id": "q2619",
+  "question": "How many people in Canada have French as their first language?",
+  "option1": "7 million",
+  "option2": "11 million",
+  "option3": "4 million",
+  "option4": "2 million",
+  "correctOption": "The Pacific Ocean",
+"category": "geography"
+},
+{
+  "id": "q270",
+  "question": "The phrase that rules Canadian institutions, “Peace, Order and Good Government” comes from where?",
+  "option1": "The British North America Act",
+  "option2": "The US Constitution",
+  "option3": "The Code Napoleon",
+  "option4": "Roman law",
+  "correctOption": "The British North America Act",
+  "category": "government"
+  },
+  {
+  "id": "q271",
+  "question": "Canada is known across the world for being…?",
+  "option1": "Strong and free",
+  "option2": "Tough and aggressive",
+  "option3": "Weak and soft",
+  "option4": "Devious and wily",
+  "correctOption": "Strong and free",
+  "category": "government"
+  },
+  {
+  "id": "q272",
+  "question": "The descendants of the original French settlers are known as what?",
+  "option1": "Acadians",
+  "option2": "Native French",
+  "option3": "First Canadians",
+  "option4": "French founders",
+  "correctOption": "French founders",
+  "category": "history"
+  },
+  {
+  "id": "q273",
+  "question": "Canada is often called…?",
+  "option1": "The land of immigrants",
+  "option2": "The land of isolation",
+  "option3": "The land of waterfalls",
+  "option4": "The land of religion",
+  "correctOption": "The land of immigrants",
+  "category": "history"
+  },
+  {
+  "id": "q274",
+  "question": "In what year was it recognized by the House of Commons that Québecois are a distinct nation within United Canada?",
+  "option1": "2006",
+  "option2": "1986",
+  "option3": "1966",
+  "option4": "1812",
+  "correctOption": "2006",
+  "category": "government"
+  },
+  {
+    "id": "q280",
+    "question": "Metis are a people with a combined heritage of Aboriginal people and…?",
+    "option1": "European people",
+    "option2": "South American people",
+    "option3": "Asian people",
+    "option4": "African people",
+    "correctOption": "European people",
+    "category": "history"
+    },
+    {
+    "id": "q281",
+    "question": "How many people in Canada have English as their first language?",
+    "option1": "18 million",
+    "option2": "23 million",
+    "option3": "11 million",
+    "option4": "7 million",
+    "correctOption": "7 million",
+    "category": "geography"
+    },
+    {
+    "id": "q282",
+    "question": "Which of these is not one of the 12 largest ethnic groups in Canada?",
+    "option1": "Polish",
+    "option2": "Scottish",
+    "option3": "Dutch",
+    "option4": "Ukrainian",
+    "correctOption": "Dutch",
+    "category": "geography"
+    },
+    {
+    "id": "q283",
+    "question": "In which year did French colonists begin to settle in the Maritime provinces?",
+    "option1": "1604",
+    "option2": "1624",
+    "option3": "1594",
+    "option4": "1614",
+    "correctOption": "1604",
+    "category": "history"
+    },
+    {
+    "id": "q284",
+    "question": "The first constitutional document for Canada became law when?",
+    "option1": "1867",
+    "option2": "1815",
+    "option3": "1923",
+    "option4": "1962",
+    "correctOption": "1867",
+    "category": "government"
+    },
+    {
+    "id": "q285",
+    "question": "Rights for Aboriginal people are…?",
+    "option1": "Guaranteed in the constitution",
+    "option2": "Non-existent",
+    "option3": "A matter of custom",
+    "option4": "A matter for individual provinces",
+    "correctOption": "Guaranteed in the constitution",
+    "category": "laws"
+    },
+    {
+    "id": "q286",
+    "question": "All Aboriginal people who are neither Inuit nor Metis are known as what?",
+    "option1": "First Nations",
+    "option2": "Red Indians",
+    "option3": "Aliens",
+    "option4": "They don’t have a name",
+    "correctOption": "First Nations",
+    "category": "history"
+    },
+    {
+    "id": "q287",
+    "question": "Which of these is Canada’s only officially bilingual province?",
+    "option1": "New Brunswick",
+    "option2": "Québec",
+    "option3": "Manitoba",
+    "option4": "Ontario",
+    "correctOption": "New Brunswick",
+    "category": "government"
+    },
+    {
+    "id": "q288",
+    "question": "Gay and lesbian Canadians have equal rights to…?",
+    "option1": "Civil marriage",
+    "option2": "Healthcare",
+    "option3": "Protection from discrimination",
+    "option4": "All of these",
+    "correctOption": "All of these",
+    "category": "laws"
+    },
+    {
+    "id": "q289",
+    "question": "What percentage of Aboriginal peoples in Canada are Metis?",
+    "option1": "30%",
+    "option2": "15%",
+    "option3": "60%",
+    "option4": "5%",
+    "correctOption": "60%",
+    "category": "geography"
+    },
+    {
+      "id": "q290",
+      "question": "Modern Canadian society is largely derived from which civilizations?",
+      "option1": "English and French",
+      "option2": "English and German",
+      "option3": "French and German",
+      "option4": "French and Danish",
+      "correctOption": "English and French",
+      "category": "history"
+      },
+      {
+      "id": "q291",
+      "question": "How many Anglo-Quebecers have a heritage going back 250 years or more?",
+      "option1": "1 million",
+      "option2": "500,000",
+      "option3": "1.5 million",
+      "option4": "250,000",
+      "correctOption": "1.5 million",
+      "category": "history"
+      },
+      {
+      "id": "q292",
+      "question": "Canada is often called what by poets and songwriters?",
+      "option1": "The Great Dominion",
+      "option2": "The Great Democracy",
+      "option3": "The Great Satan",
+      "option4": "The Great Force",
+      "correctOption": "The Great Dominion",
+      "category": "history"
+      },
+      {
+      "id": "q293",
+      "question": "The Canadian government stopped trying to force Aboriginal children to integrate into mainstream Canadian culture in what decade?",
+      "option1": "1980s",
+      "option2": "1950s",
+      "option3": "1920s",
+      "option4": "1890s",
+      "correctOption": "1980s",
+      "category": "government"
+      },
+      {
+      "id": "q294",
+      "question": "Between 1755 and 1763, more than two thirds of French settlers were deported due to a war between the French and…?",
+      "option1": "The British",
+      "option2": "The Americans",
+      "option3": "The Germans",
+      "option4": "The Aboriginal peoples",
+      "correctOption": "The British",
+      "category": "history"
+      },
+      {
+      "id": "q295",
+      "question": "The majority of Canadians identify themselves as…?",
+      "option1": "Christians",
+      "option2": "Muslims",
+      "option3": "Hindus",
+      "option4": "Atheists",
+      "correctOption": "Christians",
+      "category": "geography"
+      },
+      {
+      "id": "q296",
+      "question": "What Act formed the Confederation of Canada?",
+      "option1": "The British North America Act of 1867",
+      "option2": "The British North America Act of 1887",
+      "option3": "The Quebec Act of 1774",
+      "option4": "Magna Carta of 1215",
+      "correctOption": "The British North America Act of 1867",
+      "category": "government"
+      },
+      {
+      "id": "q297",
+      "question": "Which of these is the Canadian system of government?",
+      "option1": "Constitutional monarchy",
+      "option2": "Republican democracy",
+      "option3": "Autocracy",
+      "option4": "Benign dictatorship",
+      "correctOption": "Constitutional monarchy",
+      "category": "government"
+      },
+      {
+      "id": "q298",
+      "question": "Anglophones are usually referred to as…?",
+      "option1": "English Canadians",
+      "option2": "Original Canadians",
+      "option3": "British Canadians",
+      "option4": "Canadian Englishmen",
+      "correctOption": "English Canadians",
+      "category": "geography"
+      },
+      {
+        "id": "q295",
+        "question": "Since the 1970s, the majority of immigrants to Canada have come from where?",
+        "option1": "Asia",
+        "option2": "Africa",
+        "option3": "South America",
+        "option4": "Europe",
+        "correctOption": "Asia",
+        "category": "geography"
+        },
+        {
+        "id": "q296",
+        "question": "The majority of French-speaking Canadians live in which province?",
+        "option1": "Québec",
+        "option2": "New Brunswick",
+        "option3": "Manitoba",
+        "option4": "Ontario",
+        "correctOption": "Québec",
+        "category": "geography"
+        },
+        {
+        "id": "q297",
+        "question": "In Vancouver and Toronto, which of these languages is the second most commonly spoken at home, after English?",
+        "option1": "Chinese",
+        "option2": "Swahili",
+        "option3": "Pushtu",
+        "option4": "Spanish",
+        "correctOption": "Chinese",
+        "category": "geography"
+        },
+        {
+        "id": "q298",
+        "question": "Roughly how many First Nations communities are there in Canada?",
+        "option1": "600",
+        "option2": "1200",
+        "option3": "150",
+        "option4": "300",
+        "correctOption": "150",
+        "category": "geography"
+        },
+        {
+        "id": "q299",
+        "question": "How many groups make up the Aboriginal people of Canada?",
+        "option1": "Three",
+        "option2": "Four",
+        "option3": "Five",
+        "option4": "Nobody knows",
+        "correctOption": "Four",
+        "category": "geography"
+        },
+
+        {
+          "id": "q310",
+          "question": "What organizations has Canada joined?",
+          "option1": "All of these",
+          "option2": "NATO",
+          "option3": "NORAD",
+          "option4": "UN",
+          "correctOption": "All of these",
+          "category": "government"
+          },
+          {
+          "id": "q311",
+          "question": "Perhaps Canada’s best-known contribution to the visual arts is…?",
+          "option1": "The Group of Seven",
+          "option2": "The Group of Six",
+          "option3": "The Group of Four",
+          "option4": "The Group of Eight",
+          "correctOption": "The Group of Seven",
+          "category": "history"
+          },
+          {
+          "id": "q312",
+          "question": "Which of these is currently Canada’s largest trade partner?",
+          "option1": "United States",
+          "option2": "European Union",
+          "option3": "China",
+          "option4": "Mexico",
+          "correctOption": "United States",
+          "category": "economy"
+          },
+          {
+          "id": "q313",
+          "question": "Who developed the Standard Time Zone system?",
+          "option1": "Sir Sanford Fleming",
+          "option2": "Joseph Bombardier",
+          "option3": "Alexander Graham Bell",
+          "option4": "Charles Best",
+          "correctOption": "Sir Sanford Fleming",
+          "category": "history"
+          },
+          {
+          "id": "q314",
+          "question": "Federal government (un)employment insurance was introduced in Canada in which year?",
+          "option1": "1940",
+          "option2": "1930",
+          "option3": "1950",
+          "option4": "1960",
+          "correctOption": "1940",
+          "category": "government"
+          },
+          {
+          "id": "q315",
+          "question": "Terry Fox, a British Columbian, tried to run across Canada in the 'Marathon of Hope' to raise money for what?",
+          "option1": "Cancer research",
+          "option2": "Multiple Sclerosis research",
+          "option3": "Heart disease research",
+          "option4": "Parkinson’s disease research",
+          "correctOption": "Cancer research",
+          "category": "symbols"
+          },
+          {
+          "id": "q316",
+          "question": "Who were the last group of Canadians, in 1960, to get the vote?",
+          "option1": "Aboriginal Canadians",
+          "option2": "Japanese Canadians",
+          "option3": "Chinese Canadians",
+          "option4": "Mexican Canadians",
+          "correctOption": "Aboriginal Canadians",
+          "category": "laws"
+          },
+          {
+          "id": "q317",
+          "question": "When was La Francophonie founded?",
+          "option1": "1970",
+          "option2": "1975",
+          "option3": "1947",
+          "option4": "1950",
+          "correctOption": "1970",
+          "category": "government"
+          },
+          {
+          "id": "q318",
+          "question": "Canada’s modern energy industry began with the discovery of oil in 1947 in which province?",
+          "option1": "Alberta",
+          "option2": "Manitoba",
+          "option3": "Québec",
+          "option4": "British Columbia",
+          "correctOption": "Alberta",
+          "category": "economy"
+          },
+          {
+          "id": "q319",
+          "question": "The period of rapid change in Québec in the 1960s was called what?",
+          "option1": "The quiet revolution",
+          "option2": "The noisy revolution",
+          "option3": "The French Revolution",
+          "option4": "The Québec revolution",
+          "correctOption": "The quiet revolution",
+          "category": "history"
+          },
+          {
+            "id": "q321",
+            "question": "Federal government (un)employment insurance was introduced in Canada in which year?",
+            "option1": "1940",
+            "option2": "1930",
+            "option3": "1950",
+            "option4": "1960",
+            "correctOption": "1940",
+            "category": "economy"
+            },
+            {
+            "id": "q322",
+            "question": "Terry Fox, a British Columbian, tried to run across Canada in the 'Marathon of Hope' to raise money for what?",
+            "option1": "Cancer research",
+            "option2": "Multiple Sclerosis research",
+            "option3": "Heart disease research",
+            "option4": "Parkinson’s disease research",
+            "correctOption": "Cancer research",
+            "category": "history"
+            },
+            {
+            "id": "q323",
+            "question": "Who were the last group of Canadians, in 1960, to get the vote?",
+            "option1": "Aboriginal Canadians",
+            "option2": "Japanese Canadians",
+            "option3": "Chinese Canadians",
+            "option4": "Mexican Canadians",
+            "correctOption": "Aboriginal Canadians",
+            "category": "government"
+            },
+            {
+            "id": "q324",
+            "question": "When was La Francophonie founded?",
+            "option1": "1970",
+            "option2": "1975",
+            "option3": "1947",
+            "option4": "1950",
+            "correctOption": "1970",
+            "category": "government"
+            },
+            {
+            "id": "q325",
+            "question": "Canada’s modern energy industry began with the discovery of oil in 1947 in which province?",
+            "option1": "Alberta",
+            "option2": "Manitoba",
+            "option3": "Québec",
+            "option4": "British Columbia",
+            "correctOption": "Alberta",
+            "category": "economy"
+            },
+            {
+            "id": "q326",
+            "question": "The period of rapid change in Québec in the 1960s was called what?",
+            "option1": "The quiet revolution",
+            "option2": "The noisy revolution",
+            "option3": "The French Revolution",
+            "option4": "The Québec revolution",
+            "correctOption": "The quiet revolution",
+            "category": "history"
+            },
+            {
+            "id": "q327",
+            "question": "Canadian football teams compete in the Canadian Football League for which trophy?",
+            "option1": "The Grey Cup",
+            "option2": "The Black Cup",
+            "option3": "The White Cup",
+            "option4": "The Red Cup",
+            "correctOption": "The Grey Cup",
+            "category": "symbols"
+            },
+            {
+            "id": "q320",
+            "question": "What have Canadians Sidney Altman, Richard Lee Taylor, Michael Smith, Bertram Brockhouse, Gerhardt Hertzberg, and John Polanyi all got in common?",
+            "option1": "They’ve all won Nobel prizes",
+            "option2": "They’ve all won Pulitzer prizes",
+            "option3": "They’ve all won Oscars",
+            "option4": "They’ve all won Emmys",
+            "correctOption": "They’ve all won Nobel prizes",
+            "category": "government"
+            },
+            {
+              "id": "q328",
+              "question": "How many times have referendums produced a negative result for Québec sovereignty?",
+              "option1": "Twice",
+              "option2": "Once",
+              "option3": "Three times",
+              "option4": "Never",
+              "correctOption": "Never",
+              "category": "government"
+              },
+              {
+              "id": "q329",
+              "question": "Canadians Sir Frederick Banting and Charles Best discovered which revolutionary drug?",
+              "option1": "Insulin",
+              "option2": "Warfarin",
+              "option3": "Viagra",
+              "option4": "Penicillin",
+              "correctOption": "Insulin",
+              "category": "science"
+              },
+              {
+              "id": "q330",
+              "question": "Canadian James Naismith invented which sport in 1891?",
+              "option1": "Basketball",
+              "option2": "Baseball",
+              "option3": "American football",
+              "option4": "Korfball",
+              "correctOption": "Basketball",
+              "category": "history"
+              },
+              {
+              "id": "q331",
+              "question": "What is Canada’s official summer sport?",
+              "option1": "Lacrosse",
+              "option2": "Football",
+              "option3": "Soccer",
+              "option4": "Hockey",
+              "correctOption": "Lacrosse",
+              "category": "symbols"
+              },
+              {
+              "id": "q332",
+              "question": "In which year did Canada pass the threshold that more than 50% of its population had adequate food, shelter, and clothing?",
+              "option1": "1951",
+              "option2": "1947",
+              "option3": "1957",
+              "option4": "1927",
+              "correctOption": "1951",
+              "category": "economy"
+              },
+              {
+              "id": "q333",
+              "question": "When was the Canadian Pension Plan introduced?",
+              "option1": "1965",
+              "option2": "1940",
+              "option3": "1947",
+              "option4": "1920",
+              "correctOption": "1965",
+              "category": "government"
+              },
+              {
+              "id": "q334",
+              "question": "Widely regarded as the greatest hockey player of all time, which Canadian team did Wayne Gretzky play for between 1979 and 1988?",
+              "option1": "Edmonton Oilers",
+              "option2": "Montréal Canadiens",
+              "option3": "Ottawa Senators",
+              "option4": "Toronto Maple Leafs",
+              "correctOption": "Edmonton Oilers",
+              "category": "symbols"
+              },
+              {
+              "id": "q335",
+              "question": "In what year was an Act passed which guarantees equal access to French and English federal government services?",
+              "option1": "1969",
+              "option2": "1959",
+              "option3": "1979",
+              "option4": "1989",
+              "correctOption": "1969",
+              "category": "laws"
+              },
+              {
+              "id": "q336",
+              "question": "In which year did Donovan Bailey of Canada break the 100m world record and become a double Olympic gold medallist?",
+              "option1": "1996",
+              "option2": "1992",
+              "option3": "1988",
+              "option4": "2000",
+              "correctOption": "1996",
+              "category": "symbols"
+              },
+              {
+              "id": "q337",
+              "question": "In 1975, Canada welcomed over 50,000 refugees from which country?",
+              "option1": "Vietnam",
+              "option2": "South Africa",
+              "option3": "Ethiopia",
+              "option4": "Hungary",
+              "correctOption": "Vietnam",
+              "category": "history"
+              },
+              {
+                "id": "q338",
+                "question": "Canadian company Research in Motion is best known for its invention which communications device?",
+                "option1": "The BlackBerry",
+                "option2": "The iPhone",
+                "option3": "Galaxy phone",
+                "option4": "Nokia phone",
+                "correctOption": "The BlackBerry",
+                "category": "economy"
+                },
+                {
+                "id": "q339",
+                "question": "Which war did Canadian troops fight in as part of a United Nations force between 1950 and 1953?",
+                "option1": "Korea",
+                "option2": "Vietnam",
+                "option3": "Cambodia",
+                "option4": "Laos",
+                "correctOption": "Korea",
+                "category": "history"
+                },
+                {
+                "id": "q340",
+                "question": "Which of these was not invented by a Canadian inventor?",
+                "option1": "The television",
+                "option2": "The telephone",
+                "option3": "The heart pacemaker",
+                "option4": "Electric light bulbs",
+                "correctOption": "Electric light bulbs",
+                "category": "economy"
+                },
+                {
+                  "id": "q341",
+                  "question": "Which of these is not a branch of Canadian government?",
+                  "option1": "The monarchy",
+                  "option2": "The executive",
+                  "option3": "The legislature",
+                  "option4": "The judiciary",
+                  "correctOption": "The monarchy",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q342",
+                  "question": "Canada is…?",
+                  "option1": "All of these",
+                  "option2": "A federal state",
+                  "option3": "A Parliamentary democracy",
+                  "option4": "A constitutional monarchy",
+                  "correctOption": "All of these",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q343",
+                  "question": "Who grants Royal assent for bills to become law on behalf of the Sovereign?",
+                  "option1": "The Governor General",
+                  "option2": "The Prime Minister",
+                  "option3": "The House of Commons",
+                  "option4": "The Senate",
+                  "correctOption": "The Governor General",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q344",
+                  "question": "The equivalent of the Prime Minister in the federal government is called what in each province?",
+                  "option1": "Premier",
+                  "option2": "Governor",
+                  "option3": "Regional Prime Minister",
+                  "option4": "Head of Region",
+                  "correctOption": "Premier",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q345",
+                  "question": "The federal government sits where?",
+                  "option1": "Ottawa",
+                  "option2": "Montréal",
+                  "option3": "Toronto",
+                  "option4": "Vancouver",
+                  "correctOption": "Ottawa",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q346",
+                  "question": "Traditionally, Canada holds Parliamentary elections every…?",
+                  "option1": "4 years",
+                  "option2": "5 years",
+                  "option3": "3 years",
+                  "option4": "6 years",
+                  "correctOption": "4 years",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q347",
+                  "question": "How many times must a bill be “read” in the House of Commons before it becomes law?",
+                  "option1": "Three times",
+                  "option2": "Twice",
+                  "option3": "Once",
+                  "option4": "Four times",
+                  "correctOption": "Three times",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q348",
+                  "question": "A provincial legislature comprises the elected Assembly and…?",
+                  "option1": "A Lieutenant Governor",
+                  "option2": "A regional Prime Minister",
+                  "option3": "A regional President",
+                  "option4": "A Governor General",
+                  "correctOption": "A Lieutenant Governor",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q349",
+                  "question": "Lieutenant Governors usually serve terms of…?",
+                  "option1": "5 years",
+                  "option2": "3 years",
+                  "option3": "8 years",
+                  "option4": "10 years",
+                  "correctOption": "5 years",
+                  "category": "government"
+                  },
+                  {
+                  "id": "q350",
+                  "question": "How many other nations is Canada linked to through the Commonwealth?",
+                  "option1": "53",
+                  "option2": "43",
+                  "option3": "33",
+                  "option4": "63",
+                  "correctOption": "53",
+                  "category": "government"
+                  },
+                  {
+                    "id": "q351",
+                    "question": "Members of the House of Commons are responsible for…?",
+                    "option1": "Passing laws",
+                    "option2": "Approving expenditure",
+                    "option3": "Keeping government accountable",
+                    "option4": "All of these",
+                    "correctOption": "All of these",
+                    "category": "government"
+                    },
+                    {
+                    "id": "q352",
+                    "question": "To become law in Canada, a bill has to…?",
+                    "option1": "Be passed by the House of Commons",
+                    "option2": "Be passed by the Senate",
+                    "option3": "Be given Royal assent",
+                    "option4": "All of these",
+                    "correctOption": "All of these",
+                    "category": "government"
+                    },
+                    {
+                    "id": "q353",
+                    "question": "Who appoints the Canadian Governor General?",
+                    "option1": "The Sovereign on the advice of the Prime Minister",
+                    "option2": "The Prime Minister on the advice of the Sovereign",
+                    "option3": "The House of Commons",
+                    "option4": "The Canadian electorate",
+                    "correctOption": "The Sovereign on the advice of the Prime Minister",
+                    "category": "government"
+                    },
+                    {
+                      "id": "q363",
+                      "question": "Which of these terms describe the Canadian Prime Minister?",
+                      "option1": "Head of government",
+                      "option2": "Head of state",
+                      "option3": "Head of parliament",
+                      "option4": "Head of Senate",
+                      "correctOption": "Head of government",
+                      "category": "government"
+                      },
+                      {
+                      "id": "q364",
+                      "question": "Proposed laws for debate in Parliament are called what?",
+                      "option1": "Bills",
+                      "option2": "Proposals",
+                      "option3": "Papers",
+                      "option4": "Drafts",
+                      "correctOption": "Bills",
+                      "category": "government"
+                      },
+                      {
+                      "id": "q365",
+                      "question": "Which of these policy areas would come under federal government?",
+                      "option1": "Currency",
+                      "option2": "Education",
+                      "option3": "Highways",
+                      "option4": "Natural resources",
+                      "correctOption": "Currency",
+                      "category": "government"
+                      },
+                      {
+                      "id": "q366",
+                      "question": "How many judges are there in the Supreme Court of Canada?",
+                      "option1": "Nine",
+                      "option2": "Six",
+                      "option3": "Twelve",
+                      "option4": "Three",
+                      "correctOption": "Nine",
+                      "category": "laws"
+                      },
+                      {
+                      "id": "q367",
+                      "question": "The Canadian Governor General usually serves a term of…?",
+                      "option1": "5 years",
+                      "option2": "3 years",
+                      "option3": "8 years",
+                      "option4": "10 years",
+                      "correctOption": "5 years",
+                      "category": "government"
+                      },
+                      {
+                      "id": "q368",
+                      "question": "Which of these is not part of Parliament?",
+                      "option1": "Lieutenant Governor",
+                      "option2": "Sovereign",
+                      "option3": "House of Commons",
+                      "option4": "Senate",
+                      "correctOption": "Lieutenant Governor",
+                      "category": "government"
+                      },
+                      {
+                      "id": "q369",
+                      "question": "In the three territories, the federal government is represented by what?",
+                      "option1": "A Commissioner",
+                      "option2": "A Regional Governor",
+                      "option3": "A Head of Territory",
+                      "option4": "A Territorial Prime Minister",
+                      "correctOption": "A Commissioner",
+                      "category": "government"
+                      },
+                      {
+                      "id": "q370",
+                      "question": "What is a law called before it is official?",
+                      "option1": "A bill",
+                      "option2": "A pre-law",
+                      "option3": "A by-law",
+                      "option4": "A legislature",
+                      "correctOption": "A bill",
+                      "category": "laws"
+                      },
+                      {
+                      "id": "q371",
+                      "question": "Which of these policy areas would come under the control of the provinces?",
+                      "option1": "Civil rights",
+                      "option2": "Navigation",
+                      "option3": "Interprovincial trade",
+                      "option4": "Citizenship",
+                      "correctOption": "Civil rights",
+                      "category": "government"
+                      },
+                      {
+                        "id": "q372",
+                        "question": "Who selects Canada’s Cabinet ministers?",
+                        "option1": "The Prime Minister",
+                        "option2": "The Sovereign",
+                        "option3": "The Senate",
+                        "option4": "The House of Commons",
+                        "correctOption": "The Prime Minister",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q373",
+                        "question": "Who appoints the Lieutenant Governors in Canada?",
+                        "option1": "The Governor General on the advice of the Prime Minister",
+                        "option2": "The Sovereign on the advice of the Governor General",
+                        "option3": "The Prime Minister on the advice of the Governor General",
+                        "option4": "The House of Commons",
+                        "correctOption": "The Sovereign on the advice of the Governor General",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q374",
+                        "question": "The elected part of the Parliament of Canada is called what?",
+                        "option1": "The House of Commons",
+                        "option2": "The House of Lords",
+                        "option3": "The Senate",
+                        "option4": "The House of Representatives",
+                        "correctOption": "The House of Commons",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q375",
+                        "question": "Which part of the Parliament of Canada has members appointed by the Governor General?",
+                        "option1": "The Senate",
+                        "option2": "The House of Commons",
+                        "option3": "The House of Lords",
+                        "option4": "The Governor’s House",
+                        "correctOption": "The Senate",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q376",
+                        "question": "The Canadian Government must resign if they lose what sort of vote in Parliament?",
+                        "option1": "A non-confidence vote",
+                        "option2": "An education bill vote",
+                        "option3": "A health bill",
+                        "option4": "Any sort of vote",
+                        "correctOption": "A non-confidence vote",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q377",
+                        "question": "How old do you have to be to vote in Canada?",
+                        "option1": "18",
+                        "option2": "17",
+                        "option3": "19",
+                        "option4": "21",
+                        "correctOption": "18",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q378",
+                        "question": "The provinces are governed by…?",
+                        "option1": "Legislative assemblies",
+                        "option2": "Direct rule",
+                        "option3": "Plebiscites",
+                        "option4": "Federal government",
+                        "correctOption": "Legislative assemblies",
+                        "category": "government"
+                        },
+                        {
+                        "id": "q379",
+                        "question": "Canadian Senators serve until they reach what age?",
+                        "option1": "75",
+                        "option2": "65",
+                        "option3": "70",
+                        "option4": "80",
+                        "correctOption": "75",
+                        "category": "government"
+                        },
+                        {
+                          "id": "q390",
+                          "question": "To vote in an election or referendum, how far must you register in advance?",
+                          "option1": "You can register on the day",
+                          "option2": "Three weeks in advance",
+                          "option3": "Four weeks in advance",
+                          "option4": "Two days in advance",
+                          "correctOption": "Three weeks in advance",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q391",
+                          "question": "How many people can run for office in a single electoral district?",
+                          "option1": "As many as apply",
+                          "option2": "12",
+                          "option3": "24",
+                          "option4": "48",
+                          "correctOption": "As many as apply",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q392",
+                          "question": "What do you call the political party with the second largest number of seats in the federal government?",
+                          "option1": "Her Majesty’s Loyal Opposition",
+                          "option2": "Minority government",
+                          "option3": "Majority government",
+                          "option4": "The Cabinet",
+                          "correctOption": "Her Majesty’s Loyal Opposition",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q393",
+                          "question": "To be valid, your vote has to consist of what drawn in the circle next to the name of your chosen candidate?",
+                          "option1": "X",
+                          "option2": "A tick",
+                          "option3": "Y",
+                          "option4": "Any symbol",
+                          "correctOption": "X",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q394",
+                          "question": "Who has the right to demand that you tell them how you voted in an election?",
+                          "option1": "Nobody",
+                          "option2": "Your MP",
+                          "option3": "The Prime Minister",
+                          "option4": "The sovereign",
+                          "correctOption": "Nobody",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q395",
+                          "question": "Which of these is not a major political party in Canada?",
+                          "option1": "The Labour Party",
+                          "option2": "The Conservative Party",
+                          "option3": "The New Democratic Party",
+                          "option4": "The Liberal Party",
+                          "correctOption": "The Labour Party",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q396",
+                          "question": "Which of these maintains the National Register of Electors?",
+                          "option1": "Elections Canada",
+                          "option2": "The Governor General",
+                          "option3": "The House of Commons",
+                          "option4": "Provincial legislatures",
+                          "correctOption": "Elections Canada",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q397",
+                          "question": "If you can’t vote on election day, how can you vote?",
+                          "option1": "In advance polls or special ballot",
+                          "option2": "You can’t",
+                          "option3": "After the election",
+                          "option4": "On the Internet",
+                          "correctOption": "In advance polls or special ballot",
+                          "category": "government"
+                        },
+                        {
+                          "id": "q398",
+                          "question": "In order to run in a federal election you must be at least what age?",
+"option1": "18",
+"option2": "17",
+"option3": "19",
+"option4": "21",
+"correctOption": "18",
+"category": "government"
+},
+{
+"id": "q399",
+"question": "In Federal Elections, Canadians vote for whom?",
+"option1": "Members of the House of Commons",
+"option2": "Members of the Senate",
+"option3": "The Prime Minister",
+"option4": "The Governor General",
+"correctOption": "Members of the House of Commons",
+"category": "government"
+},
+{
+  "id": "q410",
+  "question": "What is the piece of paper you vote on called?",
+  "option1": "A ballot",
+  "option2": "A voter’s list",
+  "option3": "A riding",
+  "option4": "A voter information card",
+  "correctOption": "A ballot",
+  "category": "government"
+  },
+  {
+  "id": "q411",
+  "question": "Who is responsible for running government departments?",
+  "option1": "Cabinet ministers",
+  "option2": "Lieutenant Governors",
+  "option3": "Members of Parliament",
+  "option4": "Senators",
+  "correctOption": "Cabinet ministers",
+  "category": "government"
+  },
+  {
+  "id": "q412",
+  "question": "How many electoral districts (a.k.a. ridings or constituencies) are there in Canada?",
+  "option1": "308",
+  "option2": "208",
+  "option3": "108",
+  "option4": "408",
+  "correctOption": "338",
+  "category": "government"
+  },
+  {
+  "id": "q413",
+  "question": "Which of these does not fall under the responsibilities of a municipal government?",
+  "option1": "Agriculture",
+  "option2": "Transportation",
+  "option3": "Snow removal",
+  "option4": "Recycling Programs",
+  "correctOption": "Agriculture",
+  "category": "government"
+  },
+  {
+  "id": "q414",
+  "question": "What are the laws passed by municipal governments that only affect the local community?",
+  "option1": "Bylaws",
+  "option2": "Regional laws",
+  "option3": "Town laws",
+  "option4": "Provincial laws",
+  "correctOption": "Bylaws",
+  "category": "laws"
+  },
+  {
+  "id": "q415",
+  "question": "The Prime Minister and government ministers collectively are called what?",
+  "option1": "The Cabinet",
+  "option2": "The Board",
+  "option3": "The Rulers",
+  "option4": "The Collective",
+  "correctOption": "The Cabinet",
+  "category": "government"
+  },
+  {
+    "id": "q416",
+    "question": "The basis of the Canadian justice system is what?",
+    "option1": "The presumption of innocence",
+    "option2": "The presumption of guilt",
+    "option3": "The burden of proof",
+    "option4": "The balance of probabilities",
+    "correctOption": "The presumption of innocence",
+    "category": "laws"
+    },
+    {
+    "id": "q417",
+    "question": "The purpose of Canadian law is to do what?",
+    "option1": "All these things",
+    "option2": "Give order to society",
+    "option3": "Help settle disputes",
+    "option4": "To express Canadian values and beliefs",
+    "correctOption": "All these things",
+    "category": "laws"
+    },
+    {
+    "id": "q418",
+    "question": "Who are the federal police in Canada?",
+    "option1": "The RCMP",
+    "option2": "The Canadian Rangers",
+    "option3": "The Canadian Army",
+    "option4": "CSIS",
+    "correctOption": "The RCMP",
+    "category": "government"
+    },
+    {
+    "id": "q419",
+    "question": "Canadian law applies to everyone, except…?",
+    "option1": "There are no exceptions",
+    "option2": "Judges",
+    "option3": "Police officers",
+    "option4": "Members of Parliament",
+    "correctOption": "There are no exceptions",
+    "category": "laws"
+    },
+    {
+    "id": "q420",
+    "question": "If you can’t afford to pay for a lawyer when you are charged with a crime…?",
+    "option1": "You will be provided with one",
+    "option2": "You must represent yourself",
+    "option3": "You will be found guilty",
+    "option4": "You will have to borrow the money",
+    "correctOption": "You will be provided with one",
+    "category": "laws"
+    },
+    {
+    "id": "q421",
+    "question": "Small Claims Courts deal with what?",
+    "option1": "Civil cases",
+    "option2": "Traffic offences",
+    "option3": "Minor crime",
+    "option4": "Divorces",
+    "correctOption": "Civil cases",
+    "category": "laws"
+    },
+    {
+    "id": "q422",
+    "question": "The highest court in Canada is what?",
+    "option1": "The Supreme Court",
+    "option2": "The Queen’s Bench",
+    "option3": "The Federal Court",
+    "option4": "The Provincial Supreme Court",
+    "correctOption": "The Supreme Court",
+    "category": "laws"
+    },
+    {
+    "id": "q423",
+    "question": "The Canadian government must respect every citizen’s legal rights…?",
+    "option1": "At all times",
+    "option2": "Except in emergencies",
+    "option3": "Unless they admit guilt",
+    "option4": "When convenient",
+    "correctOption": "At all times",
+    "category": "laws"
+    },
+    {
+    "id": "q424",
+    "question": "In which of these situations can you turn to the police for help?",
+    "option1": "All of them",
+    "option2": "If there’s been an accident",
+    "option3": "If you have witnessed a crime",
+    "option4": "If someone is missing",
+    "correctOption": "All of them",
+    "category": "government"
+    },
+    {
+    "id": "q425",
+    "question": "Whose job is it to enforce the laws of Canada?",
+    "option1": "Police",
+    "option2": "Court",
+    "option3": "MP",
+    "option4": "Judge",
+    "correctOption": "Police",
+    "category": "laws"
+    },
+    {
+      "id": "q426",
+      "question": "Who makes the laws in Canada?",
+      "option1": "The legislature",
+      "option2": "The courts",
+      "option3": "The police",
+      "option4": "The Sovereign",
+      "correctOption": "The legislature",
+      "category": "laws"
+      },
+      {
+      "id": "q427",
+      "question": "Which provinces have their own police forces?",
+      "option1": "Ontario and Québec",
+      "option2": "British Columbia and Manitoba",
+      "option3": "Prince Edward Island and Saskatchewan",
+      "option4": "Alberta and Nova Scotia",
+      "correctOption": "Ontario and Québec",
+      "category": "laws"
+      },
+      {
+      "id": "q428",
+      "question": "Whose role is it to settle disagreements or conflicts?",
+      "option1": "The court’s",
+      "option2": "The municipality’s",
+      "option3": "The city government’s",
+      "option4": "The police force’s",
+      "correctOption": "The court’s",
+      "category": "laws"
+      },
+
+      {
+        "id": "q436",
+        "question": "Red and white have been the national colours of Canada since…?",
+        "option1": "1921",
+        "option2": "1911",
+        "option3": "1901",
+        "option4": "1931",
+        "correctOption": "1921",
+        "category": "symbols"
+        },
+        {
+        "id": "q437",
+        "question": "The red-white-red pattern of the Canadian flag comes from the flag of where?",
+        "option1": "The Royal Military College, Kingston",
+        "option2": "The British Royal Navy",
+        "option3": "England",
+        "option4": "The Royal Canadian Mounted Police",
+        "correctOption": "The Royal Military College, Kingston",
+        "category": "symbols"
+        },
+        {
+        "id": "q438",
+        "question": "The current Canadian flag has been in use since when?",
+        "option1": "1965",
+        "option2": "1955",
+        "option3": "1945",
+        "option4": "1975",
+        "correctOption": "1965",
+        "category": "symbols"
+        },
+        {
+        "id": "q439",
+        "question": "The Canadian national motto, A mari usque ad mare, means what?",
+        "option1": "From sea to sea",
+        "option2": "The Maple Leaf forever",
+        "option3": "Mary protects us",
+        "option4": "Always on horseback",
+        "correctOption": "From sea to sea",
+        "category": "symbols"
+        },
+        {
+        "id": "q440",
+        "question": "The National Hockey League championship is played for what?",
+        "option1": "The Stanley Cup",
+        "option2": "The Laurel Cup",
+        "option3": "The Albert Cup",
+        "option4": "The Frederick Cup",
+        "correctOption": "The Stanley Cup",
+        "category": "symbols"
+        },
+        {
+        "id": "q441",
+        "question": "In what century did French Canadians adapt maple leaves as their symbol?",
+        "option1": "1700s",
+        "option2": "1800s",
+        "option3": "1900s",
+        "option4": "1600s",
+        "correctOption": "1700s",
+        "category": "symbols"
+        },
+        {
+        "id": "q442",
+        "question": "Canadian Thanksgiving Day is on the second Monday of which month?",
+        "option1": "October",
+        "option2": "September",
+        "option3": "July",
+        "option4": "April",
+        "correctOption": "October",
+        "category": "symbols"
+        },
+        {
+        "id": "q443",
+        "question": "Curling was introduced into Canada by immigrants from what country?",
+        "option1": "Scotland",
+        "option2": "Sweden",
+        "option3": "Norway",
+        "option4": "Iceland",
+        "correctOption": "Scotland",
+        "category": "symbols"
+        },
+        {
+        "id": "q444",
+        "question": "Who was the first constitutional monarch of Canada?",
+        "option1": "Queen Victoria",
+        "option2": "Queen Elizabeth II",
+        "option3": "King George III",
+        "option4": "King Edward VII",
+        "correctOption": "Queen Victoria",
+        "category": "symbols"
+        },
+        {
+        "id": "q445",
+        "question": "The last Canadian, up to the present day, to the awarded the Victoria Cross was in which year?",
+        "option1": "1945",
+        "option2": "1918",
+        "option3": "1953",
+        "option4": "1902",
+        "correctOption": "1945",
+        "category": "symbols"
+        },
+        {
+          "id": "q450",
+          "question": "The Canadian coat of arms does not contain a symbol from which country?",
+          "option1": "Wales",
+          "option2": "France",
+          "option3": "Scotland",
+          "option4": "Ireland",
+          "correctOption": "Ireland",
+          "category": "symbols"
+          },
+          {
+          "id": "q451",
+          "question": "On what day of the year do Canadians celebrate Sir John A. McDonald Day?",
+          "option1": "January 11",
+          "option2": "January 1",
+          "option3": "November 11",
+          "option4": "July 1",
+          "correctOption": "January 11",
+          "category": "history"
+          },
+          {
+          "id": "q452",
+          "question": "The Canadian national anthem is called what?",
+          "option1": "O Canada",
+          "option2": "God Save the Queen",
+          "option3": "Canada Fair",
+          "option4": "God Bless Canada",
+          "correctOption": "O Canada",
+          "category": "symbols"
+          },
+          {
+          "id": "q453",
+          "question": "The highest prize in women’s hockey in Canada is what?",
+          "option1": "The Clarkson Cup",
+          "option2": "The Hammond Cup",
+          "option3": "The May Cup",
+          "option4": "The Ottawa Cup",
+          "correctOption": "The Clarkson Cup",
+          "category": "symbols"
+          },
+          {
+          "id": "q454",
+          "question": "How long has the crown been a symbol of state in Canada?",
+          "option1": "400 years",
+          "option2": "300 years",
+          "option3": "200 years",
+          "option4": "500 years",
+          "correctOption": "400 years",
+          "category": "symbols"
+          },
+          {
+          "id": "q455",
+          "question": "Which sport has more registered players in Canada than any other?",
+          "option1": "Soccer",
+          "option2": "Hockey",
+          "option3": "Tennis",
+          "option4": "Athletics",
+          "correctOption": "Hockey",
+          "category": "symbols"
+          },
+          {
+          "id": "q456",
+          "question": "The beaver was first used as a symbol in Canada by…?",
+          "option1": "The Hudson’s Bay Company",
+          "option2": "The St.Jean Baptiste Society",
+          "option3": "The city of Montréal",
+          "option4": "The province of Saskatchewan",
+          "correctOption": "The Hudson’s Bay Company",
+          "category": "symbols"
+          },
+          {
+            "id": "q457",
+            "question": "What’s Canada’s second most popular sport?",
+            "option1": "Canadian football",
+            "option2": "Curling",
+            "option3": "Hockey",
+            "option4": "Skiing",
+            "correctOption": "Curling",
+            "category": "symbols"
+            },
+            {
+            "id": "q458",
+            "question": "The Peace Tower in the Parliament Buildings was built to commemorate…?",
+            "option1": "World War I",
+            "option2": "World War II",
+            "option3": "The Korean War",
+            "option4": "The Boer War",
+            "correctOption": "World War I",
+            "category": "symbols"
+            },
+            {
+            "id": "q459",
+            "question": "Which Canadian symbol can be found on the five cent coin?",
+            "option1": "The beaver",
+            "option2": "The moose",
+            "option3": "The snow goose",
+            "option4": "The grizzly bear",
+            "correctOption": "The beaver",
+            "category": "symbols"
+            },
+            {
+            "id": "q460",
+            "question": "Which of these French symbols was adopted into Québec’s own flag in 1940?",
+            "option1": "Fleur-de-lys",
+            "option2": "French crown",
+            "option3": "A lion",
+            "option4": "The cross of Lorraine",
+            "correctOption": "Fleur-de-lys",
+            "category": "symbols"
+            },
+            {
+            "id": "q461",
+            "question": "Before the current Canadian flag, what was used for around a century before?",
+            "option1": "The Canadian Red Ensign",
+            "option2": "The Union Jack",
+            "option3": "A modified Stars & Stripes",
+            "option4": "A plain red banner",
+            "correctOption": "The Canadian Red Ensign",
+            "category": "symbols"
+            },
+            {
+            "id": "q462",
+            "question": "The Maple Leaf has appeared on Canadian military uniforms since when?",
+            "option1": "The 1850s",
+            "option2": "The 1820s",
+            "option3": "The 1880s",
+            "option4": "The 1920s",
+            "correctOption": "The 1860s",
+            "category": "symbols"
+            },
+            {
+            "id": "q463",
+            "question": "What is the official summer sport of Canada?",
+            "option1": "Lacrosse",
+            "option2": "Cricket",
+            "option3": "Swimming",
+            "option4": "Tennis",
+            "correctOption": "Lacrosse",
+            "category": "symbols"
+            },
+            {
+            "id": "q464",
+            "question": "The Books of Remembrance in the Peace Tower hold the names of…?",
+            "option1": "All of these",
+            "option2": "All soldiers who have died on service",
+            "option3": "All sailors who have died on service",
+            "option4": "All airmen who have died on service",
+            "correctOption": "All of these",
+            "category": "symbols"
+            },
+            {
+            "id": "q465",
+            "question": "Canada has been a constitutional monarchy in its own right since when?",
+            "option1": "1867",
+            "option2": "1701",
+            "option3": "1815",
+            "option4": "1918",
+            "correctOption": "1867",
+            "category": "government"
+            },
+            {
+              "id": "q466",
+              "question": "What is due process?",
+              "option1": "It is the impartial manner in which the laws are administered",
+              "option2": "It is the rule of law and freedom under the law",
+              "option3": "It is the legal requirement that the government must respect all the legal rights that are owed to each person.",
+              "option4": "None of these",
+              "correctOption": "It is the legal requirement that the government must respect all the legal rights that are owed to each person.",
+              "category": "laws"
+              },
+              {
+                "id": "q467",
+                "question": "Why is there a border between Canada and the USA?",
+                "option1": "To indicate that Canada and the United States are two separate countries",
+                "option2": "To prevent war between the two countries",
+                "option3": "To improve security",
+                "option4": "To maintain distance",
+                "correctOption": "To indicate that Canada and the United States are two separate countries",
+                "category": "government"
+                },
+ {
+   "id": "q468",
+   "question": "Postwar Canada became a more flexible and open society. Which of the following was this based on?",
+   "option1": "Inequality of men and women",
+   "option2": "Inequality of women",
+   "option3": "Equality of men and women",
+   "option4": "Equality of men",
+   "correctOption": "Equality of men and women",
+   "category": "laws"
+   },
+   {
+    "id": "q4698",
+    "question": "What is the minimum age for voting in federal, provincial, territorial, and municipal elections?",
+    "option1": "18",
+    "option2": "21",
+    "option3": "16",
+    "option4": "19",
+    "correctOption": "18",
+    "category": "government"
+    },
+    {
+    "id": "q4699",
+    "question": "Who circled the globe in a wheelchair to raise funds for spinal cord research?",
+    "option1": "Rick Hansen",
+    "option2": "Reginald Fessenden",
+    "option3": "Terry Fox",
+    "option4": "Gerhard Herzberg",
+    "correctOption": "Rick Hansen",
+    "category": "history"
+    },
+    {
+    "id": "q4700",
+    "question": "Which province is Canada’s largest producer of hydroelectricity?",
+    "option1": "Quebec",
+    "option2": "Alberta",
+    "option3": "Ontario",
+    "option4": "Newfoundland & Labrador",
+    "correctOption": "Quebec",
+    "category": "economy"
+    },
+    {
+      "id": "q5010",
+      "question": "Why is there a border between Canada and the USA?",
+      "option1": "To indicate that Canada and the United States are two separate countries",
+      "option2": "To prevent war between the two countries",
+      "option3": "To maintain distance",
+      "option4": "To improve security",
+      "correctOption": "To indicate that Canada and the United States are two separate countries",
+      "category": "history"
+      },
+      {
+      "id": "q5011",
+      "question": "Who was the first person to draw a map of Canada’s eastern coast?",
+      "option1": "John Cabot",
+      "option2": "Jacques Cartier",
+      "option3": "Count Frontenac",
+      "option4": "Jean Talon",
+      "correctOption": "Jacques Cartier",
+      "category": "history"
+      },
+      {
+      "id": "q5012",
+      "question": "Which province in Canada is the smallest by land size?",
+      "option1": "Prince Edward Island",
+      "option2": "Ontario",
+      "option3": "Alberta",
+      "option4": "Newfoundland & Labrador",
+      "correctOption": "Prince Edward Island",
+      "category": "geography"
+      },
+      {
+      "id": "q5013",
+      "question": "What do electors need to have with them at a polling station in order to vote in an election?",
+      "option1": "Proof of identity, and proof of address",
+      "option2": "A ballot paper",
+      "option3": "A valid credit card",
+      "option4": "None of these",
+      "correctOption": "Proof of identity, and proof of address",
+      "category": "government"
+      },
+      {
+      "id": "q5014",
+      "question": "When did Canada’s economy and industry experience a boom?",
+      "option1": "In the 1890s and early 1900s",
+      "option2": "In the 1860s",
+      "option3": "In the 1880s",
+      "option4": "In the 1840s",
+      "correctOption": "In the 1890s and early 1900s",
+      "category": "economy"
+      },
+      {
+      "id": "q5015",
+      "question": "Who appoints the judges of the Supreme Court of Canada?",
+      "option1": "The Governor General",
+      "option2": "The Prime Minister",
+      "option3": "The Commissioner",
+      "option4": "The Sovereign",
+      "correctOption": "The Governor General",
+      "category": "government"
+      },
+      {
+      "id": "q5016",
+      "question": "What is a name by which the highest trial court of a province can be called?",
+      "option1": "The Court of Queen’s Bench",
+      "option2": "The Federal Court",
+      "option3": "The Provincial Court",
+      "option4": "The Small Claims Courts",
+      "correctOption": "The Court of Queen’s Bench",
+      "category": "laws"
+      },
+      {
+      "id": "q5017",
+      "question": "What are the main functions of the Cabinet?",
+      "option1": "To prepare the budget and propose new laws to be implemented",
+      "option2": "Natural resources",
+      "option3": "Defence",
+      "option4": "Navigation",
+      "correctOption": "To prepare the budget and propose new laws to be implemented",
+      "category": "government"
+      },
+      {
+        "id": "q5018",
+        "question": "Who recommended that Upper and Lower Canada be merged and given a sole responsible government?",
+        "option1": "Lord Durham",
+        "option2": "La Fontaine",
+        "option3": "Sir George-Étienne Cartier",
+        "option4": "Sir Leonard Tilley",
+        "correctOption": "Lord Durham",
+        "category": "government"
+        },
+        {
+        "id": "q5019",
+        "question": "When did the British North America Act come into effect?",
+        "option1": "1867",
+        "option2": "1871",
+        "option3": "1898",
+        "option4": "1905",
+        "correctOption": "1867",
+        "category": "government"
+        },
+        {
+        "id": "q5020",
+        "question": "What is the last line of our National Anthem?",
+        "option1": "O Canada, we stand on guard for thee!",
+        "option2": "Canada! Our home and native land!",
+        "option3": "God keep our land glorious and free!",
+        "option4": "The true North strong and free!",
+        "correctOption": "The true North strong and free!",
+        "category": "symbols"
+        },
+        {
+        "id": "q5021",
+        "question": "In World War II, Canada contributed more to the air efforts of the Allied nations than any other Commonwealth country. What did they provide?",
+        "option1": "130 000 Allied aircrew, trained in Canada",
+        "option2": "100 000 Bombers",
+        "option3": "120 000 Fighter Planes",
+        "option4": "180 000 Aircraft Parts",
+        "correctOption": "130 000 Allied aircrew, trained in Canada",
+        "category": "history"
+        },
+        {
+        "id": "q5022",
+        "question": "Postwar Canada became a more flexible and open society. Which of the following was this based on?",
+        "option1": "Equality of men and women",
+        "option2": "Equality of men",
+        "option3": "Inequality of men and women",
+        "option4": "Inequality of women",
+        "correctOption": "Equality of men and women",
+        "category": "history"
+        },
+        {
+        "id": "q5023",
+        "question": "Who is the Queen's representative in Canadian provinces?",
+        "option1": "The Lieutenant-Governor",
+        "option2": "A member of the Legislative Assembly",
+        "option3": "A Senator",
+        "option4": "The Premier",
+        "correctOption": "The Lieutenant-Governor",
+        "category": "government"
+        },
+        {
+          "id": "q4691",
+          "question": "Who is considered by many to be the father of Manitoba?",
+          "option1": "Louis Riel",
+          "option2": "Dr. Emily Stowe",
+          "option3": "John Graves Simcoe",
+          "option4": "Gabriel Dumont",
+          "correctOption": "Louis Riel",
+          "category": "history"
+          },
+          {
+          "id": "q4692",
+          "question": "People from which country played a significant role in the building of the Canadian Pacific Railway?",
+          "option1": "China",
+          "option2": "France",
+          "option3": "Great Britain",
+          "option4": "Italy",
+          "correctOption": "China",
+          "category": "history"
+          },
+          {
+          "id": "q4693",
+          "question": "When is ‘Sir Wilfrid Laurier Day’ celebrated?",
+          "option1": "November 20th",
+          "option2": "May 9th",
+          "option3": "December 26th",
+          "option4": "November 21st",
+          "correctOption": "November 20th",
+          "category": "history"
+          },
+          {
+          "id": "q4694",
+          "question": "Who was John Graves Simcoe?",
+          "option1": "The Founder of the city of Toronto",
+          "option2": "The Founder of the city of Calgary",
+          "option3": "The Founder of the city of Victoria",
+          "option4": "The Founder of the city of Kingston",
+          "correctOption": "The Founder of the city of Toronto",
+          "category": "history"
+          },
+          {
+          "id": "q4695",
+          "question": "What does the blindfolded Lady Justice symbolize?",
+          "option1": "The judicial system is blind to all considerations other than facts.",
+          "option2": "The judicial system must respect all the legal rights to which a blind person is entitled under the law.",
+          "option3": "The judicial system is founded on the presumption of innocence in criminal matters.",
+          "option4": "None of these",
+          "correctOption": "The judicial system is blind to all considerations other than facts.",
+          "category": "symbols"
+          },
+          {
+          "id": "q4696",
+          "question": "Quebec is Canada’s main producer of which of the following?",
+          "option1": "Pulp and paper",
+          "option2": "Music",
+          "option3": "Literary works",
+          "option4": "Processed foods",
+          "correctOption": "Pulp and paper",
+          "category": "economy"
+          },
+          {
+          "id": "q4697",
+          "question": "Which oceans line Canada’s frontiers??",
+          "option1": "The Pacific Ocean, the Atlantic Ocean, and the Arctic Ocean",
+          "option2": "The Atlantic Ocean, the Indian Ocean, and the Pacific Ocean",
+          "option3": "The Arctic Ocean and the Pacific Ocean",
+          "option4": "The Pacific Ocean and the Atlantic Ocean",
+          "correctOption": "The Pacific Ocean, the Atlantic Ocean, and the Arctic Ocean",
+          "category": "geography"
+          },
+          {
+            "id": "q4698",
+            "question": "What three requirements must a potential elector meet in order to vote in a federal election?",
+            "option1": "A potential elector must be 18 years or older, must be a Canadian citizen, and must be registered on the voters’ list in order to vote in a federal election.",
+            "option2": "A potential elector must have a driver’s license, must be 21 years or older, and must be registered on the voters’ list in order to vote in a federal election.",
+            "option3": "A potential elector must be a landed immigrant, must be 18 years or older, and must be registered on the voters’ list in order to vote in a federal election.",
+            "option4": "A potential elector must be 21 years or older, must work for the government, and must be a landed immigrant in order to vote in a federal election.",
+            "correctOption": "A potential elector must be 18 years or older, must be a Canadian citizen, and must be registered on the voters’ list in order to vote in a federal election.",
+            "category": "laws"
+            },
+            {
+            "id": "q4699",
+            "question": "For which of the following is the federal government responsible?",
+            "option1": "Criminal law and citizenship",
+            "option2": "Civil Rights",
+            "option3": "Health",
+            "option4": "Education",
+            "correctOption": "Criminal law and citizenship",
+            "category": "government"
+            },
+            {
+            "id": "q4700",
+            "question": "How often are federal elections held in Canada?",
+            "option1": "Every four years",
+            "option2": "Every six years",
+            "option3": "Every five years",
+            "option4": "Every seven years",
+            "correctOption": "Every four years",
+            "category": "government"
+            },
+            {
+            "id": "q4701",
+            "question": "Which of the following are the three founding peoples of Canada?",
+            "option1": "The Aboriginals, the French, and the British",
+            "option2": "The French, the Americans, and the Indians",
+            "option3": "The British, the Americans, and the Aboriginals",
+            "option4": "The Americans, the French, and the British",
+            "correctOption": "The Aboriginals, the French, and the British",
+            "category": "history"
+            },
+            {
+              "id": "q4698",
+              "question": "The discovery of insulin was a result of whose work?",
+              "option1": "Sir Frederick Banting and Charles Best",
+              "option2": "Dr. Emily Stowe",
+              "option3": "John Graves Simcoe",
+              "option4": "Charles Best and Reginald Fessenden",
+              "correctOption": "Sir Frederick Banting and Charles Best",
+              "category": "history"
+              },
+              {
+              "id": "q4699",
+              "question": "Which of the following is Canada’s only officially bilingual province?",
+              "option1": "New Brunswick",
+              "option2": "Quebec",
+              "option3": "Ontario",
+              "option4": "Alberta",
+              "correctOption": "New Brunswick",
+              "category": "government"
+              },
+              {
+              "id": "q4700",
+              "question": "How many territories does Canada have?",
+              "option1": "3",
+              "option2": "10",
+              "option3": "13",
+              "option4": "7",
+              "correctOption": "3",
+              "category": "geography"
+              },
+              {
+              "id": "q4701",
+              "question": "In which industry do most Canadians work?",
+              "option1": "Service",
+              "option2": "Natural resources",
+              "option3": "Information Technology",
+              "option4": "Manufacturing",
+              "correctOption": "Service",
+              "category": "economy"
+              },
+              {
+              "id": "q4702",
+              "question": "Who was General Sir Arthur Currie?",
+              "option1": "The greatest Canadian soldier in the First World War",
+              "option2": "The most famous explorer of western Canada",
+              "option3": "The person who started the “Marathon of Hope”",
+              "option4": "The greatest military leader of the Métis",
+              "correctOption": "The greatest Canadian soldier in the First World War",
+              "category": "history"
+              },
+              {
+              "id": "q4703",
+              "question": "What is the significance of the sport lacrosse in Canada?",
+              "option1": "It is Canada’s official summer sport.",
+              "option2": "It is Canada’s official winter sport.",
+              "option3": "It is fun game played on ice.",
+              "option4": "It is Canada’s most popular sport.",
+              "correctOption": "It is Canada’s official summer sport.",
+              "category": "symbols"
+              },
+              {
+              "id": "q4704",
+              "question": "Who is the head of the government in Canada?",
+              "option1": "The Prime Minister",
+              "option2": "The Commissioner",
+              "option3": "Queen Elizabeth II",
+              "option4": "The Premier",
+              "correctOption": "The Prime Minister",
+              "category": "government"
+              },
+              {
+              "id": "q4705",
+              "question": "To whom or what do Canadians profess loyalty?",
+              "option1": "To a person who represents all Canadians",
+              "option2": "To the Canadian Flag",
+              "option3": "To the Canadian Constitution",
+              "option4": "To Geopolitical entities",
+              "correctOption": "To the Canadian Flag",
+              "category": "symbols"
+              },
+              {
+              "id": "q4706",
+              "question": "For which of the following is the provincial government responsible?",
+              "option1": "Property and civil rights",
+              "option2": "Defence",
+              "option3": "Interprovincial Trade and Communications",
+              "option4": "Currency",
+              "correctOption": "Property and civil rights",
+              "category": "government"
+              }
+]
+
+
+// {
+//   "id": "q4",
+//   "question": "",
+//   "option1": "",
+//   "option2": "",
+//   "option3": "",
+//   "option4": "",
+//   "correctOption": "",
+//   "category": "symbols"
+//   },
+
 export const Ontario = [
   {
     "id": "o64",
@@ -2375,6 +5179,77 @@ export const Quebec = [
         "correctOption": "Sir George-Étienne Cartier",
         "category": "history"
         },
+        {
+          "id": "q4691",
+          "question": "Who has the right to run for a post in federal elections?",
+          "option1": "Any Canadian citizen who is at least 18 years old",
+          "option2": "Any man who is at least 18 years old",
+          "option3": "Any Canadian citizen 16 years of age or older",
+          "option4": "Anyone",
+          "correctOption": "Any Canadian citizen who is at least 18 years old",
+          "category": "government"
+          },
+          {
+          "id": "q4692",
+          "question": "Where do the majority of Canadians live?",
+          "option1": "In Central Canada",
+          "option2": "In the Northern Territories",
+          "option3": "West Coast",
+          "option4": "Prairie Provinces",
+          "correctOption": "In Central Canada",
+          "category": "geography"
+          },
+          {
+          "id": "q4693",
+          "question": "What is 'due process'?",
+          "option1": "It is the legal requirement that the government must respect all the legal rights that are owed to each person.",
+          "option2": "It is the impartial manner in which the laws are administered",
+          "option3": "It is the rule of law and freedom under the law",
+          "option4": "None of these",
+          "correctOption": "It is the legal requirement that the government must respect all the legal rights that are owed to each person.",
+          "category": "laws"
+          },
+          {
+          "id": "q4694",
+          "question": "Which of the following is the industrial and manufacturing heartland in Canada?",
+          "option1": "Central Canada",
+          "option2": "Northern Territories",
+          "option3": "West Coast",
+          "option4": "Prairie Provinces",
+          "correctOption": "Central Canada",
+          "category": "economy"
+          },
+          {
+          "id": "q4695",
+          "question": "Who built the French Empire in North America?",
+          "option1": "Jean Talon, Bishop Laval, and Count Frontenac",
+          "option2": "Great Britain",
+          "option3": "Pierre Le Moyne and Sieur Iberville",
+          "option4": "King Charles II",
+          "correctOption": "Jean Talon, Bishop Laval, and Count Frontenac",
+          "category": "history"
+          },
+          {
+          "id": "q4696",
+          "question": "For which of the following are municipal governments responsible?",
+          "option1": "Snow removal",
+          "option2": "Aboriginal Affairs",
+          "option3": "Education",
+          "option4": "Highways",
+          "correctOption": "Snow removal",
+          "category": "government"
+          },
+          {
+          "id": "q4697",
+          "question": "Who was the first Prime Minister of the Dominion of Canada?",
+          "option1": "Sir John Alexander Macdonald",
+          "option2": "Sir George-Étienne Cartier",
+          "option3": "Sir Louis-Hippolyte La Fontaine",
+          "option4": "Sir Leonard Tilley",
+          "correctOption": "Sir John Alexander Macdonald",
+          "category": "history"
+          },
+
 ]
 
 
