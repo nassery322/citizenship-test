@@ -18,9 +18,11 @@ function App() {
   const [testIsStarted, setTestIsStarted] = useState(false);
   const [loading, setLoading] = useState(true);
   const [numberOfQuestions, setNumberOfQuestions] = useState(null);
-  const [preparationTabIsOpen, setPreparationTabIsOpen] = useState(false)
+  const [preparationTabIsOpen, setPreparationTabIsOpen] = useState(false);
   const [numberOfQuestionsSelected, setNumberOfQuestionsSelected] =
     useState(true);
+  const [askForProvince, setAskForProvince] = useState(false);
+  const [category, setCategory] = useState(null);
   useEffect(() => {
     onAuthStateChanged(auth, async (currentUser) => {
       setInterval(() => {
@@ -34,13 +36,15 @@ function App() {
 
   function askForProvinceHandler() {
     setProvinceIsSelected((e) => !e);
+    
   }
   function provinceSelectHandler(province) {
     setProvince(province);
     setProvinceIsSelected(true);
   }
-  function askForNumberOfQuestionsHandler() {
+  function askForNumberOfQuestionsHandler(category) {
     setNumberOfQuestionsSelected((e) => !e);
+    setCategory(category);
   }
   function numberOfQuestionsHandler(num) {
     setNumberOfQuestions(num);
@@ -49,30 +53,46 @@ function App() {
   const testHandler = (event) => {
     setTestIsStarted(event);
   };
-const preparationTabHandler = () =>{
-  setPreparationTabIsOpen(true)
-}
-const prepTabCloseHandler = () =>{
-  setPreparationTabIsOpen(false)
-}
+  const preparationTabHandler = () => {
+    setPreparationTabIsOpen(true);
+  };
+  const prepTabCloseHandler = () => {
+    setPreparationTabIsOpen(false);
+  };
+
+  const provinceSelectorCloseHandler = () =>{
+    setProvinceIsSelected(true)
+    setNumberOfQuestionsSelected(true)
+  }
   return (
     <div className="App">
       {!loading && (
         <Fragment>
-          {!testIsStarted && provinceIsSelected && <Navbar onPrepTabClose={prepTabCloseHandler} onPreparation={preparationTabHandler} />}
+          {!testIsStarted &&
+            provinceIsSelected &&
+            numberOfQuestionsSelected && (
+              <Navbar
+                onPrepTabClose={prepTabCloseHandler}
+                onPreparation={preparationTabHandler}
+              />
+            )}
           {userIsLoggedIn ? (
             <Fragment>
               {provinceIsSelected && numberOfQuestionsSelected ? (
-               !preparationTabIsOpen && <Tests
-                  askForProvince={askForProvinceHandler}
-                  testIsStarted={testHandler}
-                  askForNumberOfQuestions={askForNumberOfQuestionsHandler}
-                  province={province && province}
-                  numberOfQuestions={numberOfQuestions}
-                />
+                !preparationTabIsOpen && (
+                  <Tests
+                    askForProvince={askForProvinceHandler}
+                    testIsStarted={testHandler}
+                    askForNumberOfQuestions={askForNumberOfQuestionsHandler}
+                    province={province && province}
+                    numberOfQuestions={numberOfQuestions}
+                  />
+                )
               ) : (
                 <ProvinceSelector
-                  onClose={askForProvinceHandler}
+                  askForProvince={provinceIsSelected}
+                  category={category}
+                  onClose={provinceSelectorCloseHandler}
                   province={provinceSelectHandler}
                   requestNumberOfQuestions={numberOfQuestionsSelected}
                   numberOfQuestions={numberOfQuestionsHandler}
@@ -81,19 +101,24 @@ const prepTabCloseHandler = () =>{
               {!testIsStarted && provinceIsSelected && (
                 <Fragment>
                   {preparationTabIsOpen ? <Preparation /> : <Progress />}
-                  
                 </Fragment>
               )}
             </Fragment>
           ) : (
             <Fragment>
-              { !preparationTabIsOpen ? 
-              <Fragment>
-              <Home />
-              <Features />
-              <About />
-              <Contact />
-              </Fragment> : <Preparation />}
+              {!preparationTabIsOpen ? (
+                <Fragment>
+                  <Home hideNav={testHandler}/>
+                  {!testIsStarted && <Fragment>
+                  <Features />
+                  <About />
+                  <Contact />
+                  </Fragment>}
+                  
+                </Fragment>
+              ) : (
+                <Preparation />
+              )}
             </Fragment>
           )}
         </Fragment>

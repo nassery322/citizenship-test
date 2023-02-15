@@ -59,6 +59,21 @@ background-position-y: 70%; */
   font-size: 1.2rem;
   line-height: 2rem;
 }
+
+
+
+@media (min-width:1120px){
+  .sample-btn{
+    width:450px;
+  }
+}
+@media (max-width: 1120px) {
+  .sample-btn{
+    margin-bottom: 30px;
+    max-width: 450px !important;
+    min-width: 100px;
+  }
+}
 @media (max-width: 911px) {
   .home-quote {
     font-size: 1.7rem;

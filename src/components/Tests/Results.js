@@ -86,7 +86,7 @@ const Results = (props) => {
       return;
     }
   }, [props.score, props.sendScore]);
-
+  const error = props.retakeDisabled && "Sign up to access all test materials!"
   return (
     <Fragment>
       <section className="results">
@@ -106,7 +106,8 @@ const Results = (props) => {
           <button className="check-btn" onClick={props.onCheck}>
             Check Answers
           </button>
-          <Button onClick={props.onRetake}>Retake Test</Button>
+          <Button onClick={props.onRetake} disabled={props.retakeDisabled}>Retake Test</Button>
+          <p style={{'color': '#d22a2a' , 'fontSize': '1.2rem'}}>{error}</p>
         </div>
       </section>
     </Fragment>

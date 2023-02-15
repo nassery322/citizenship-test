@@ -18,3 +18,11 @@
    background-color:#d22a2a ;
 }
 
+button:disabled{
+    opacity: .3;
+}
+button:disabled:hover{
+    background-color: inherit;
+    color:inherit
+}
+

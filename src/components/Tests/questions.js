@@ -3129,6 +3129,190 @@ export const Questions = [{
                 "category": "economy"
                 },
                 {
+                  "id": "s84",
+                  "question": "What three industries are important to Saskatchewan’s economy today?",
+                  "option1": "Forestry, films and tourism",
+                  "option2": "Fishing, mining and agriculture",
+                  "option3": "Mining, oil production and forestry",
+                  "option4": "Farming, mining and natural gas",
+                  "correctOption": "Farming, mining and natural gas",
+                  "category": "economy"
+                  },{
+                    "id": "q4694",
+                    "question": "Which of the following is the industrial and manufacturing heartland in Canada?",
+                    "option1": "Central Canada",
+                    "option2": "Northern Territories",
+                    "option3": "West Coast",
+                    "option4": "Prairie Provinces",
+                    "correctOption": "Central Canada",
+                    "category": "economy"
+                    },{
+                      "id": "qu82",
+                      "question": "What three industries are important to Quebec’s economy today?",
+                      "option1": "Tourism, mining and forestry",
+                      "option2": "Pulp and paper, forestry and hydro-electric power",
+                      "option3": "Films, fishing and mining",
+                      "option4": "Forestry, shipping and tourism",
+                      "correctOption": "Pulp and paper, forestry and hydro-electric power",
+                      "category": "economy"
+                      }, {
+                        "id": "ns84",
+                        "question": "What three industries are important to Nova Scotia’s economy today?",
+                        "option1": "Fisheries, shipbuilding and forestry",
+                        "option2": "Forestry, mining and tourism",
+                        "option3": "Coal mining, forestry and agriculture",
+                        "option4": "Tourism, movies and shipbuilding",
+                        "correctOption": "Coal mining, forestry and agriculture",
+                        "category": "economy"
+                        },{
+                          "id": "nl84",
+                          "question": "What three industries are important to Newfoundland and Labrador’s economy today?",
+                          "option1": "Fisheries, oil and gas extraction",
+                          "option2": "Fisheries, tourism, forestry",
+                          "option3": "Shipbuilding, fisheries and mining",
+                          "option4": "Tourism, mining and forestry",
+                          "correctOption": "Fisheries, oil and gas extraction",
+                          "category": "economy"
+                          },
+                          {
+                            "id": "nb84",
+                            "question": "What three industries are important to New Brunswick’s economy today?",
+                            "option1": "Forestry, hydro-electric power generation, oil",
+                            "option2": "Fisheries, oil, tourism",
+                            "option3": "Atlantic trade, fishing and oil",
+                            "option4": "Forestry, agriculture and mining",
+                            "correctOption": "Forestry, agriculture and mining",
+                            "category": "economy"
+                            },
+                            {
+                              "id": "m84",
+                              "question": "What three industries are important to Manitoba’s economy today?",
+                              "option1": "Farming, mining and fishing",
+                              "option2": "Agriculture, mining and hydro-electric power generation",
+                              "option3": "Fishing, tourism and mining",
+                              "option4": "Forestry, fishing and energy",
+                              "correctOption": "Agriculture, mining and hydro-electric power generation",
+                              "category": "economy"
+                              },{
+                                "id": "b129",
+                                "question": "Which three natural resources are important to British Columbia’s economy today?",
+                                "option1": "Forests, water and grain crops.",
+                                "option2": "Forests, fish and water.",
+                                "option3": "Fish, oil and water.",
+                                "option4": "Coal, water and shipbuilding.",
+                                "correctOption": "Forests, fish and water.",
+                                "category": "economy"
+                                },
+                                {
+                                "id": "b156",
+                                "question": "Why is British Columbia known as Canada’s Pacific Gateway?",
+                                "option1": "Most new imigrants arrive at Vancouver International Airport.",
+                                "option2": "British Columbia is the closest province to the Far East.",
+                                "option3": "Billions of dollars in trade goods are handled through the Port of Vancouver.",
+                                "option4": "British Columbia borders the Pacific Ocean.",
+                                "correctOption": "Billions of dollars in trade goods are handled through the Port of Vancouver.",
+                                "category": "economy"
+                                },{
+                                  "id": "a124",
+                                  "question": "Which three natural resources are important to Alberta’s economy today?",
+                                  "option1": "Oil, agriculture, and forestry.",
+                                  "option2": "Oil, tourism, and fishing.",
+                                  "option3": "Oil, coal, and hydroelectricity.",
+                                  "option4": "Oil, coal, and forestry.",
+                                  "correctOption": "Oil, agriculture, and forestry.",
+                                  "category": "economy"
+                                  },{
+                                    "id": "o84",
+                                    "question": "What three industries are important to Ontario’s economy today?",
+                                    "option1": "Mining, fishing, automobile manufacturing",
+                                    "option2": "Mining, tourism, automobile manufacturing",
+                                    "option3": "Farming, tourism, fishing",
+                                    "option4": "Automobile manufacturing, tourism, fishing",
+                                    "correctOption": "Mining, tourism, automobile manufacturing",
+                                    "category": "economy"
+                                    },
+                          
+                          {
+                            "id": "q46940",
+                            "question": "Which of the following is the industrial and manufacturing heartland in Canada?",
+                            "option1": "Central Canada",
+                            "option2": "Northern Territories",
+                            "option3": "West Coast",
+                            "option4": "Prairie Provinces",
+                            "correctOption": "Central Canada",
+                            "category": "economy"
+                            },
+                            {
+                              "id": "q7009",
+                              "question": "What is the Goods and Services Tax (GST) in Canada?",
+                              "option1": "A tax on goods and services sold in Canada",
+                              "option2": "A tax on goods and services imported into Canada",
+                              "option3": "A tax on income earned in Canada",
+                              "option4": "A tax on capital gains earned in Canada",
+                              "correctOption": "A tax on goods and services sold in Canada",
+                              "category": "economy"
+                              },
+                              {
+                              "id": "q7010",
+                              "question": "What is the Canada Pension Plan (CPP)?",
+                              "option1": "A retirement savings plan sponsored by the Canadian government",
+                              "option2": "A health care plan provided to all Canadian citizens",
+                              "option3": "A program to support low-income Canadians",
+                              "option4": "A tax credit for small business owners",
+                              "correctOption": "A retirement savings plan sponsored by the Canadian government",
+                              "category": "economy"
+                              },
+                              {
+                              "id": "q7011",
+                              "question": "What is the average household debt in Canada?",
+                              "option1": "Approximately $10,000",
+                              "option2": "Approximately $50,000",
+                              "option3": "Approximately $100,000",
+                              "option4": "Approximately $200,000",
+                              "correctOption": "Approximately $50,000",
+                              "category": "economy"
+                              },
+                              {
+                              "id": "q7012",
+                              "question": "What is the Bank of Canada?",
+                              "option1": "A commercial bank that provides financial services to Canadian citizens",
+                              "option2": "A government agency that regulates the Canadian banking system",
+                              "option3": "A federal department responsible for the management of public finances",
+                              "option4": "A crown corporation responsible for investing the assets of the Canada Pension Plan",
+                              "correctOption": "A government agency that regulates the Canadian banking system",
+                              "category": "economy"
+                              },
+                              {
+                              "id": "q7013",
+                              "question": "What is the Toronto Stock Exchange?",
+                              "option1": "A stock exchange located in Toronto, Ontario",
+                              "option2": "A stock exchange located in Vancouver, British Columbia",
+                              "option3": "A stock exchange located in Montreal, Quebec",
+                              "option4": "A stock exchange located in Calgary, Alberta",
+                              "correctOption": "A stock exchange located in Toronto, Ontario",
+                              "category": "economy"
+                              },
+                              {
+                              "id": "q7014",
+                              "question": "What is the Canada Revenue Agency (CRA)?",
+                              "option1": "A government agency responsible for collecting taxes in Canada",
+                              "option2": "A government agency responsible for regulating financial institutions in Canada",
+                              "option3": "A government agency responsible for providing financial assistance to Canadians",
+                              "option4": "A government agency responsible for enforcing immigration laws in Canada",
+                              "correctOption": "A government agency responsible for collecting taxes in Canada",
+                              "category": "economy"
+                              },
+                              {
+                              "id": "q7015",
+                              "question": "What is the unemployment rate in Canada?",
+                              "option1": "Approximately 5%",
+                              "option2": "Approximately 10%",
+                              "option3": "Approximately 15%",
+                              "option4": "Approximately 20%",
+                              "correctOption": "Approximately 5%",
+                              "category": "economy"
+                              },
+                {
                 "id": "q339",
                 "question": "Which war did Canadian troops fight in as part of a United Nations force between 1950 and 1953?",
                 "option1": "Korea",
@@ -4260,6 +4444,86 @@ export const Questions = [{
           "category": "economy"
           },
           {
+            "id": "q7001",
+            "question": "Which sector of the Canadian economy is the largest contributor to the country's GDP?",
+            "option1": "Agriculture",
+            "option2": "Manufacturing",
+            "option3": "Service",
+            "option4": "Natural resources",
+            "correctOption": "Service",
+            "category": "economy"
+            },
+            {
+            "id": "q7002",
+            "question": "Which Canadian city is known as the financial capital of the country?",
+            "option1": "Montreal",
+            "option2": "Vancouver",
+            "option3": "Toronto",
+            "option4": "Calgary",
+            "correctOption": "Toronto",
+            "category": "economy"
+            },
+            {
+            "id": "q7003",
+            "question": "Which organization regulates and oversees the Canadian banking system?",
+            "option1": "Bank of Canada",
+            "option2": "Canadian Imperial Bank of Commerce",
+            "option3": "Royal Bank of Canada",
+            "option4": "Office of the Superintendent of Financial Institutions (OSFI)",
+            "correctOption": "Office of the Superintendent of Financial Institutions (OSFI)",
+            "category": "economy"
+            },
+            {
+            "id": "q7004",
+            "question": "Which Canadian province is known for its strong technology industry and is home to many of Canada's top tech companies?",
+            "option1": "Ontario",
+            "option2": "Quebec",
+            "option3": "British Columbia",
+            "option4": "Alberta",
+            "correctOption": "British Columbia",
+            "category": "economy"
+            },
+            {
+            "id": "q7005",
+            "question": "Which Canadian industry produces the most employment opportunities?",
+            "option1": "Agriculture",
+            "option2": "Manufacturing",
+            "option3": "Service",
+            "option4": "Natural resources",
+            "correctOption": "Service",
+            "category": "economy"
+            },
+            {
+            "id": "q7006",
+            "question": "What is the currency used in Canada?",
+            "option1": "Canadian dollar",
+            "option2": "American dollar",
+            "option3": "Euro",
+            "option4": "Yen",
+            "correctOption": "Canadian dollar",
+            "category": "economy"
+            },
+            {
+            "id": "q7007",
+            "question": "What is Canada's national debt?",
+            "option1": "Approximately $1 trillion",
+            "option2": "Approximately $500 billion",
+            "option3": "Approximately $100 billion",
+            "option4": "Approximately $10 billion",
+            "correctOption": "Approximately $1 trillion",
+            "category": "economy"
+            },
+            {
+            "id": "q7008",
+            "question": "Which of the following is the main regulatory body responsible for ensuring fair competition and protecting consumers in Canada?",
+            "option1": "Canadian Radio-television and Telecommunications Commission (CRTC)",
+            "option2": "Competition Bureau",
+            "option3": "Canadian Food Inspection Agency (CFIA)",
+            "option4": "Transport Canada",
+            "correctOption": "Competition Bureau",
+            "category": "economy"
+            },
+          {
           "id": "q4697",
           "question": "Which oceans line Canada’s frontiers??",
           "option1": "The Pacific Ocean, the Atlantic Ocean, and the Arctic Ocean",
@@ -4398,7 +4662,168 @@ export const Questions = [{
               "option4": "Currency",
               "correctOption": "Property and civil rights",
               "category": "government"
-              }
+              },
+              {
+                "id": "o64",
+                "question": "What is the capital city of Ontario?",
+                "option1": "Kingston",
+                "option2": "Ottawa",
+                "option3": "Toronto",
+                "option4": "London",
+                "correctOption": "Toronto",
+                "category": "geography"
+              },
+              {
+                "id": "a63",
+                "question": "What is the capital city of Alberta?",
+                "option1": "Medicine Hat.",
+                "option2": "Red Deer.",
+                "option3": "Calgary.",
+                "option4": "Edmonton.",
+                "correctOption": "Edmonton.",
+                "category": "geography"
+                },
+                {
+                  "id": "b23",
+                  "question": "Name the federal electoral districts in Richmond, British Columbia.",
+                  "option1": "Richmond has two federal electoral districts: Richmond North and Richmond South",
+                  "option2": "Richmond has two federal electoral districts: Richmond East and Richmond West",
+                  "option3": "Richmond has two federal electoral districts: Richmond and Richmond South.",
+                  "option4": "Richmond has two federal electoral districts: Richmond Centre and Steveston-Richmond East",
+                  "correctOption": "Richmond has two federal electoral districts: Richmond Centre and Steveston-Richmond East",
+                  "category": "geography"
+                  },
+                  {
+                    "id": "b67",
+                    "question": "What is the capital city of British Columbia?",
+                    "option1": "Vancouver.",
+                    "option2": "Prince George.",
+                    "option3": "Victoria.",
+                    "option4": "New Westminster.",
+                    "correctOption": "Victoria.",
+                    "category": "geography"
+                    },
+                    {
+                      "id": "m64",
+                      "question": "What is the capital city of Manitoba?",
+                      "option1": "Winnipeg",
+                      "option2": "Grand Rapids",
+                      "option3": "Portage la Prairie",
+                      "option4": "Brandon",
+                      "correctOption": "Winnipeg",
+                      "category": "geography"
+                      },
+
+                      {
+                        "id": "nb64",
+                        "question": "What is the capital city of New Brunswick?",
+                        "option1": "Victoria",
+                        "option2": "Winnipeg",
+                        "option3": "Fredericton",
+                        "option4": "Montreal",
+                        "correctOption": "Fredericton",
+                        "category": "geography"
+                        },
+                        {
+                          "id": "nl64",
+                          "question": "What is the capital city of Newfoundland and Labrador?",
+                          "option1": "Charlottetown",
+                          "option2": "Chimney Tickle",
+                          "option3": "St. John's",
+                          "option4": "St. Pierre et Miquelon",
+                          "correctOption": "St. John's",
+                          "category": "geography"
+                          },
+                          {
+                            "id": "nt64",
+                            "question": "What is the capital City of the Northwest Territories?",
+                            "option1": "Fort Simpson",
+                            "option2": "Hay River",
+                            "option3": "Fort Providence",
+                            "option4": "Yellowknife",
+                            "correctOption": "Yellowknife",
+                            "category": "geography"
+                            },
+                            {
+                              "id": "ns64",
+                              "question": "What is the capital city of Nova Scotia?",
+                              "option1": "Shearwater",
+                              "option2": "Halifax",
+                              "option3": "Dartmouth",
+                              "option4": "Devon",
+                              "correctOption": "Halifax",
+                              "category": "geography"
+                              },
+                              {
+                                "id": "n64",
+                                "question": "What is the capital City of the Nunavut?",
+                                "option1": "Sinaa",
+                                "option2": "Iqaluit",
+                                "option3": "Nipisa",
+                                "option4": "Mivvik",
+                                "correctOption": "Iqaluit",
+                                "category": "geography"
+                                },
+                                {
+                                  "id": "pe64",
+                                  "question": "What is the capital City of the Prince Edward Island?",
+                                  "option1": "Cornwall",
+                                  "option2": "Stratford",
+                                  "option3": "Charlottetown",
+                                  "option4": "Georgetown",
+                                  "correctOption": "Charlottetown",
+                                  "category": "geography"
+                                  },
+                                  {
+                                    "id": "qu56",
+                                    "question": "What is a major river in Quebec?",
+                                    "option1": "Fraser River",
+                                    "option2": "St. Lawrence River",
+                                    "option3": "Niagara",
+                                    "option4": "Hudson's Bay.",
+                                    "correctOption": "St. Lawrence River",
+                                    "category": "geography"
+                                    },
+                                    {
+                                    "id": "qu64",
+                                    "question": "What is the capital City of the Quebec?",
+                                    "option1": "Beauport",
+                                    "option2": "Quebec City",
+                                    "option3": "Montreal",
+                                    "option4": "Chicoutimi",
+                                    "correctOption": "Quebec City",
+                                    "category": "geography"
+                                    },
+                                    {
+                                      "id": "q4692",
+                                      "question": "Where do the majority of Canadians live?",
+                                      "option1": "In Central Canada",
+                                      "option2": "In the Northern Territories",
+                                      "option3": "West Coast",
+                                      "option4": "Prairie Provinces",
+                                      "correctOption": "In Central Canada",
+                                      "category": "geography"
+                                      },
+                                      {
+                                        "id": "s64",
+                                        "question": "What is the capital city of Saskatchewan?",
+                                        "option1": "Regina",
+                                        "option2": "Avonlea",
+                                        "option3": "Glenavon",
+                                        "option4": "Fort Qu'Appelle",
+                                        "correctOption": "Regina",
+                                        "category": "geography"
+                                        },
+                                        {
+                                          "id": "y64",
+                                          "question": "What is the capital city of Yukon Territory?",
+                                          "option1": "MacRae",
+                                          "option2": "Crestview",
+                                          "option3": "Whitehorse",
+                                          "option4": "Riverdale",
+                                          "correctOption": "Whitehorse",
+                                          "category": "geography"
+                                          },
 ]
 
 

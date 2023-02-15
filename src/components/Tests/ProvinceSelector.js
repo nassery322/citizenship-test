@@ -4,7 +4,8 @@ import "./ProvinceSelector.css";
 
 const ProvinceSelector = (props) => {
   const [province, setProvince] = useState("AB");
-  const [number, setNumber] = useState(!props.requestNumberOfQuestions &&  5)
+  const [number, setNumber] = useState(!props.requestNumberOfQuestions && 20);
+  const [options, setOptions] = useState([5, 10, 20, 40, 80, "All"]);
   const CanadianProvinces = [
     { name: "Alberta", code: "AB" },
     { name: "British Columbia", code: "BC" },
@@ -25,56 +26,94 @@ const ProvinceSelector = (props) => {
   const provinceHandler = (e) => {
     setProvince(e.target.value);
   };
-  const numberHandler = (e) =>{
-    setNumber(e.target.value)
-  }
+  const numberHandler = (e) => {
+    setNumber(e.target.value);
+  };
   const submitHandler = (e) => {
     e.preventDefault();
     if (province) {
       props.province(province);
     }
-    if(number){
-      props.numberOfQuestions(number)
+    if (number) {
+      props.numberOfQuestions(number);
     }
+    window.scrollTo(0, 0);
   };
- 
-
+  useEffect(() => {
+    if (props.category) {
+      if (props.category === "geography") {
+        setOptions([5, 10, 20, 40, 50, 55]);
+      }
+      if (props.category === "history") {
+        setOptions([5, 10, 20, 40, 80, 150]);
+      }
+      if (props.category === "government") {
+        setOptions([5, 10, 20, 40, 80, 150]);
+      }
+      if (props.category === "laws") {
+        setOptions([5, 10, 20, 40, 50, 60]);
+      }
+      if (props.category === "symbols") {
+        setOptions([5, 10, 20, 40, 50, 55]);
+      }
+      if (props.category === "economy") {
+        setOptions([5, 10, 15, 20, 40, 50,]);
+      }
+    }
+  }, [props.category]);
+  const closeHandler = () =>{
+    props.onClose(true)
+  }
   return (
     <Fragment>
-      <div className="close-btn" onClick={props.onClose}>
+      <div className="close-btn" onClick={closeHandler}>
         &times;
       </div>
       <section className="province-selector">
         <form>
-          <label htmlFor="province">
-            {props.requestNumberOfQuestions
-              ? `Please select your province of residence:`
-              : "Please select your province of residence and number of questions:"}
-          </label>
-          <select
-            className="form-select"
-            aria-label="Default select example"
-            onChange={provinceHandler}
-            defaultValue="AB"
-          >
-            {CanadianProvinces.map((province) => (
-              <option key={province.code} value={province.code}>
-                {province.name}
-              </option>
-            ))}
-          </select>
-          <div className="num-questions">
-            {!props.requestNumberOfQuestions && (
-              <select className="form-select" defaultValue="AB" onChange={numberHandler}>
-                <option value="5">5</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="40">40</option>
-                <option value="80">80</option>
-                <option value="all">All</option>
+          {!props.askForProvince && (
+            <Fragment>
+              <label htmlFor="province">
+                {props.requestNumberOfQuestions
+                  ? `Please select your province of residence:`
+                  : "Please select your province of residence and number of questions:"}
+              </label>
+              <select
+                className="form-select"
+                aria-label="Default select example"
+                onChange={provinceHandler}
+                defaultValue="AB"
+              >
+                {CanadianProvinces.map((province) => (
+                  <option key={province.code} value={province.code}>
+                    {province.name}
+                  </option>
+                ))}
               </select>
-            )}
-          </div>
+            </Fragment>
+          )}
+          {!props.requestNumberOfQuestions && (
+            <div className="num-questions">
+              {props.askForProvince && (
+                <label htmlFor="questions-amount">
+                  Please select the number of questions.
+                </label>
+              )}
+
+              <select
+                className="form-select"
+                name="questions-amount"
+                defaultValue="20"
+                onChange={numberHandler}
+              >
+                {options.map((option, index) => (
+                  <option key={index} value={option === 'All'? 'all' : option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
           <Button onClick={submitHandler} style={buttonStyles}>
             Start Test
           </Button>

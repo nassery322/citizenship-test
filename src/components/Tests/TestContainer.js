@@ -54,7 +54,7 @@ const TestContainer = (props) => {
   };
 
   const mainQuestion = props.questions[questionNum];
-  const selectedOption = answers[questionNum].selectedOption;
+  const selectedOption =  answers[questionNum].selectedOption;
   const questionsLength = props.questions.length;
   function testFinishedHandler() {
     setTestIsFinished(true);
@@ -177,6 +177,7 @@ const TestContainer = (props) => {
     setSendScore(true);
     testFinishedHandler();
   };
+  const disabled = props.retakeDisabled;
  
   return (
     <Fragment>
@@ -203,6 +204,7 @@ const TestContainer = (props) => {
             sendScore={sendScore}
             categoryScores={categoryScores}
             id={props.id}
+            retakeDisabled={disabled}
           />
         ) : (
           <section className="test-container-main">

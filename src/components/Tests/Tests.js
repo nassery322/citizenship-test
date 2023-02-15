@@ -28,6 +28,9 @@ import {
 import TestContainer from "./TestContainer";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 
+export function shuffleArray(a, b) {
+  return Math.random() - 0.5;
+}
 const Tests = (props) => {
   const [testIsStarted, setTestIsStarted] = useState(false);
   const [testQuestions, setTestQuestions] = useState();
@@ -36,9 +39,8 @@ const Tests = (props) => {
   const [testId, setTestId] = useState(null);
   const [loading, setLoading] = useState(false);
   const [numberOfQuestions, setNumberOfQuestions] = useState(null);
-  function shuffleArray(a, b) {
-    return Math.random() - 0.5;
-  }
+  
+
   const testsArray = [
     {
       id: "t1",
@@ -79,7 +81,7 @@ const Tests = (props) => {
             question.category && question.category.toLowerCase() === "geography"
         )
         .sort(shuffleArray)
-        .slice(0, 15),
+        .slice(0, numberOfQuestions),
     },
     {
       id: "t4",
@@ -92,7 +94,7 @@ const Tests = (props) => {
           (question) =>
             question.category && question.category.toLowerCase() === "history"
         )
-        .slice(0, 15),
+        .slice(0, numberOfQuestions),
     },
     {
       id: "t5",
@@ -106,7 +108,7 @@ const Tests = (props) => {
             question.category &&
             question.category.toLowerCase() === "government"
         )
-        .slice(0, 15),
+        .slice(0, numberOfQuestions),
     },
     {
       id: "t6",
@@ -119,7 +121,7 @@ const Tests = (props) => {
           (question) =>
             question.category && question.category.toLowerCase() === "laws"
         )
-        .slice(0, 15),
+        .slice(0, numberOfQuestions),
     },
     {
       id: "t7",
@@ -132,7 +134,7 @@ const Tests = (props) => {
           (question) =>
             question.category && question.category.toLowerCase() === "symbols"
         )
-        .slice(0, 15),
+        .slice(0, numberOfQuestions),
     },
     {
       id: "t8",
@@ -145,7 +147,7 @@ const Tests = (props) => {
           (question) =>
             question.category && question.category.toLowerCase() === "economy"
         )
-        .slice(0, 15),
+        .slice(0, numberOfQuestions),
     },
   ];
   const startTestHandler = (questions) => {
@@ -204,9 +206,8 @@ const Tests = (props) => {
     if (props.province) {
       provinceSelectHandler(props.province);
     }
-    if (props.numberOfQuestions) {
-      setNumberOfQuestions(props.numberOfQuestions);
-    }
+
+    setNumberOfQuestions(props.numberOfQuestions);
   }, [province, props.numberOfQuestions]);
 
   function askForProvinceHandler() {
@@ -214,11 +215,10 @@ const Tests = (props) => {
     props.askForProvince(true);
   }
 
-  function askForNumberOfQuestionsHandler() {
+  function askForNumberOfQuestionsHandler(category) {
     setTestIsClosed(false);
-    props.askForNumberOfQuestions(true);
+    props.askForNumberOfQuestions(category);
   }
-
   function closeContainerHandler() {
     setTestIsStarted(false);
     props.testIsStarted(false);
@@ -239,7 +239,6 @@ const Tests = (props) => {
   }, []);
   return (
     <Fragment>
-
       {loading ? (
         <LoadingSpinner />
       ) : (

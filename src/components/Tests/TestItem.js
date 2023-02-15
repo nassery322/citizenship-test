@@ -4,22 +4,47 @@ import "./TestItem.css";
 
 const TestItem = (props) => {
   const startTestHandler = () => {
-    props.idForRetake(props.id)
+    window.scrollTo(0, 0); 
+    props.idForRetake(props.id);
     if (props.id === "t1") {
       props.askForProvince(true);
       return;
     }
-    if(props.id === 't2'){
-      props.askForProvince(true)
-      props.askForNumberOfQuestions(true)
+    if (props.id === "t2") {
+      props.askForProvince(true);
+      props.askForNumberOfQuestions(true);
+      return;
+    } 
+     if(props.id === "t3"){
+      props.askForNumberOfQuestions('geography');
       return;
     }
-    props.startTest(props.questions);
+    if(props.id === "t4"){
+      props.askForNumberOfQuestions('history');
+      return;
+    }
+    if(props.id === "t5"){
+      props.askForNumberOfQuestions('government');
+      return;
+    }
+    if(props.id === "t6"){
+      props.askForNumberOfQuestions('laws');
+      return;
+    }
+    if(props.id === "t7"){
+      props.askForNumberOfQuestions('symbols');
+      return;
+    }
+    if(props.id === "t8"){
+      props.askForNumberOfQuestions('economy');
+      return;
+    }
     
   };
   useEffect(() => {
+ 
     if (props.id === "t1") {
-      props.idForRetake(props.id)
+      props.idForRetake(props.id);
       if (props.testIsClosed) {
         return;
       }
@@ -27,19 +52,23 @@ const TestItem = (props) => {
         props.startTest(props.questions);
       }
     }
-    if(props.id === 't2'){
-      props.idForRetake(props.id)
-      if(props.testIsClosed){
+    
+    if (props.id === "t2") {
+      props.idForRetake(props.id);
+      if (props.testIsClosed) {
         return;
       }
-      if(props.numberOfQuestions && props.province){
-        props.startTest(props.questions)
+      if (props.numberOfQuestions && props.province) {
+        props.startTest(props.questions);
       }
+      return;
     }
-
-
+    
+    
   }, [props.province, props.questions, props.numberOfQuestions]);
-  
+
+
+
 
   return (
     <Fragment>

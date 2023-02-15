@@ -4,11 +4,14 @@ import "./Home.css";
 import HomeContent from "./HomeContent";
 import Navbar from "./Navbar/Navbar";
 
-const Home = () => {
+const Home = (props) => {
+  function hideNavHandler(e){
+props.hideNav(e)
+  }
   return (
     <Fragment>
       <section className="home">
-        <HomeContent />
+        <HomeContent hideNav={hideNavHandler} />
       </section>
     </Fragment>
   );
