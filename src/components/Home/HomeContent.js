@@ -24,7 +24,7 @@ const HomeContent = (props) => {
     }
   }
 
-  const sampleTestQuestions = Questions.sort(shuffleArray).slice(0, 15)
+  const sampleTestQuestions = Questions.slice(0, 15)
   const sampleTestHandler = () => {
     setShowSampleTest((e) => !e);
     props.hideNav(e => !e)
@@ -62,7 +62,7 @@ const HomeContent = (props) => {
                 Login
               </button>
               <Button className="sample-btn" onClick={sampleTestHandler}>
-                Try free sample test
+                Try Free Sample Test
               </Button>
 
               {form === "signup" ? (
