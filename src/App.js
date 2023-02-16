@@ -11,6 +11,7 @@ import ProvinceSelector from "./components/Tests/ProvinceSelector";
 import Preparation from "./components/Preparation/Preparation";
 import Navbar from "./components/Home/Navbar/Navbar";
 import Progress from "./components/Progress/Progress";
+import { Router } from "react-router-dom";
 function App() {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [provinceIsSelected, setProvinceIsSelected] = useState(true);
@@ -36,11 +37,11 @@ function App() {
 
   function askForProvinceHandler() {
     setProvinceIsSelected((e) => !e);
-    
   }
   function provinceSelectHandler(province) {
     setProvince(province);
     setProvinceIsSelected(true);
+    
   }
   function askForNumberOfQuestionsHandler(category) {
     setNumberOfQuestionsSelected((e) => !e);
@@ -52,6 +53,7 @@ function App() {
   }
   const testHandler = (event) => {
     setTestIsStarted(event);
+    
   };
   const preparationTabHandler = () => {
     setPreparationTabIsOpen(true);
@@ -62,6 +64,7 @@ function App() {
 
   const provinceSelectorCloseHandler = () =>{
     setProvinceIsSelected(true)
+    
     setNumberOfQuestionsSelected(true)
   }
   return (
@@ -100,7 +103,7 @@ function App() {
               )}
               {!testIsStarted && provinceIsSelected && (
                 <Fragment>
-                  {preparationTabIsOpen ? <Preparation /> : <Progress />}
+                  {preparationTabIsOpen ? <Preparation onClose={prepTabCloseHandler}/> : <Fragment><Progress /></Fragment>}
                 </Fragment>
               )}
             </Fragment>
@@ -117,7 +120,7 @@ function App() {
                   
                 </Fragment>
               ) : (
-                <Preparation />
+                <Preparation onClose={prepTabCloseHandler}/>
               )}
             </Fragment>
           )}

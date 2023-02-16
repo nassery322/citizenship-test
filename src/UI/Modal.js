@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import "./Modal.css";
 import CSSTransition from "react-transition-group/CSSTransition";
 
@@ -31,8 +31,21 @@ const Overlay = (props) => {
     </CSSTransition>
   );
 };
-
 const Modal = (props) => {
+  useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+    const handlePopstate = () => {
+      if(props.show){
+
+        props.onClick();
+      }
+    };
+    window.addEventListener('popstate', handlePopstate);
+    return () => {
+      window.removeEventListener('popstate', handlePopstate);
+    }
+  }, [props.onClick]);
+  
   return (
     <React.Fragment>
       {props.show &&

@@ -1,5 +1,4 @@
 .test-container {
-  min-height: 100vh;
   height: auto;
   width: 100%;
   display: flex;
@@ -111,7 +110,15 @@
   border-color: #d22a2a;
   cursor: pointer;
 }
-
+.test-btn:disabled{
+  opacity: .6;
+  
+}
+.test-btn:disabled:hover{
+  border-color: grey;
+  color: grey;
+  opacity: .6;
+}
 .selectedOption {
   background-color: rgb(83, 83, 189);
   color: white;

@@ -52,7 +52,7 @@ setManageModalIsOpen(e => !e)
         </a>
       </li>
       <li onClick={props.onPreparation}>
-        <a href="#preparation" className="nav-link">
+        <a onClick={props.onPreparation} className="nav-link">
           Preparation
         </a>
       </li>
@@ -76,7 +76,7 @@ setManageModalIsOpen(e => !e)
         </a>
       </li>
       <li onClick={props.onPreparation}>
-        <a href="#preparation" className="nav-link">
+        <a onClick={props.onPreparation} className="nav-link">
           Preparation
         </a>
       </li>

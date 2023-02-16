@@ -27,11 +27,15 @@ import {
 } from "./questions";
 import TestContainer from "./TestContainer";
 import LoadingSpinner from "../../UI/LoadingSpinner";
+import { useSelector, useDispatch } from "react-redux";
+import { testActions } from "../../Store/testSlice";
+import { useNavigate } from 'react-router-dom';
 
 export function shuffleArray(a, b) {
   return Math.random() - 0.5;
 }
 const Tests = (props) => {
+  const dispatch = useDispatch();
   const [testIsStarted, setTestIsStarted] = useState(false);
   const [testQuestions, setTestQuestions] = useState();
   const [province, setProvince] = useState(null);
@@ -39,7 +43,8 @@ const Tests = (props) => {
   const [testId, setTestId] = useState(null);
   const [loading, setLoading] = useState(false);
   const [numberOfQuestions, setNumberOfQuestions] = useState(null);
-  
+
+  const TestId = useSelector((state) => state.tests.testId);
 
   const testsArray = [
     {
@@ -150,14 +155,13 @@ const Tests = (props) => {
         .slice(0, numberOfQuestions),
     },
   ];
-  const startTestHandler = (questions) => {
-    if (!questions) {
-      return;
-    }
-
+  const startTestHandler = () => {
+    const questions = testsArray.find((test) => test.id === TestId)?.questions;
+    
     setTestIsStarted(true);
     props.testIsStarted(true);
     setTestQuestions(questions);
+    window.history.forward()
   };
 
   const provinceSelectHandler = (provinceCode) => {
@@ -228,9 +232,10 @@ const Tests = (props) => {
     setTestIsStarted(false);
     startTestHandler(testsArray.find((test) => test.id === id).questions);
   };
-
+ 
   function testIdentfierHandler(id) {
     setTestId(id);
+    
   }
   useEffect(() => {
     setInterval(() => {
@@ -258,6 +263,7 @@ const Tests = (props) => {
                     idForRetake={testIdentfierHandler}
                     key={test.id}
                     id={test.id}
+                    
                     title={test.title}
                     description={test.description}
                     image={test.image}

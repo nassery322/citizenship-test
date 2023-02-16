@@ -1,10 +1,14 @@
-import { Fragment, useEffect } from "react";
-
+import { Fragment, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./TestItem.css";
-
+import { testActions } from "../../Store/testSlice";
 const TestItem = (props) => {
+  const dispatch = useDispatch();
+
+  const testId = useSelector((state) => state.tests.testId);
   const startTestHandler = () => {
-    window.scrollTo(0, 0); 
+    dispatch(testActions.testIdHandler(props.id));
+    window.scrollTo(0, 0);
     props.idForRetake(props.id);
     if (props.id === "t1") {
       props.askForProvince(true);
@@ -14,61 +18,84 @@ const TestItem = (props) => {
       props.askForProvince(true);
       props.askForNumberOfQuestions(true);
       return;
-    } 
-     if(props.id === "t3"){
-      props.askForNumberOfQuestions('geography');
+    }
+    if (props.id === "t3") {
+      
+      props.askForNumberOfQuestions("geography");
       return;
     }
-    if(props.id === "t4"){
-      props.askForNumberOfQuestions('history');
+    props.startTest(props.questions);
+    if (props.id === "t4") {
+      props.askForNumberOfQuestions("history");
       return;
     }
-    if(props.id === "t5"){
-      props.askForNumberOfQuestions('government');
+    if (props.id === "t5") {
+      props.askForNumberOfQuestions("government");
       return;
     }
-    if(props.id === "t6"){
-      props.askForNumberOfQuestions('laws');
+    if (props.id === "t6") {
+      props.askForNumberOfQuestions("laws");
       return;
     }
-    if(props.id === "t7"){
-      props.askForNumberOfQuestions('symbols');
+    if (props.id === "t7") {
+      props.askForNumberOfQuestions("symbols");
       return;
     }
-    if(props.id === "t8"){
-      props.askForNumberOfQuestions('economy');
+    if (props.id === "t8") {
+      props.askForNumberOfQuestions("economy");
       return;
     }
-    
+    //props.startTest(props.questions);
   };
+  function idenifier() {
+    props.idForRetake(props.id);
+
+    if (props.testIsClosed) {
+      return;
+    }
+    if (props.numberOfQuestions) {
+      props.startTest(props.questions);
+      return;
+    }
+  }
   useEffect(() => {
- 
-    if (props.id === "t1") {
+    if (testId == "t1") {
       props.idForRetake(props.id);
       if (props.testIsClosed) {
         return;
       }
       if (props.province) {
-        props.startTest(props.questions);
+        props.startTest();
       }
     }
-    
-    if (props.id === "t2") {
+    if (testId === "t2") {
       props.idForRetake(props.id);
+
       if (props.testIsClosed) {
         return;
       }
       if (props.numberOfQuestions && props.province) {
-        props.startTest(props.questions);
+        props.startTest();
+        return;
       }
-      return;
     }
-    
-    
-  }, [props.province, props.questions, props.numberOfQuestions]);
+   else{
+      props.idForRetake(props.id);
 
-
-
+      if (props.testIsClosed) {
+        return;
+      }
+      if (props.numberOfQuestions) {
+        props.startTest();
+        return;
+      }
+    }
+  }, [
+    props.province,
+    props.questions,
+    props.numberOfQuestions,
+    props.idenifier,
+  ]);
 
   return (
     <Fragment>

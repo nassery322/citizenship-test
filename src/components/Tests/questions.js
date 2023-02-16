@@ -1344,6 +1344,7 @@ export const Questions = [{
                                         "option3": "Métis",
                                         "option4": "Inuit.",
                                         "correctOption": "Settlers who came to Canada from the United States during the American Revolution.",
+                                        "category":"history"
                                         },
                                         {
                                         "id": "q151",
@@ -3036,7 +3037,7 @@ export const Questions = [{
               "option3": "Viagra",
               "option4": "Penicillin",
               "correctOption": "Insulin",
-              "category": "science"
+              "category": "history"
               },
               {
               "id": "q330",

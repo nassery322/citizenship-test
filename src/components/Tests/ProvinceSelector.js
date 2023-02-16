@@ -1,11 +1,13 @@
 import { Fragment, useEffect, useState } from "react";
 import Button from "../../UI/Button";
 import "./ProvinceSelector.css";
-
+import CloseTestContainer from "./CloseTestContainer";
 const ProvinceSelector = (props) => {
   const [province, setProvince] = useState("AB");
   const [number, setNumber] = useState(!props.requestNumberOfQuestions && 20);
   const [options, setOptions] = useState([5, 10, 20, 40, 80, "All"]);
+  const [closeTestContainer, setCloseTestContainer] = useState(false);
+  
   const CanadianProvinces = [
     { name: "Alberta", code: "AB" },
     { name: "British Columbia", code: "BC" },
@@ -64,9 +66,25 @@ const ProvinceSelector = (props) => {
   const closeHandler = () =>{
     props.onClose(true)
   }
+  useEffect(()=>{
+    window.history.pushState(null, '', window.location.href);
+  },[])
+  useEffect(() => {
+    
+    const handlePopstate = () => {
+      props.onClose(true);
+    };
+  
+    window.addEventListener("popstate", handlePopstate);
+  
+    
+  }, [props.onClose]);
+  
+
   return (
     <Fragment>
-      <div className="close-btn" onClick={closeHandler}>
+      
+      <div className="close-btn" style={{"fontSize":"3rem"}} onClick={closeHandler}>
         &times;
       </div>
       <section className="province-selector">

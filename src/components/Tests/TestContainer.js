@@ -5,6 +5,7 @@ import Results from "./Results";
 import CloseTestContainer from "./CloseTestContainer";
 import CheckAnswers from "./CheckAnswers";
 import { firebaseDatabase } from "../firebase";
+import { useHistory } from "react-router-dom";
 const TestContainer = (props) => {
   const [questionNum, setQuestionNum] = useState(0);
   const [testIsFinished, setTestIsFinished] = useState(false);
@@ -13,7 +14,7 @@ const TestContainer = (props) => {
   const [checkAnswers, setCheckAnswers] = useState(false);
   const [sendScore, setSendScore] = useState(false);
   const [categoryScores, setCategoryScores] = useState({});
-
+  const [nextBtnDisabled, setNextBtnDisabled] = useState(false);
   const [answers, setAnswers] = useState(
     props.questions &&
       props.questions.map((item) => {
@@ -43,10 +44,12 @@ const TestContainer = (props) => {
   };
 
   const optionHandler = (e) => {
+    setNextBtnDisabled(false);
     let target = e.target;
     if (target.tagName === "P") {
       target = target.parentNode;
     }
+
     answers[questionNum].selectedOption = target.children[1].innerHTML;
     resetOptions();
 
@@ -54,7 +57,7 @@ const TestContainer = (props) => {
   };
 
   const mainQuestion = props.questions[questionNum];
-  const selectedOption =  answers[questionNum].selectedOption;
+  const selectedOption = answers[questionNum].selectedOption;
   const questionsLength = props.questions.length;
   function testFinishedHandler() {
     setTestIsFinished(true);
@@ -90,6 +93,24 @@ const TestContainer = (props) => {
     setScore(points);
     setCategoryScores(categories);
   }
+  
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      if (!testIsFinished) {
+        event.preventDefault();
+        event.returnValue = "";
+      }
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, [testIsFinished]);
+  
+  
+  useEffect(() => {
+    window.addEventListener("popstate", closeModalHandler);
+  }, [testIsFinished]);
 
   const closeModalHandler = () => {
     if (!testIsFinished) {
@@ -158,6 +179,15 @@ const TestContainer = (props) => {
     setScore(0);
     setCategoryScores({});
   };
+
+  useEffect(() => {
+    if (answers[questionNum].selectedOption == "") {
+      setNextBtnDisabled(true);
+    } else {
+      setNextBtnDisabled(false);
+    }
+  }, [answers[questionNum].selectedOption]);
+
   useEffect(() => {
     setAnswers(
       props.questions &&
@@ -170,15 +200,13 @@ const TestContainer = (props) => {
         })
     );
   }, [props.questions]);
-  const nextOrFinish =
-    questionNum === questionsLength - 1 ? "Finish" : "Next";
+  const nextOrFinish = questionNum === questionsLength - 1 ? "Finish" : "Next";
 
   const sendDataToFirebase = async () => {
     setSendScore(true);
     testFinishedHandler();
   };
   const disabled = props.retakeDisabled;
- 
   return (
     <Fragment>
       <div
@@ -194,7 +222,7 @@ const TestContainer = (props) => {
         onCloseContainer={closeTestContainerHandler}
       />
 
-      <section className="test-container">
+      <section className="test-container" id="test-container">
         {testIsFinished ? (
           <Results
             onCheck={checkAnswersHandler}
@@ -290,6 +318,7 @@ const TestContainer = (props) => {
               )}
               <button
                 className="test-btn"
+                disabled={nextBtnDisabled}
                 onClick={
                   questionNum < questionsLength - 1 || checkAnswers
                     ? nextHandler

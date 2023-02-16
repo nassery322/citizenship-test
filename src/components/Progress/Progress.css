@@ -1,5 +1,5 @@
 .progress{
-    min-height:100vh ;
+    min-height:70vh ;
     height: auto;
     font-family: "Montserrat", sans-serif;
     
@@ -7,7 +7,7 @@
 }
 
 .progress-main{
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     flex-direction: column;

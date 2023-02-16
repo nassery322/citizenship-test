@@ -57,15 +57,16 @@
   margin: 10px auto;
   display: block;
   border: 2px solid #f21414;
-  color: #d22a2a;
-  height: 2.9rem;
+  color: #f21414;
+  height: 3.1rem;
   background-color: #fefefe;
   transition: 0.3s all ease-in-out;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .start-test-btn:hover {
   background-color: #d22a2a;
+  border-color: #d22a2a;
   color: white;
 }
 
@@ -88,6 +89,14 @@
     .test-item header{
         font-size:1.4rem;
     }
+    .start-test-btn{
+      height: 3.4rem;
+    }
+}
+@media (max-width:430px){
+  .test-image{
+    width: 90%;
+  }
 }
 
 @media (max-width:400px){

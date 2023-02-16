@@ -23,9 +23,10 @@ const ManageAccount = (props) => {
     await signOut(auth);
     window.location.reload();
   }
+  
   return (
     <Modal show={props.show} onClick={props.onClick} style={{'top':'20%'}}>
-      <div className="close-btn" onClick={props.onClick}>
+      <div className="close-btn" style={{"fontSize":"2.8rem"}} onClick={props.onClick}>
         &times;
       </div>
       <div className="avatar-canvas-manage">

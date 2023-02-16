@@ -1,8 +1,24 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Navbar from "../Home/Navbar/Navbar";
 import "./Preparation.css";
 
-const Preparation = () => {
+const Preparation = (props) => {
+
+  useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+  
+    const handlePopState = () => {
+      props.onClose();
+    };
+    
+    window.addEventListener("popstate", () => {
+      handlePopState();
+    });
+    
+   
+   
+  }, [props.onClose]);
+  
   return (
     <Fragment>
       <section className="preparation">

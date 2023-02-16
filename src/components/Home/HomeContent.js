@@ -11,7 +11,7 @@ import TestContainer from "../Tests/TestContainer";
 const HomeContent = (props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [showSampleTest, setShowSampleTest] = useState(false);
-  const [retakeDisabled, setRetakeDisabled] = useState(true)
+  const [retakeDisabled, setRetakeDisabled] = useState(true);
   const [form, setForm] = useState("signup");
   function signupModalPopUp() {
     setModalIsOpen((e) => !e);
@@ -24,10 +24,10 @@ const HomeContent = (props) => {
     }
   }
 
-  const sampleTestQuestions = Questions.slice(0, 15)
+  const sampleTestQuestions = Questions.slice(0, 15);
   const sampleTestHandler = () => {
     setShowSampleTest((e) => !e);
-    props.hideNav(e => !e)
+    props.hideNav((e) => !e);
   };
   const loginModalHandler = () => {
     signupModalPopUp();
