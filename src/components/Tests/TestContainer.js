@@ -85,8 +85,7 @@ const TestContainer = (props) => {
         if (numOfQuestions === 0) {
           categories[category] = 0;
         } else {
-          categories[category] = (categories[category] / numOfQuestions) * 100;
-          categories[category] = categories[category].toFixed(0);
+          categories[category] = (+(categories[category] / numOfQuestions) * 100).toFixed(0);
         }
       }
     }

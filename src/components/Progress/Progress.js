@@ -4,22 +4,19 @@ import "./Progress.css";
 import ProgressByCategory from "./ProgressByCategory";
 
 const Progress = () => {
-  const [empty, setEmpty] = useState(false);
   const [categoryProgressIsEmpty, setCategoryProgressIsEmpty] = useState(false);
+
   function EmptyHandler() {
-    setEmpty(true);
-  }
-  function categoryEmptyHandler() {
     setCategoryProgressIsEmpty(true);
   }
   return (
     <Fragment>
       <section className="progress" id="progress">
         <header>Progress</header>
-        {empty && categoryProgressIsEmpty ?<section className="empty">You Have No Progress Yet!</section>:
+        {categoryProgressIsEmpty  ? <section className="empty">You Have No Progress Yet!</section>:
         <Fragment>
           <section className="progress-main">
-          <ProgressByCategory progressIsEmpty={categoryEmptyHandler} />
+          <ProgressByCategory progressIsEmpty={EmptyHandler} />
           </section>
           
         </Fragment>}

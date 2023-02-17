@@ -340,7 +340,7 @@ export const Questions = [{
                         "option2": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown).",
                         "option3": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Quebec (Quebec).",
                         "option4": "Nova Scotia (Halifax), New Brunswick (Fredericton), Quebec (Quebec City) and Ontario (Toronto)",
-                    "correctOption": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown)",
+                    "correctOption": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown).",
                     "category": "geography"
                     },
                     {
@@ -1912,7 +1912,7 @@ export const Questions = [{
       "id": '209',
       "question": "Around what time did the word Canada first begin appearing on maps?",
       "option1": "1560s",
-      "option2": "15502",
+      "option2": "1550s",
       "option3": "1540s",
       "option4": "1570s",
       "correctOption": "1550s",
@@ -2511,7 +2511,7 @@ export const Questions = [{
   {
   "id": "q2616",
   "question": "Among Canadian Christians, what is the most common affiliation?",
-  "option1": "Catholic (correct answer)",
+  "option1": "Catholic",
   "option2": "Baptist",
   "option3": "Methodist",
   "option4": "Orthodox",
@@ -2545,7 +2545,7 @@ export const Questions = [{
   "option2": "11 million",
   "option3": "4 million",
   "option4": "2 million",
-  "correctOption": "The Pacific Ocean",
+  "correctOption": "11 million",
 "category": "geography"
 },
 {
@@ -3758,7 +3758,7 @@ export const Questions = [{
   "question": "How many electoral districts (a.k.a. ridings or constituencies) are there in Canada?",
   "option1": "308",
   "option2": "208",
-  "option3": "108",
+  "option3": "338",
   "option4": "408",
   "correctOption": "338",
   "category": "government"
@@ -4149,7 +4149,7 @@ export const Questions = [{
             "question": "The Maple Leaf has appeared on Canadian military uniforms since when?",
             "option1": "The 1850s",
             "option2": "The 1820s",
-            "option3": "The 1880s",
+            "option3": "The 1860s",
             "option4": "The 1920s",
             "correctOption": "The 1860s",
             "category": "symbols"
@@ -5800,10 +5800,4 @@ export const YukonTerritories = [
         "category": "government"
         }
 ]
-const shuffleArray = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
+

@@ -17,10 +17,10 @@ const websiteFeatures = [
       },
   {
     id: "f2",
-    header: "Over (Number)+ Questions",
+    header: "Over 550+ Questions",
     image: questionsSvg,
     description:
-      "Practice with (Number)+ test questions including multiple choice and true or false questions.",
+      "Practice with 550+ test questions including multiple choice and true or false questions.",
   },
   {
     id: "f3",

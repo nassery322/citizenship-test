@@ -15,30 +15,7 @@ const Results = (props) => {
   async function sendRequest(id) {
     if (!scoresend) {
       const scoreData = percentage;
-      // if (props.id === "t1") {
-      //   const response = await fetch(
-      //     `${firebaseDatabase}/usersprogress/${id}/overallProgress.json`
-      //   );
-      //   let data = await response.json();
-      //   if (!data) {
-      //     data = [];
-      //   } else {
-      //     data = Object.values(data);
-      //   }
-      //   data.unshift(scoreData);
 
-      //   if (data.length > 7) {
-      //     data.pop();
-      //   }
-
-      //   await fetch(
-      //     `${firebaseDatabase}/usersprogress/${id}/overallProgress.json`,
-      //     {
-      //       method: "PUT",
-      //       body: JSON.stringify(data),
-      //     }
-      //   );
-      // }
       const categoryScores = props.categoryScores;
       if(!categoryScores){
         return;

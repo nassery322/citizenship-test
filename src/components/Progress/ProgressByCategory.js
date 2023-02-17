@@ -2,7 +2,6 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth, firebaseDatabase } from "../firebase";
 import BarChart from "./BarChart";
-import Graph from "./Graph";
 import "./ProgressByCategory.css";
 
 const ProgressByCategory = (props) => {
@@ -69,7 +68,7 @@ const ProgressByCategory = (props) => {
           },
         };
         setCategoryProgress(loadedData.data);
-        if (loadedData.length < 1) {
+        if (loadedData.data.labels.length < 1) {
           props.progressIsEmpty(true);
         }
       }
