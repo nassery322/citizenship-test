@@ -5800,4 +5800,3 @@ export const YukonTerritories = [
         "category": "government"
         }
 ]
-

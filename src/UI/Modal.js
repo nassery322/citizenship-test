@@ -6,7 +6,6 @@ import CSSTransition from "react-transition-group/CSSTransition";
 const Backdrop = (props) => {
   return <div className="backdrop" onClick={props.onClick} />;
 };
-
 const Overlay = (props) => {
   const animationTiming = {
     enter: 400,
@@ -29,6 +28,7 @@ const Overlay = (props) => {
         <div className="modal-content">{props.children}</div>
       </div>
     </CSSTransition>
+
   );
 };
 const Modal = (props) => {

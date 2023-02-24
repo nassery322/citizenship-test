@@ -1,21 +1,21 @@
 import { Fragment, useEffect, useState } from "react";
 import "./BarChart.css";
 import { Bar } from "react-chartjs-2";
+import {Chart as ChartJS} from 'chart.js/auto'
 
 const BarChart = (props) => {
   const [barThickness, setBarThickness] = useState(50);
 
   useEffect(() => {
     const handleWindowResize = () => {
-
       if (window.innerWidth < 800) {
         setBarThickness(40);
       }
 
       if (window.innerWidth < 600) {
         setBarThickness(20);
-      }else{
-        setBarThickness(50)
+      } else {
+        setBarThickness(50);
       }
     };
 

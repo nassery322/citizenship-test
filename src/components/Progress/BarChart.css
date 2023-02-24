@@ -1,31 +1,26 @@
-.bar-chart{
-    width: 60%;
-    margin:40px auto;
+.bar-chart {
+  width: 60%;
+  margin: 40px auto;
 
-    box-sizing: border-box;
-    min-height: 400px;
-    max-height: 500px;
+  box-sizing: border-box;
+  min-height: 400px;
+  max-height: 500px;
 }
 
-
-
-
-@media (max-width:980px){
-    .bar-chart{
-        width: 80%;
-    }
-
+@media (max-width: 980px) {
+  .bar-chart {
+    width: 80%;
+  }
 }
 
-@media (max-width:670px){
-    .bar-chart{
-        width: 90%;
-    }
+@media (max-width: 670px) {
+  .bar-chart {
+    width: 90%;
+  }
 }
 
-@media (max-width:600px){
-    .bar-chart{
-        width: 100%;
-    }
-   
+@media (max-width: 600px) {
+  .bar-chart {
+    width: 100%;
+  }
 }

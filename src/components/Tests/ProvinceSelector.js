@@ -47,10 +47,10 @@ const ProvinceSelector = (props) => {
         setOptions([5, 10, 20, 40, 50, 55]);
       }
       if (props.category === "history") {
-        setOptions([5, 10, 20, 40, 80, 150]);
+        setOptions([5, 10, 20, 40, 80, 145]);
       }
       if (props.category === "government") {
-        setOptions([5, 10, 20, 40, 80, 150]);
+        setOptions([5, 10, 20, 40, 80, 115]);
       }
       if (props.category === "laws") {
         setOptions([5, 10, 20, 40, 50, 60]);

@@ -1,5 +1,4 @@
 import { Fragment, useState } from "react";
-import OverallProgress from "./OverallProgress";
 import "./Progress.css";
 import ProgressByCategory from "./ProgressByCategory";
 

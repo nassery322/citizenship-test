@@ -19,10 +19,11 @@
 }
 
 button:disabled{
-    opacity: .3;
+    opacity: .4;
+    cursor: not-allowed;
 }
 button:disabled:hover{
     background-color: inherit;
-    color:inherit
+   color:#d22a2a;
 }
 
