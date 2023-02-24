@@ -19,7 +19,7 @@
 .contact div:nth-child(1){
   justify-content: left;
   padding-left: 10px;
-  font-size: 1.17rem;
+  font-size: 1.1rem;
   color:#d62323;
   transition: all .3s ease;
 }
@@ -27,7 +27,7 @@
 
 .contact div:nth-child(2){
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color:rgb(94, 92, 92)
 }
