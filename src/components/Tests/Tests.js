@@ -28,8 +28,7 @@ import {
 import TestContainer from "./TestContainer";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 import { useSelector, useDispatch } from "react-redux";
-import { testActions } from "../../Store/testSlice";
-import { useNavigate } from 'react-router-dom';
+
 
 export function shuffleArray(a, b) {
   return Math.random() - 0.5;
@@ -54,8 +53,8 @@ const Tests = (props) => {
         "Our simulation test replicates the format of the real Canadian Citizenship Test. It draws questions from every categories and are also timed which helps to further prepare you.",
       image: citizenCert,
       questions: Questions.sort(shuffleArray)
-        .slice(0, 15)
-        .concat(province ? province.sort(shuffleArray).slice(0, 5) : ""),
+        .slice(0, 18)
+        .concat(province ? province.sort(shuffleArray).slice(0, 2) : ""),
     },
     {
       id: "t2",
