@@ -18,8 +18,8 @@
 
   .modal {
     position: fixed;
-    width: 40%;
-    left:30%;
+    width: 35%;
+    left:32.5%;
     top:15%;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);

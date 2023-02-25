@@ -5,7 +5,6 @@ import Signup from "./Forms/Signup";
 import Login from "./Forms/Login";
 import bookcover from "../../assets/bookcover.png";
 import { Questions } from "../Tests/questions";
-import { shuffleArray } from "../Tests/Tests";
 import TestContainer from "../Tests/TestContainer";
 
 const HomeContent = (props) => {
@@ -30,9 +29,11 @@ const HomeContent = (props) => {
     props.hideNav((e) => !e);
   };
   const loginModalHandler = () => {
-    signupModalPopUp();
     setForm("login");
+    signupModalPopUp();
   };
+
+
   return (
     <Fragment>
       {showSampleTest ? (
