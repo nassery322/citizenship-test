@@ -34,7 +34,7 @@ const websiteFeatures = [
     header: "Track Your Progress",
     image: chartsSvg,
     description:
-      "Track your progress with our user friendly graphs and chart.",
+      "Track your progress with our user friendly graphs and charts.",
   },
   {
     id: "f5",
