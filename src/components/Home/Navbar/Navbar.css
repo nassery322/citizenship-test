@@ -67,15 +67,16 @@
   width: 45px ;
   height: 45px;
 }
+
 @media (max-width:1200px){
   .nav-list li{
     margin:0 10px;
   }
 }
-@media (min-width: 822px) {
+@media (min-width: 970px) {
   #login:hover {
-    background-color: white;
     color: #d22a2a;
+    background-color: white;
   }
 }
 

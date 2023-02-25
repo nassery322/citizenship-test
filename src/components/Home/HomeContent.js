@@ -32,7 +32,10 @@ const HomeContent = (props) => {
     setForm("login");
     signupModalPopUp();
   };
-
+function signupmodalhandler(){
+  setForm("signup")
+  signupModalPopUp()
+}
 
   return (
     <Fragment>
@@ -54,7 +57,7 @@ const HomeContent = (props) => {
               becoming a proud Canadian citizen.
             </p>
             <div className="home-buttons">
-              <Button onClick={signupModalPopUp}>Create Account</Button>
+              <Button onClick={signupmodalhandler}>Create Account</Button>
               <button
                 onClick={loginModalHandler}
                 className={"check-btn"}

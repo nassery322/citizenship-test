@@ -18,7 +18,7 @@ const ManageAccount = (props) => {
         fetchData(currentUser.uid);
       }
     });
-  }, [auth.currentUser]);
+  }, [auth]);
   async function signoutHandler() {
     await signOut(auth);
     window.location.reload();

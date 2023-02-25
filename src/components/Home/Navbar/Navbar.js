@@ -14,9 +14,11 @@ const Navbar = (props) => {
   const [userIsLoggedIn, setUserIsLoggedIn] = useState(false);
   const [manageModalIsOpen, setManageModalIsOpen] = useState(false);
   function loginModalPopUp() {
-    setModalIsOpen((e) => !e);
+    setModalIsOpen(e => !e);
   }
-
+function modalClose(){
+  setModalIsOpen(false)
+}
   function changeModalHandler() {
     if (form === "login") {
       setForm("signup");
@@ -34,7 +36,7 @@ const Navbar = (props) => {
 
   function ManageAccountHandler() {
     setManageModalIsOpen((e) => !e);
-  }
+  } 
   const navContent = (
     <Fragment>
       {userIsLoggedIn ? (
@@ -88,7 +90,7 @@ const Navbar = (props) => {
             </a>
           </li>
           <li id="login" onClick={loginModalPopUp}>
-            <a href="#" className="nav-link">
+            <a  className="nav-link">
               Login
             </a>
           </li>
@@ -113,13 +115,12 @@ const Navbar = (props) => {
           {form === "login" ? (
             <Login
               onClick={loginModalPopUp}
-              onLoginClose={loginModalPopUp}
               show={modalIsOpen}
               onChangeModal={changeModalHandler}
             />
           ) : (
             <Signup
-              onClick={loginModalPopUp}
+              onClick={modalClose}
               show={modalIsOpen}
               onChangeModal={changeModalHandler}
             />
